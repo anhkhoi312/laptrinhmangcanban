@@ -8,6 +8,7 @@
 
 **Giảng viên:** Trần Hồng Nghi 
 ## A. Mô tả đề tài
+![](MindMap/MindMap.png)
 - Đăng nhập (Giảng viên, sinh viên) 
 - Về phía người dùng là Sinh viên: Xem điểm, xem hạng, xếp loại 
 - Về phía người dùng là Giảng viên: Nhập điểm, Đánh giá sinh viên, Tạo thông báo 
