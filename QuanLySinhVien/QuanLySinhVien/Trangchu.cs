@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLySinhVien
 {
-    public partial class QuanLyDiem : Form
+    public partial class Trangchu : Form
     {
-        public QuanLyDiem()
+        public Trangchu()
         {
             InitializeComponent();
-        }
-
-        private void comboBox_mssv_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

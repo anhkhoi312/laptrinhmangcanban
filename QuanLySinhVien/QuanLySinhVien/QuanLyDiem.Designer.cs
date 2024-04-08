@@ -47,9 +47,9 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.column_mssv = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.column_ten = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.column_gioitinh = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.column_sdt = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.column_email = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.column_gioitinh = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.column_monhoc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.column_diemgk = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.column_diemck = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -153,6 +153,7 @@
             this.comboBox_mssv.Name = "comboBox_mssv";
             this.comboBox_mssv.Size = new System.Drawing.Size(121, 24);
             this.comboBox_mssv.TabIndex = 15;
+            this.comboBox_mssv.SelectedIndexChanged += new System.EventHandler(this.comboBox_mssv_SelectedIndexChanged);
             // 
             // comboBox_mon
             // 
@@ -225,6 +226,11 @@
             // 
             this.column_ten.Text = "Tên";
             // 
+            // column_gioitinh
+            // 
+            this.column_gioitinh.DisplayIndex = 4;
+            this.column_gioitinh.Text = "Giới tính";
+            // 
             // column_sdt
             // 
             this.column_sdt.DisplayIndex = 2;
@@ -234,11 +240,6 @@
             // 
             this.column_email.DisplayIndex = 3;
             this.column_email.Text = "Email";
-            // 
-            // column_gioitinh
-            // 
-            this.column_gioitinh.DisplayIndex = 4;
-            this.column_gioitinh.Text = "Giới tính";
             // 
             // column_monhoc
             // 
