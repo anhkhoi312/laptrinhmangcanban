@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.groupbox_enter_stu_info = new System.Windows.Forms.GroupBox();
-            this.label_mssv = new System.Windows.Forms.Label();
-            this.label_name = new System.Windows.Forms.Label();
-            this.label_gioitinh = new System.Windows.Forms.Label();
-            this.label_sdt = new System.Windows.Forms.Label();
-            this.label_email = new System.Windows.Forms.Label();
-            this.radio_bt_Nam = new System.Windows.Forms.RadioButton();
-            this.radio_bt_Nu = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1_them = new System.Windows.Forms.Button();
-            this.button2_capnhat = new System.Windows.Forms.Button();
-            this.button3_nhapfileexcel = new System.Windows.Forms.Button();
-            this.button4_xoa = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.button4_xoa = new System.Windows.Forms.Button();
+            this.button3_nhapfileexcel = new System.Windows.Forms.Button();
+            this.button2_capnhat = new System.Windows.Forms.Button();
+            this.button1_them = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.radio_bt_Nu = new System.Windows.Forms.RadioButton();
+            this.radio_bt_Nam = new System.Windows.Forms.RadioButton();
+            this.label_email = new System.Windows.Forms.Label();
+            this.label_sdt = new System.Windows.Forms.Label();
+            this.label_gioitinh = new System.Windows.Forms.Label();
+            this.label_name = new System.Windows.Forms.Label();
+            this.label_mssv = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.column_mssv = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -83,131 +83,15 @@
             this.groupbox_enter_stu_info.TabStop = false;
             this.groupbox_enter_stu_info.Text = "Enter Student Information";
             // 
-            // label_mssv
+            // button5
             // 
-            this.label_mssv.AutoSize = true;
-            this.label_mssv.Location = new System.Drawing.Point(6, 52);
-            this.label_mssv.Name = "label_mssv";
-            this.label_mssv.Size = new System.Drawing.Size(126, 20);
-            this.label_mssv.TabIndex = 0;
-            this.label_mssv.Text = "Mã số sinh viên";
-            // 
-            // label_name
-            // 
-            this.label_name.AutoSize = true;
-            this.label_name.Location = new System.Drawing.Point(6, 97);
-            this.label_name.Name = "label_name";
-            this.label_name.Size = new System.Drawing.Size(37, 20);
-            this.label_name.TabIndex = 1;
-            this.label_name.Text = "Tên";
-            // 
-            // label_gioitinh
-            // 
-            this.label_gioitinh.AutoSize = true;
-            this.label_gioitinh.Location = new System.Drawing.Point(6, 143);
-            this.label_gioitinh.Name = "label_gioitinh";
-            this.label_gioitinh.Size = new System.Drawing.Size(81, 30);
-            this.label_gioitinh.TabIndex = 2;
-            this.label_gioitinh.Text = "Giới tính";
-            // 
-            // label_sdt
-            // 
-            this.label_sdt.AutoSize = true;
-            this.label_sdt.Location = new System.Drawing.Point(6, 182);
-            this.label_sdt.Name = "label_sdt";
-            this.label_sdt.Size = new System.Drawing.Size(106, 20);
-            this.label_sdt.TabIndex = 3;
-            this.label_sdt.Text = "Số điện thoại";
-            // 
-            // label_email
-            // 
-            this.label_email.AutoSize = true;
-            this.label_email.Location = new System.Drawing.Point(6, 221);
-            this.label_email.Name = "label_email";
-            this.label_email.Size = new System.Drawing.Size(51, 20);
-            this.label_email.TabIndex = 4;
-            this.label_email.Text = "Email";
-            // 
-            // radio_bt_Nam
-            // 
-            this.radio_bt_Nam.AutoSize = true;
-            this.radio_bt_Nam.Location = new System.Drawing.Point(138, 141);
-            this.radio_bt_Nam.Name = "radio_bt_Nam";
-            this.radio_bt_Nam.Size = new System.Drawing.Size(65, 24);
-            this.radio_bt_Nam.TabIndex = 6;
-            this.radio_bt_Nam.TabStop = true;
-            this.radio_bt_Nam.Text = "Nam";
-            this.radio_bt_Nam.UseVisualStyleBackColor = true;
-            // 
-            // radio_bt_Nu
-            // 
-            this.radio_bt_Nu.AutoSize = true;
-            this.radio_bt_Nu.Location = new System.Drawing.Point(209, 141);
-            this.radio_bt_Nu.Name = "radio_bt_Nu";
-            this.radio_bt_Nu.Size = new System.Drawing.Size(51, 24);
-            this.radio_bt_Nu.TabIndex = 7;
-            this.radio_bt_Nu.TabStop = true;
-            this.radio_bt_Nu.Text = "Nữ";
-            this.radio_bt_Nu.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(164, 52);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(133, 26);
-            this.textBox1.TabIndex = 8;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(164, 94);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(133, 26);
-            this.textBox2.TabIndex = 9;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(164, 179);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(133, 26);
-            this.textBox3.TabIndex = 10;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(164, 221);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(133, 26);
-            this.textBox4.TabIndex = 11;
-            // 
-            // button1_them
-            // 
-            this.button1_them.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1_them.Location = new System.Drawing.Point(355, 46);
-            this.button1_them.Name = "button1_them";
-            this.button1_them.Size = new System.Drawing.Size(123, 46);
-            this.button1_them.TabIndex = 12;
-            this.button1_them.Text = "THÊM";
-            this.button1_them.UseVisualStyleBackColor = false;
-            // 
-            // button2_capnhat
-            // 
-            this.button2_capnhat.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button2_capnhat.Location = new System.Drawing.Point(508, 44);
-            this.button2_capnhat.Name = "button2_capnhat";
-            this.button2_capnhat.Size = new System.Drawing.Size(109, 48);
-            this.button2_capnhat.TabIndex = 13;
-            this.button2_capnhat.Text = "CẬP NHẬT";
-            this.button2_capnhat.UseVisualStyleBackColor = false;
-            // 
-            // button3_nhapfileexcel
-            // 
-            this.button3_nhapfileexcel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button3_nhapfileexcel.Location = new System.Drawing.Point(355, 108);
-            this.button3_nhapfileexcel.Name = "button3_nhapfileexcel";
-            this.button3_nhapfileexcel.Size = new System.Drawing.Size(123, 57);
-            this.button3_nhapfileexcel.TabIndex = 14;
-            this.button3_nhapfileexcel.Text = "NHẬP FILE EXCEL";
-            this.button3_nhapfileexcel.UseVisualStyleBackColor = false;
-            this.button3_nhapfileexcel.Click += new System.EventHandler(this.button3_nhapfileexcel_Click);
+            this.button5.BackColor = System.Drawing.Color.IndianRed;
+            this.button5.Location = new System.Drawing.Point(437, 182);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(126, 45);
+            this.button5.TabIndex = 16;
+            this.button5.Text = "THOÁT";
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // button4_xoa
             // 
@@ -220,15 +104,131 @@
             this.button4_xoa.UseVisualStyleBackColor = false;
             this.button4_xoa.Click += new System.EventHandler(this.button4_xoa_Click);
             // 
-            // button5
+            // button3_nhapfileexcel
             // 
-            this.button5.BackColor = System.Drawing.Color.IndianRed;
-            this.button5.Location = new System.Drawing.Point(437, 182);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(126, 45);
-            this.button5.TabIndex = 16;
-            this.button5.Text = "THOÁT";
-            this.button5.UseVisualStyleBackColor = false;
+            this.button3_nhapfileexcel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button3_nhapfileexcel.Location = new System.Drawing.Point(355, 108);
+            this.button3_nhapfileexcel.Name = "button3_nhapfileexcel";
+            this.button3_nhapfileexcel.Size = new System.Drawing.Size(123, 57);
+            this.button3_nhapfileexcel.TabIndex = 14;
+            this.button3_nhapfileexcel.Text = "NHẬP FILE EXCEL";
+            this.button3_nhapfileexcel.UseVisualStyleBackColor = false;
+            this.button3_nhapfileexcel.Click += new System.EventHandler(this.button3_nhapfileexcel_Click);
+            // 
+            // button2_capnhat
+            // 
+            this.button2_capnhat.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button2_capnhat.Location = new System.Drawing.Point(508, 44);
+            this.button2_capnhat.Name = "button2_capnhat";
+            this.button2_capnhat.Size = new System.Drawing.Size(109, 58);
+            this.button2_capnhat.TabIndex = 13;
+            this.button2_capnhat.Text = "CẬP NHẬT";
+            this.button2_capnhat.UseVisualStyleBackColor = false;
+            // 
+            // button1_them
+            // 
+            this.button1_them.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1_them.Location = new System.Drawing.Point(355, 46);
+            this.button1_them.Name = "button1_them";
+            this.button1_them.Size = new System.Drawing.Size(123, 56);
+            this.button1_them.TabIndex = 12;
+            this.button1_them.Text = "THÊM";
+            this.button1_them.UseVisualStyleBackColor = false;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(164, 221);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(133, 26);
+            this.textBox4.TabIndex = 11;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(164, 179);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(133, 26);
+            this.textBox3.TabIndex = 10;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(164, 94);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(133, 26);
+            this.textBox2.TabIndex = 9;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(164, 52);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(133, 26);
+            this.textBox1.TabIndex = 8;
+            // 
+            // radio_bt_Nu
+            // 
+            this.radio_bt_Nu.AutoSize = true;
+            this.radio_bt_Nu.Location = new System.Drawing.Point(220, 141);
+            this.radio_bt_Nu.Name = "radio_bt_Nu";
+            this.radio_bt_Nu.Size = new System.Drawing.Size(51, 24);
+            this.radio_bt_Nu.TabIndex = 7;
+            this.radio_bt_Nu.TabStop = true;
+            this.radio_bt_Nu.Text = "Nữ";
+            this.radio_bt_Nu.UseVisualStyleBackColor = true;
+            // 
+            // radio_bt_Nam
+            // 
+            this.radio_bt_Nam.AutoSize = true;
+            this.radio_bt_Nam.Location = new System.Drawing.Point(149, 141);
+            this.radio_bt_Nam.Name = "radio_bt_Nam";
+            this.radio_bt_Nam.Size = new System.Drawing.Size(65, 24);
+            this.radio_bt_Nam.TabIndex = 6;
+            this.radio_bt_Nam.TabStop = true;
+            this.radio_bt_Nam.Text = "Nam";
+            this.radio_bt_Nam.UseVisualStyleBackColor = true;
+            // 
+            // label_email
+            // 
+            this.label_email.AutoSize = true;
+            this.label_email.Location = new System.Drawing.Point(6, 221);
+            this.label_email.Name = "label_email";
+            this.label_email.Size = new System.Drawing.Size(51, 20);
+            this.label_email.TabIndex = 4;
+            this.label_email.Text = "Email";
+            // 
+            // label_sdt
+            // 
+            this.label_sdt.AutoSize = true;
+            this.label_sdt.Location = new System.Drawing.Point(6, 182);
+            this.label_sdt.Name = "label_sdt";
+            this.label_sdt.Size = new System.Drawing.Size(106, 20);
+            this.label_sdt.TabIndex = 3;
+            this.label_sdt.Text = "Số điện thoại";
+            // 
+            // label_gioitinh
+            // 
+            this.label_gioitinh.AutoSize = true;
+            this.label_gioitinh.Location = new System.Drawing.Point(6, 143);
+            this.label_gioitinh.Name = "label_gioitinh";
+            this.label_gioitinh.Size = new System.Drawing.Size(71, 20);
+            this.label_gioitinh.TabIndex = 2;
+            this.label_gioitinh.Text = "Giới tính";
+            // 
+            // label_name
+            // 
+            this.label_name.AutoSize = true;
+            this.label_name.Location = new System.Drawing.Point(6, 97);
+            this.label_name.Name = "label_name";
+            this.label_name.Size = new System.Drawing.Size(37, 20);
+            this.label_name.TabIndex = 1;
+            this.label_name.Text = "Tên";
+            // 
+            // label_mssv
+            // 
+            this.label_mssv.AutoSize = true;
+            this.label_mssv.Location = new System.Drawing.Point(6, 52);
+            this.label_mssv.Name = "label_mssv";
+            this.label_mssv.Size = new System.Drawing.Size(126, 20);
+            this.label_mssv.TabIndex = 0;
+            this.label_mssv.Text = "Mã số sinh viên";
             // 
             // groupBox1
             // 
@@ -239,7 +239,7 @@
             this.groupBox1.Size = new System.Drawing.Size(1273, 219);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Information";
+            this.groupBox1.Text = "Thông tin";
             // 
             // listView1
             // 
@@ -259,23 +259,31 @@
             // 
             // column_mssv
             // 
-            this.column_mssv.Text = "Mã số sinh viên";
+            this.column_mssv.Text = "Mã sinh viên";
+            this.column_mssv.Width = 120;
             // 
             // column_ten
             // 
             this.column_ten.Text = "Tên";
+            this.column_ten.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.column_ten.Width = 120;
             // 
             // column_gioitinh
             // 
             this.column_gioitinh.Text = "Giới tính";
+            this.column_gioitinh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.column_gioitinh.Width = 120;
             // 
             // column_sdt
             // 
             this.column_sdt.Text = "Số điện thoại";
+            this.column_sdt.Width = 120;
             // 
             // column_email
             // 
             this.column_email.Text = "Email";
+            this.column_email.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.column_email.Width = 150;
             // 
             // QuanLySinhVien
             // 

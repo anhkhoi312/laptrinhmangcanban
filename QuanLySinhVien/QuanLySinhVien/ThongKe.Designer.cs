@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label_thongke = new System.Windows.Forms.Label();
+            this.textBox_mssv_thongke = new System.Windows.Forms.TextBox();
+            this.tracuu = new System.Windows.Forms.Button();
             this.label_mssv = new System.Windows.Forms.Label();
             this.label_hoten = new System.Windows.Forms.Label();
             this.label_email = new System.Windows.Forms.Label();
@@ -47,70 +47,75 @@
             this.textBox_sdt = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // label1
+            // label_thongke
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Mã số sinh viên";
+            this.label_thongke.AutoSize = true;
+            this.label_thongke.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_thongke.Location = new System.Drawing.Point(7, 9);
+            this.label_thongke.Name = "label_thongke";
+            this.label_thongke.Size = new System.Drawing.Size(148, 25);
+            this.label_thongke.TabIndex = 0;
+            this.label_thongke.Text = "Mã số sinh viên";
             // 
-            // textBox1
+            // textBox_mssv_thongke
             // 
-            this.textBox1.Location = new System.Drawing.Point(16, 66);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 22);
-            this.textBox1.TabIndex = 1;
+            this.textBox_mssv_thongke.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox_mssv_thongke.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_mssv_thongke.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_mssv_thongke.Location = new System.Drawing.Point(12, 41);
+            this.textBox_mssv_thongke.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
+            this.textBox_mssv_thongke.Name = "textBox_mssv_thongke";
+            this.textBox_mssv_thongke.Size = new System.Drawing.Size(167, 30);
+            this.textBox_mssv_thongke.TabIndex = 1;
             // 
-            // button1
+            // tracuu
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(16, 118);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 42);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Tra cứu";
-            this.button1.UseVisualStyleBackColor = true;
+            this.tracuu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tracuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tracuu.Location = new System.Drawing.Point(12, 90);
+            this.tracuu.Name = "tracuu";
+            this.tracuu.Size = new System.Drawing.Size(122, 42);
+            this.tracuu.TabIndex = 2;
+            this.tracuu.Text = "Tra cứu";
+            this.tracuu.UseVisualStyleBackColor = false;
             // 
             // label_mssv
             // 
             this.label_mssv.AutoSize = true;
-            this.label_mssv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_mssv.Location = new System.Drawing.Point(38, 210);
+            this.label_mssv.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_mssv.Location = new System.Drawing.Point(13, 144);
             this.label_mssv.Name = "label_mssv";
-            this.label_mssv.Size = new System.Drawing.Size(103, 20);
+            this.label_mssv.Size = new System.Drawing.Size(116, 24);
             this.label_mssv.TabIndex = 3;
             this.label_mssv.Text = "Mã sinh viên";
             // 
             // label_hoten
             // 
             this.label_hoten.AutoSize = true;
-            this.label_hoten.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_hoten.Location = new System.Drawing.Point(38, 276);
+            this.label_hoten.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_hoten.Location = new System.Drawing.Point(8, 224);
             this.label_hoten.Name = "label_hoten";
-            this.label_hoten.Size = new System.Drawing.Size(59, 20);
+            this.label_hoten.Size = new System.Drawing.Size(66, 24);
             this.label_hoten.TabIndex = 4;
             this.label_hoten.Text = "Họ tên";
             // 
             // label_email
             // 
             this.label_email.AutoSize = true;
-            this.label_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_email.Location = new System.Drawing.Point(41, 351);
+            this.label_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_email.Location = new System.Drawing.Point(8, 320);
             this.label_email.Name = "label_email";
-            this.label_email.Size = new System.Drawing.Size(51, 20);
+            this.label_email.Size = new System.Drawing.Size(57, 24);
             this.label_email.TabIndex = 5;
             this.label_email.Text = "Email";
             // 
             // label_sdt
             // 
             this.label_sdt.AutoSize = true;
-            this.label_sdt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_sdt.Location = new System.Drawing.Point(41, 410);
+            this.label_sdt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_sdt.Location = new System.Drawing.Point(8, 421);
             this.label_sdt.Name = "label_sdt";
-            this.label_sdt.Size = new System.Drawing.Size(106, 20);
+            this.label_sdt.Size = new System.Drawing.Size(121, 24);
             this.label_sdt.TabIndex = 6;
             this.label_sdt.Text = "Số điện thoại";
             // 
@@ -122,10 +127,11 @@
             this.column_diemgk,
             this.column_diemck,
             this.column_diemtb});
+            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(271, 52);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(868, 378);
+            this.listView1.Size = new System.Drawing.Size(868, 526);
             this.listView1.TabIndex = 7;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -133,53 +139,62 @@
             // column_lop
             // 
             this.column_lop.Text = "Lớp";
+            this.column_lop.Width = 100;
             // 
             // column_monhoc
             // 
             this.column_monhoc.Text = "Môn học";
+            this.column_monhoc.Width = 100;
             // 
             // column_diemgk
             // 
             this.column_diemgk.Text = "Điểm giữa kì";
+            this.column_diemgk.Width = 120;
             // 
             // column_diemck
             // 
             this.column_diemck.Text = "Điểm cuối kì";
+            this.column_diemck.Width = 120;
             // 
             // column_diemtb
             // 
             this.column_diemtb.Text = "Điểm trung bình";
+            this.column_diemtb.Width = 130;
             // 
             // textBox_mssv
             // 
-            this.textBox_mssv.Location = new System.Drawing.Point(45, 251);
+            this.textBox_mssv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_mssv.Location = new System.Drawing.Point(12, 182);
             this.textBox_mssv.Name = "textBox_mssv";
             this.textBox_mssv.ReadOnly = true;
-            this.textBox_mssv.Size = new System.Drawing.Size(100, 22);
+            this.textBox_mssv.Size = new System.Drawing.Size(138, 30);
             this.textBox_mssv.TabIndex = 8;
             // 
             // textBox_hoten
             // 
-            this.textBox_hoten.Location = new System.Drawing.Point(45, 316);
+            this.textBox_hoten.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_hoten.Location = new System.Drawing.Point(12, 266);
             this.textBox_hoten.Name = "textBox_hoten";
             this.textBox_hoten.ReadOnly = true;
-            this.textBox_hoten.Size = new System.Drawing.Size(100, 22);
+            this.textBox_hoten.Size = new System.Drawing.Size(138, 30);
             this.textBox_hoten.TabIndex = 9;
             // 
             // textBox_email
             // 
-            this.textBox_email.Location = new System.Drawing.Point(45, 385);
+            this.textBox_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_email.Location = new System.Drawing.Point(12, 368);
             this.textBox_email.Name = "textBox_email";
             this.textBox_email.ReadOnly = true;
-            this.textBox_email.Size = new System.Drawing.Size(100, 22);
+            this.textBox_email.Size = new System.Drawing.Size(138, 30);
             this.textBox_email.TabIndex = 10;
             // 
             // textBox_sdt
             // 
-            this.textBox_sdt.Location = new System.Drawing.Point(45, 456);
+            this.textBox_sdt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_sdt.Location = new System.Drawing.Point(12, 463);
             this.textBox_sdt.Name = "textBox_sdt";
             this.textBox_sdt.ReadOnly = true;
-            this.textBox_sdt.Size = new System.Drawing.Size(100, 22);
+            this.textBox_sdt.Size = new System.Drawing.Size(138, 30);
             this.textBox_sdt.TabIndex = 11;
             // 
             // ThongKe
@@ -196,9 +211,10 @@
             this.Controls.Add(this.label_email);
             this.Controls.Add(this.label_hoten);
             this.Controls.Add(this.label_mssv);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tracuu);
+            this.Controls.Add(this.textBox_mssv_thongke);
+            this.Controls.Add(this.label_thongke);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "ThongKe";
             this.Text = "ThongKe";
             this.ResumeLayout(false);
@@ -208,9 +224,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label_thongke;
+        private System.Windows.Forms.TextBox textBox_mssv_thongke;
+        private System.Windows.Forms.Button tracuu;
         private System.Windows.Forms.Label label_mssv;
         private System.Windows.Forms.Label label_hoten;
         private System.Windows.Forms.Label label_email;

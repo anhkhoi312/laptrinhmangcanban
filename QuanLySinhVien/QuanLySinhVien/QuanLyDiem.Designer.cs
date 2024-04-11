@@ -59,143 +59,152 @@
             // label_mssv_qld
             // 
             this.label_mssv_qld.AutoSize = true;
-            this.label_mssv_qld.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_mssv_qld.Location = new System.Drawing.Point(119, 97);
+            this.label_mssv_qld.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_mssv_qld.Location = new System.Drawing.Point(28, 57);
             this.label_mssv_qld.Name = "label_mssv_qld";
-            this.label_mssv_qld.Size = new System.Drawing.Size(103, 20);
+            this.label_mssv_qld.Size = new System.Drawing.Size(116, 24);
             this.label_mssv_qld.TabIndex = 0;
             this.label_mssv_qld.Text = "Mã sinh viên";
             // 
             // label_hovaten_qld
             // 
             this.label_hovaten_qld.AutoSize = true;
-            this.label_hovaten_qld.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_hovaten_qld.Location = new System.Drawing.Point(113, 176);
+            this.label_hovaten_qld.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_hovaten_qld.Location = new System.Drawing.Point(28, 131);
             this.label_hovaten_qld.Name = "label_hovaten_qld";
-            this.label_hovaten_qld.Size = new System.Drawing.Size(37, 20);
+            this.label_hovaten_qld.Size = new System.Drawing.Size(44, 24);
             this.label_hovaten_qld.TabIndex = 1;
             this.label_hovaten_qld.Text = "Tên";
             // 
             // label_sdt_qld
             // 
             this.label_sdt_qld.AutoSize = true;
-            this.label_sdt_qld.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_sdt_qld.Location = new System.Drawing.Point(116, 234);
+            this.label_sdt_qld.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_sdt_qld.Location = new System.Drawing.Point(28, 191);
             this.label_sdt_qld.Name = "label_sdt_qld";
-            this.label_sdt_qld.Size = new System.Drawing.Size(106, 20);
+            this.label_sdt_qld.Size = new System.Drawing.Size(121, 24);
             this.label_sdt_qld.TabIndex = 2;
             this.label_sdt_qld.Text = "Số điện thoại";
             // 
             // label_email_qld
             // 
             this.label_email_qld.AutoSize = true;
-            this.label_email_qld.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_email_qld.Location = new System.Drawing.Point(116, 305);
+            this.label_email_qld.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_email_qld.Location = new System.Drawing.Point(28, 256);
             this.label_email_qld.Name = "label_email_qld";
-            this.label_email_qld.Size = new System.Drawing.Size(51, 20);
+            this.label_email_qld.Size = new System.Drawing.Size(57, 24);
             this.label_email_qld.TabIndex = 3;
             this.label_email_qld.Text = "Email";
             // 
             // label_monhoc_qld
             // 
             this.label_monhoc_qld.AutoSize = true;
-            this.label_monhoc_qld.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_monhoc_qld.Location = new System.Drawing.Point(116, 368);
+            this.label_monhoc_qld.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_monhoc_qld.Location = new System.Drawing.Point(28, 318);
             this.label_monhoc_qld.Name = "label_monhoc_qld";
-            this.label_monhoc_qld.Size = new System.Drawing.Size(41, 20);
+            this.label_monhoc_qld.Size = new System.Drawing.Size(48, 24);
             this.label_monhoc_qld.TabIndex = 4;
             this.label_monhoc_qld.Text = "Môn";
             // 
             // label_diemgk_qld
             // 
             this.label_diemgk_qld.AutoSize = true;
-            this.label_diemgk_qld.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_diemgk_qld.Location = new System.Drawing.Point(122, 408);
+            this.label_diemgk_qld.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_diemgk_qld.Location = new System.Drawing.Point(28, 381);
             this.label_diemgk_qld.Name = "label_diemgk_qld";
-            this.label_diemgk_qld.Size = new System.Drawing.Size(101, 20);
+            this.label_diemgk_qld.Size = new System.Drawing.Size(113, 24);
             this.label_diemgk_qld.TabIndex = 5;
             this.label_diemgk_qld.Text = "Điểm giũa kì";
             // 
             // label_diemck_qld
             // 
             this.label_diemck_qld.AutoSize = true;
-            this.label_diemck_qld.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_diemck_qld.Location = new System.Drawing.Point(125, 441);
+            this.label_diemck_qld.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_diemck_qld.Location = new System.Drawing.Point(28, 450);
             this.label_diemck_qld.Name = "label_diemck_qld";
-            this.label_diemck_qld.Size = new System.Drawing.Size(101, 20);
+            this.label_diemck_qld.Size = new System.Drawing.Size(113, 24);
             this.label_diemck_qld.TabIndex = 6;
             this.label_diemck_qld.Text = "Điểm cuối kì";
             // 
             // button_them
             // 
-            this.button_them.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_them.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button_them.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_them.Location = new System.Drawing.Point(52, 507);
             this.button_them.Name = "button_them";
             this.button_them.Size = new System.Drawing.Size(105, 45);
             this.button_them.TabIndex = 7;
             this.button_them.Text = "Thêm";
-            this.button_them.UseVisualStyleBackColor = true;
+            this.button_them.UseVisualStyleBackColor = false;
             // 
             // button_capnhat
             // 
-            this.button_capnhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_capnhat.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button_capnhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_capnhat.Location = new System.Drawing.Point(221, 507);
             this.button_capnhat.Name = "button_capnhat";
             this.button_capnhat.Size = new System.Drawing.Size(95, 45);
             this.button_capnhat.TabIndex = 8;
             this.button_capnhat.Text = "Cập nhật";
-            this.button_capnhat.UseVisualStyleBackColor = true;
+            this.button_capnhat.UseVisualStyleBackColor = false;
             // 
             // comboBox_mssv
             // 
+            this.comboBox_mssv.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_mssv.FormattingEnabled = true;
-            this.comboBox_mssv.Location = new System.Drawing.Point(246, 93);
+            this.comboBox_mssv.Location = new System.Drawing.Point(161, 57);
             this.comboBox_mssv.Name = "comboBox_mssv";
-            this.comboBox_mssv.Size = new System.Drawing.Size(121, 24);
+            this.comboBox_mssv.Size = new System.Drawing.Size(143, 30);
             this.comboBox_mssv.TabIndex = 15;
             this.comboBox_mssv.SelectedIndexChanged += new System.EventHandler(this.comboBox_mssv_SelectedIndexChanged);
             // 
             // comboBox_mon
             // 
+            this.comboBox_mon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_mon.FormattingEnabled = true;
-            this.comboBox_mon.Location = new System.Drawing.Point(246, 368);
+            this.comboBox_mon.Location = new System.Drawing.Point(161, 313);
             this.comboBox_mon.Name = "comboBox_mon";
-            this.comboBox_mon.Size = new System.Drawing.Size(121, 24);
+            this.comboBox_mon.Size = new System.Drawing.Size(143, 33);
             this.comboBox_mon.TabIndex = 16;
             // 
             // textBox_name
             // 
-            this.textBox_name.Location = new System.Drawing.Point(246, 173);
+            this.textBox_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_name.Location = new System.Drawing.Point(161, 131);
             this.textBox_name.Name = "textBox_name";
-            this.textBox_name.Size = new System.Drawing.Size(100, 22);
+            this.textBox_name.Size = new System.Drawing.Size(143, 30);
             this.textBox_name.TabIndex = 17;
             // 
             // textBox_sdt
             // 
-            this.textBox_sdt.Location = new System.Drawing.Point(246, 231);
+            this.textBox_sdt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_sdt.Location = new System.Drawing.Point(161, 193);
             this.textBox_sdt.Name = "textBox_sdt";
-            this.textBox_sdt.Size = new System.Drawing.Size(100, 22);
+            this.textBox_sdt.Size = new System.Drawing.Size(143, 30);
             this.textBox_sdt.TabIndex = 18;
             // 
             // textBox_email
             // 
-            this.textBox_email.Location = new System.Drawing.Point(246, 302);
+            this.textBox_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_email.Location = new System.Drawing.Point(161, 256);
             this.textBox_email.Name = "textBox_email";
-            this.textBox_email.Size = new System.Drawing.Size(100, 22);
+            this.textBox_email.Size = new System.Drawing.Size(143, 30);
             this.textBox_email.TabIndex = 19;
             // 
             // textBox_diemgk
             // 
-            this.textBox_diemgk.Location = new System.Drawing.Point(246, 405);
+            this.textBox_diemgk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_diemgk.Location = new System.Drawing.Point(161, 381);
             this.textBox_diemgk.Name = "textBox_diemgk";
-            this.textBox_diemgk.Size = new System.Drawing.Size(100, 22);
+            this.textBox_diemgk.Size = new System.Drawing.Size(143, 30);
             this.textBox_diemgk.TabIndex = 20;
             // 
             // textBox_diemck
             // 
-            this.textBox_diemck.Location = new System.Drawing.Point(246, 450);
+            this.textBox_diemck.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_diemck.Location = new System.Drawing.Point(161, 450);
             this.textBox_diemck.Name = "textBox_diemck";
-            this.textBox_diemck.Size = new System.Drawing.Size(100, 22);
+            this.textBox_diemck.Size = new System.Drawing.Size(143, 30);
             this.textBox_diemck.TabIndex = 21;
             // 
             // listView1
@@ -210,10 +219,11 @@
             this.column_diemgk,
             this.column_diemck,
             this.column_diemtb});
+            this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(480, 33);
+            this.listView1.Location = new System.Drawing.Point(383, 33);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(690, 439);
+            this.listView1.Size = new System.Drawing.Size(910, 439);
             this.listView1.TabIndex = 22;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -221,41 +231,50 @@
             // column_mssv
             // 
             this.column_mssv.Text = "Mã sinh viên";
+            this.column_mssv.Width = 100;
             // 
             // column_ten
             // 
             this.column_ten.Text = "Tên";
+            this.column_ten.Width = 100;
             // 
             // column_gioitinh
             // 
             this.column_gioitinh.DisplayIndex = 4;
             this.column_gioitinh.Text = "Giới tính";
+            this.column_gioitinh.Width = 80;
             // 
             // column_sdt
             // 
             this.column_sdt.DisplayIndex = 2;
             this.column_sdt.Text = "Số điện thoại";
+            this.column_sdt.Width = 100;
             // 
             // column_email
             // 
             this.column_email.DisplayIndex = 3;
             this.column_email.Text = "Email";
+            this.column_email.Width = 100;
             // 
             // column_monhoc
             // 
             this.column_monhoc.Text = "Môn học";
+            this.column_monhoc.Width = 100;
             // 
             // column_diemgk
             // 
             this.column_diemgk.Text = "Điểm giữa kì";
+            this.column_diemgk.Width = 100;
             // 
             // column_diemck
             // 
             this.column_diemck.Text = "Điểm cuối kì";
+            this.column_diemck.Width = 100;
             // 
             // column_diemtb
             // 
             this.column_diemtb.Text = "Điểm trung bình";
+            this.column_diemtb.Width = 120;
             // 
             // QuanLyDiem
             // 
