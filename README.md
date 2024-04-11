@@ -13,7 +13,7 @@
 - Về phía người dùng là Sinh viên: Xem điểm, xem hạng, xếp loại 
 - Về phía người dùng là Giảng viên: Nhập điểm, Đánh giá sinh viên, Tạo thông báo 
 - Có chatbox giữa sinh viên và giảng viên
-- Thông báo về khi giao viên nhập điểm mới
+- Thông báo về khi giáo viên nhập điểm mới
 ### Công nghệ sử dụng:
 - Winfrom
   
