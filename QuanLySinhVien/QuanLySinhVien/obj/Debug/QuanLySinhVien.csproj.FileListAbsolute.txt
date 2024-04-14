@@ -13,3 +13,18 @@ C:\Users\ADMIN\Downloads\laptrinhmangcanban-main\laptrinhmangcanban-main\QuanLyS
 C:\Users\ADMIN\Downloads\laptrinhmangcanban-main\laptrinhmangcanban-main\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
 C:\Users\ADMIN\Downloads\laptrinhmangcanban-main\laptrinhmangcanban-main\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
 C:\Users\ADMIN\Downloads\laptrinhmangcanban-main\laptrinhmangcanban-main\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Thongbao.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe.config
+E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe
+E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.AssemblyReference.cache
+E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.DangNhap.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.QuanLyDiem.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.QuanLySinhVien.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Properties.Resources.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Thongbao.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.ThongKe.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Trangchu.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.GenerateResource.cache
+E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.CoreCompileInputs.cache
+E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
+E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
