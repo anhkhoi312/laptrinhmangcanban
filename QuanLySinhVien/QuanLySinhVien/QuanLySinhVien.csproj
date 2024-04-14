@@ -69,22 +69,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DangNhap.cs">
+    <Compile Include="Login\DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DangNhap.Designer.cs">
+    <Compile Include="Login\DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="QuanLyDiem.cs">
+    <Compile Include="QuanLy\QuanLyDiem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyDiem.Designer.cs">
+    <Compile Include="QuanLy\QuanLyDiem.Designer.cs">
       <DependentUpon>QuanLyDiem.cs</DependentUpon>
     </Compile>
-    <Compile Include="SinhVien.cs">
+    <Compile Include="QuanLy\SinhVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SinhVien.Designer.cs">
+    <Compile Include="QuanLy\SinhVien.Designer.cs">
       <DependentUpon>SinhVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -107,13 +107,13 @@
     <Compile Include="Trangchu.Designer.cs">
       <DependentUpon>Trangchu.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DangNhap.resx">
+    <EmbeddedResource Include="Login\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QuanLyDiem.resx">
+    <EmbeddedResource Include="QuanLy\QuanLyDiem.resx">
       <DependentUpon>QuanLyDiem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SinhVien.resx">
+    <EmbeddedResource Include="QuanLy\SinhVien.resx">
       <DependentUpon>SinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
