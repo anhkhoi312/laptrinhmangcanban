@@ -1,0 +1,15 @@
+C:\Users\ADMIN\Downloads\laptrinhmangcanban-main\laptrinhmangcanban-main\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe.config
+C:\Users\ADMIN\Downloads\laptrinhmangcanban-main\laptrinhmangcanban-main\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe
+C:\Users\ADMIN\Downloads\laptrinhmangcanban-main\laptrinhmangcanban-main\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.pdb
+C:\Users\ADMIN\Downloads\laptrinhmangcanban-main\laptrinhmangcanban-main\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Downloads\laptrinhmangcanban-main\laptrinhmangcanban-main\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.DangNhap.resources
+C:\Users\ADMIN\Downloads\laptrinhmangcanban-main\laptrinhmangcanban-main\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.QuanLyDiem.resources
+C:\Users\ADMIN\Downloads\laptrinhmangcanban-main\laptrinhmangcanban-main\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.QuanLySinhVien.resources
+C:\Users\ADMIN\Downloads\laptrinhmangcanban-main\laptrinhmangcanban-main\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Properties.Resources.resources
+C:\Users\ADMIN\Downloads\laptrinhmangcanban-main\laptrinhmangcanban-main\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.ThongKe.resources
+C:\Users\ADMIN\Downloads\laptrinhmangcanban-main\laptrinhmangcanban-main\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Trangchu.resources
+C:\Users\ADMIN\Downloads\laptrinhmangcanban-main\laptrinhmangcanban-main\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.GenerateResource.cache
+C:\Users\ADMIN\Downloads\laptrinhmangcanban-main\laptrinhmangcanban-main\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Downloads\laptrinhmangcanban-main\laptrinhmangcanban-main\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
+C:\Users\ADMIN\Downloads\laptrinhmangcanban-main\laptrinhmangcanban-main\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
+C:\Users\ADMIN\Downloads\laptrinhmangcanban-main\laptrinhmangcanban-main\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Thongbao.resources

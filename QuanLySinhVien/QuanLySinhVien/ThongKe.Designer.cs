@@ -53,7 +53,7 @@
             this.label_thongke.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_thongke.Location = new System.Drawing.Point(7, 9);
             this.label_thongke.Name = "label_thongke";
-            this.label_thongke.Size = new System.Drawing.Size(148, 25);
+            this.label_thongke.Size = new System.Drawing.Size(178, 29);
             this.label_thongke.TabIndex = 0;
             this.label_thongke.Text = "Mã số sinh viên";
             // 
@@ -65,7 +65,7 @@
             this.textBox_mssv_thongke.Location = new System.Drawing.Point(12, 41);
             this.textBox_mssv_thongke.Margin = new System.Windows.Forms.Padding(3, 7, 3, 7);
             this.textBox_mssv_thongke.Name = "textBox_mssv_thongke";
-            this.textBox_mssv_thongke.Size = new System.Drawing.Size(167, 30);
+            this.textBox_mssv_thongke.Size = new System.Drawing.Size(233, 35);
             this.textBox_mssv_thongke.TabIndex = 1;
             // 
             // tracuu
@@ -85,7 +85,7 @@
             this.label_mssv.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_mssv.Location = new System.Drawing.Point(13, 144);
             this.label_mssv.Name = "label_mssv";
-            this.label_mssv.Size = new System.Drawing.Size(116, 24);
+            this.label_mssv.Size = new System.Drawing.Size(134, 26);
             this.label_mssv.TabIndex = 3;
             this.label_mssv.Text = "Mã sinh viên";
             // 
@@ -95,7 +95,7 @@
             this.label_hoten.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_hoten.Location = new System.Drawing.Point(8, 224);
             this.label_hoten.Name = "label_hoten";
-            this.label_hoten.Size = new System.Drawing.Size(66, 24);
+            this.label_hoten.Size = new System.Drawing.Size(76, 26);
             this.label_hoten.TabIndex = 4;
             this.label_hoten.Text = "Họ tên";
             // 
@@ -103,9 +103,9 @@
             // 
             this.label_email.AutoSize = true;
             this.label_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_email.Location = new System.Drawing.Point(8, 320);
+            this.label_email.Location = new System.Drawing.Point(8, 305);
             this.label_email.Name = "label_email";
-            this.label_email.Size = new System.Drawing.Size(57, 24);
+            this.label_email.Size = new System.Drawing.Size(68, 26);
             this.label_email.TabIndex = 5;
             this.label_email.Text = "Email";
             // 
@@ -113,9 +113,9 @@
             // 
             this.label_sdt.AutoSize = true;
             this.label_sdt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_sdt.Location = new System.Drawing.Point(8, 421);
+            this.label_sdt.Location = new System.Drawing.Point(13, 390);
             this.label_sdt.Name = "label_sdt";
-            this.label_sdt.Size = new System.Drawing.Size(121, 24);
+            this.label_sdt.Size = new System.Drawing.Size(139, 26);
             this.label_sdt.TabIndex = 6;
             this.label_sdt.Text = "Số điện thoại";
             // 
@@ -129,9 +129,9 @@
             this.column_diemtb});
             this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(271, 52);
+            this.listView1.Location = new System.Drawing.Point(271, 41);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(868, 526);
+            this.listView1.Size = new System.Drawing.Size(640, 446);
             this.listView1.TabIndex = 7;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -139,69 +139,69 @@
             // column_lop
             // 
             this.column_lop.Text = "Lớp";
-            this.column_lop.Width = 100;
+            this.column_lop.Width = 94;
             // 
             // column_monhoc
             // 
             this.column_monhoc.Text = "Môn học";
-            this.column_monhoc.Width = 100;
+            this.column_monhoc.Width = 128;
             // 
             // column_diemgk
             // 
             this.column_diemgk.Text = "Điểm giữa kì";
-            this.column_diemgk.Width = 120;
+            this.column_diemgk.Width = 128;
             // 
             // column_diemck
             // 
             this.column_diemck.Text = "Điểm cuối kì";
-            this.column_diemck.Width = 120;
+            this.column_diemck.Width = 128;
             // 
             // column_diemtb
             // 
             this.column_diemtb.Text = "Điểm trung bình";
-            this.column_diemtb.Width = 130;
+            this.column_diemtb.Width = 162;
             // 
             // textBox_mssv
             // 
             this.textBox_mssv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_mssv.Location = new System.Drawing.Point(12, 182);
+            this.textBox_mssv.Location = new System.Drawing.Point(13, 173);
             this.textBox_mssv.Name = "textBox_mssv";
             this.textBox_mssv.ReadOnly = true;
-            this.textBox_mssv.Size = new System.Drawing.Size(138, 30);
+            this.textBox_mssv.Size = new System.Drawing.Size(233, 35);
             this.textBox_mssv.TabIndex = 8;
             // 
             // textBox_hoten
             // 
             this.textBox_hoten.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_hoten.Location = new System.Drawing.Point(12, 266);
+            this.textBox_hoten.Location = new System.Drawing.Point(12, 253);
             this.textBox_hoten.Name = "textBox_hoten";
             this.textBox_hoten.ReadOnly = true;
-            this.textBox_hoten.Size = new System.Drawing.Size(138, 30);
+            this.textBox_hoten.Size = new System.Drawing.Size(233, 35);
             this.textBox_hoten.TabIndex = 9;
             // 
             // textBox_email
             // 
             this.textBox_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_email.Location = new System.Drawing.Point(12, 368);
+            this.textBox_email.Location = new System.Drawing.Point(13, 334);
             this.textBox_email.Name = "textBox_email";
             this.textBox_email.ReadOnly = true;
-            this.textBox_email.Size = new System.Drawing.Size(138, 30);
+            this.textBox_email.Size = new System.Drawing.Size(233, 35);
             this.textBox_email.TabIndex = 10;
             // 
             // textBox_sdt
             // 
             this.textBox_sdt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_sdt.Location = new System.Drawing.Point(12, 463);
+            this.textBox_sdt.Location = new System.Drawing.Point(13, 419);
             this.textBox_sdt.Name = "textBox_sdt";
             this.textBox_sdt.ReadOnly = true;
-            this.textBox_sdt.Size = new System.Drawing.Size(138, 30);
+            this.textBox_sdt.Size = new System.Drawing.Size(227, 35);
             this.textBox_sdt.TabIndex = 11;
             // 
             // ThongKe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1330, 600);
+            this.ClientSize = new System.Drawing.Size(952, 515);
             this.Controls.Add(this.textBox_sdt);
             this.Controls.Add(this.textBox_email);
             this.Controls.Add(this.textBox_hoten);
