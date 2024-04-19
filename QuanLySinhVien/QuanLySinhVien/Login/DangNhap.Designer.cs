@@ -105,8 +105,10 @@
             this.PassBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PassBox.Location = new System.Drawing.Point(217, 148);
             this.PassBox.Name = "PassBox";
+            this.PassBox.PasswordChar = '*';
             this.PassBox.Size = new System.Drawing.Size(243, 26);
             this.PassBox.TabIndex = 10;
+            this.PassBox.UseSystemPasswordChar = true;
             // 
             // DangNhap
             // 
@@ -126,6 +128,7 @@
             this.MinimizeBox = false;
             this.Name = "DangNhap";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DangNhap";
             this.ResumeLayout(false);
             this.PerformLayout();

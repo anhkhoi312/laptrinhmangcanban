@@ -25,7 +25,25 @@ namespace QuanLySinhVien
             string username = UserBox.Text.Trim();
             string password = PassBox.Text;
             var db = FirestoreHelper.database;
-            DocumentReference docRef = db.Collection("UserData").Document(data)
+            DocumentReference docRef = db.Collection("UserData").Document(username);
+            UserData data = docRef.GetSnapshotAsync().Result.ConvertTo<UserData>();
+            if (data != null )
+            {
+                if(password==data.Password)
+                {
+                    MessageBox.Show("Dang nhap thanh cong");
+                } 
+                else
+                {
+                    MessageBox.Show("Co loi xay ra");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Co loi xay ra");
+            }
         }
+
+       
     }
 }

@@ -11,11 +11,11 @@ namespace QuanLySinhVien.Classes
     internal static class FirestoreHelper
     {
         static string fireconfig = @" 
-            {
+           {
   ""type"": ""service_account"",
   ""project_id"": ""database-list-a65df"",
-  ""private_key_id"": ""b0595ad7361eb2215b695e844fa8861e1200ed37"",
-  ""private_key"": ""-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC2vmFujBoK8zhi\npzgnWPlIl0YAaKKVYwHrv+CAGWdGAbiwdCiy3mpL+wbWBP3SjyfR1vWwaFORMOib\nxEhsSQ94MpARdvobGPcbu059DRisOrK41fmIFL9BIsLHFiF+GJFzE5JR1h3cVaaU\n98kPk7+t+gNQhr+BKwzojjX66oHGkYQYMPRlctGuQyB9VtWIPYb/hQmmikBKaRdz\nmSdbOtGF4LP4Nrj7wfObk9L/4LF5oC0hmzalXkyicJ5b9v6d6ulDpMRXor9ECcqh\nzk3qQHA75hAeWh6VmtIiyd7yhC4d3S2jBIm7+j+4NObG6I85H+iNf21BSAue/y5U\nc/bOwCenAgMBAAECggEAH8+/ZT+VTv+s+ptyboMSDh1rTanpV4j/LhteSN5jOHAX\nRvxJk22dYnGl7H688rkB7Qj3Bwj6NyWk8Gy4UMVdIIboxmmIO0xaw+SU0rcDawPi\n1cNF53b5Hi0fbAnBtdIwC7DGAWH9G7x7PaZuxTvqm64QgqWaU7F7U0ZiRjYpdjfV\nkVm6298tWKvxBHKgL2ULIxU1/kRhpK6vlmYLlCpUTxHouufxr95Mf3KUrBrHZE47\nPP9m5FbrF4taXSmyWOPTohVqHN2+/hPRzOd/MUpIfGTmRrETG0rc4eXnf4W+EC7c\nT373d06UHL/j7i7Kw+B7k6pyq/DuBos2VV8IC6agoQKBgQD5D6clf92v1H4Q6n08\nzU4XgT5XVECE4wN2PmWQtEOvTGyOuoE0Umhjr+bgvtMv//+Un1XhhI2sUXU3SUlf\nSjiORl/oQBy43ajryHtXlEv1q5+7Kj9HepIwjE9O6OBUnBXenD0TJsCpAFy/yeGt\n+s4BF4+j48uh7qpPYxwgPNgXhwKBgQC71b1yoohkmZ7JQyF6b8IVsvqAeQhP3JF1\nhDJMeVkdrsXz7GJ9hM6+aNdAzJIlKzAHB28yGyc7kHEiD2lzgxW3c/Mv5ZOaoJzm\nDuQ4uj+cZfIDDxGzYpI8qSRUkEslDQcr4NyOnt92cWJxPR677yMNO+4kFDgTCiPS\nMf58fns24QKBgAg9NFJRQIwog2Mb3ri8MfElHWLWLqw2tk6bEdEPpY2PAahXEx8f\n+sQRdZnJtkLIPTQ1cSncsLManr4NdpfoZKaQPWv5cvnKm2PxZeMnzLt7yfTvGNjM\nfTmN6rG5knI6F58dnAeeKJFuqaLOkuCmg1oV5XKOfpYExy2JIc0PNjbRAoGBAKZg\nYthhgzKop+9Z2ROcXmveBuk5S9WBaA6RtAPtELSsFIdFANBxjLc4IkIxcdoecQIo\n4aOeTZgDD1K+GAfLOrcuq1/nmGDEl3VoB1sADkw4OK/g7yrXyvSUVavZy9Xbvlht\naq+hpgpB0JLBMrIA1iloxj2K80haGPScd/BKEFXBAoGBALtaIZ7D48v1f/iqbTkf\nTXVewn/SlZHACc0bpmg0ivjJopLY9ja2MW4QrULuzz0E1Mjiiz0pyVN3xJzGe6wI\nFH4XsM4nqGTKb9QoYbsupfHYDWwnISSGoIkHML47rtqEEhXe59sJK5kmY3SxdAHq\nJcKqnBcfYrGPjEN5n0nSKZ1C\n-----END PRIVATE KEY-----\n"",
+  ""private_key_id"": ""7b0abbaeba5ceff8be7ab9ef6eff0dae2115b896"",
+  ""private_key"": ""-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCs3oCJapsV70DV\nrPGrOedWyVNKBCXRghIYljOozHV2OyzP0xThIVPhyNaRAado4nkuyDPigkz3mbyp\nuMYdnQXj8AvuAroSLFq4Y2KUyxMDIrkTj156GVfopXQfbX/HdYzrPzM0LNHIyvlb\nzegTg2bt16BeX2V2UZe7ae9abYkr0xacQVg6x74mBH2xyaypsgXwoEOhQRJOkveu\nGXRcNaj1LqN5BPExv1ltX4m9b3fnzCeUcapQVE5SRdjEEqaLfCYb7pU4c0BsTtJE\nghC95YFYxkSG4AZTluCzVzK5OT6ZfUQrIHX6/4T4l/EmS6uIu2idnyAcALU1s4PN\n7yegjKUfAgMBAAECggEAOPXl36GvcVZRBDdEuFlPh3K2DYT5WyPjR5OyePPJ3ofY\nF7CjSB09sP+G5+fmHDLHoGkaY4/wwYM4PapjKV3Uk4tEuwvN+PABgpFI6eNSI+3c\nkvviMxRHuaJO9Y4UlQoAQYGlIxODmoh7Cst5pXheQY+TyZTgb1CqUPgyhJbkJHqS\nWWkJBSkn9hnrEoFOvQ/0fST17XKdBOVo68k0I4DJBIB0LIdDsk+eHngOp7E2oFtI\n/QKyY8VS3GUNx4m8Gs0tTpqzH2GWaLTO37U3gwo8oMocQP6VJZC3EXjk9Lo5E09y\ns6Clrx2/GgLpudGmOJrWZPubDYn6Wla9uAk8GX8v1QKBgQDZmpoTXZ8eeDQEJZQb\nsvCdP79KpfXn4eKLN4pKhF2gC8H9P+f8vV37E23rykF1F+M6hLzTap3scEycHwKT\nbmOQO1Gp0w9RKJ+2Al+VND3/T+G8qQZZ+rq2nru3+cvKSGcbMnKXPH9kxbOFT9ea\nSTw7qS4i3xUI1zkuRHI/ImR8JQKBgQDLXy8LLP/IQtTdbos6BxngFIUDdNvg5opP\n/ENOFkK7/PMg/gqACHAidybx1P+wstS3HkGNUIQv8QS3XYS7Fz+NFvAVrO0UhtVX\nZWttzQE8R8Ym8J/ZdADdj56uX9DfI/2ICmdsvRi1DSn6FOBuqVGO3cllf/WjfGqN\n+xHqlp828wKBgGErUVwOdWx0vr2PTkjkKd/+RFyAKYPncXM7VOybmPdL6M8+x0gs\nA5iHf5FIGty/0v8hoPRDasvXBc69ZjgRljIk2v2buv5BxrfO7YHB92FX+XR2gdiS\nRugfj7HCwQbOOASEDXmNUVHdmqGQGrXRuCzoCisWNN1ixizr8ZxRrk9lAoGAHDOW\n0nXrAlpCKnKp2+IgNHKj/1a1JvrRM0ZIDwwHNQperLSNwDNrWVwsilx/GIGz/bC0\nZmRD8GH7xXGydj9DEM2dfWP9fFs2OmhV/WPwR+usDrpPcFglxpOj7Ypb7JWREsxe\nizWtt22b5JIAjVftd2JKC0kzRvh5zjaCxYUdjwECgYEAxQS4kf4K+RyX1w7tZNDY\nCqyIm1myBpOiPhbpMx+tAtTZzR0aafPJAsPjhNHO/QQOmIIQma1GqxJu5RL4ReSp\ne+vGAVtW9VLz1EP1a/NGx6le5izC7l23CB9tA74zESNu52AMYFy0iEj6oC+Iek2B\n0Sh4uh5CZ81LT8fcq2j6rXQ=\n-----END PRIVATE KEY-----\n"",
   ""client_email"": ""firebase-adminsdk-mobgb@database-list-a65df.iam.gserviceaccount.com"",
   ""client_id"": ""111523743590171203772"",
   ""auth_uri"": ""https://accounts.google.com/o/oauth2/auth"",
@@ -25,6 +25,7 @@ namespace QuanLySinhVien.Classes
   ""universe_domain"": ""googleapis.com""
 }
 
+
 ";
         static string filepath = "";
         public static FirestoreDb database { get; private set; }
@@ -33,7 +34,7 @@ namespace QuanLySinhVien.Classes
             filepath = Path.Combine(Path.GetTempPath(),Path.GetFileNameWithoutExtension(Path.GetRandomFileName())) + "json";
             File.WriteAllText(filepath, fireconfig);
             File.SetAttributes(filepath, FileAttributes.Hidden);
-            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTUALS", filepath);
+            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", filepath);
             database = FirestoreDb.Create("database-list-a65df");
             File.Delete(filepath);
         }
