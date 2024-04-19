@@ -1,8 +1,10 @@
-﻿using System;
+﻿using QuanLySinhVien.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace QuanLySinhVien
 {
@@ -14,9 +16,10 @@ namespace QuanLySinhVien
         [STAThread]
         static void Main()
         {
+            FirestoreHelper.SetEnvironmentVariable();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Trangchu());
+            Application.Run(new DangNhap());
         }
     }
 }
