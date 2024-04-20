@@ -242,6 +242,12 @@
     <EmbeddedResource Include="Student\TrangChu_St.resx">
       <DependentUpon>TrangChu_St.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Student\User_St.resx">
+      <DependentUpon>User_St.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\xemDiem.resx">
+      <DependentUpon>xemDiem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Teacher\QuanLyDiem.resx">
       <DependentUpon>QuanLyDiem.cs</DependentUpon>
     </EmbeddedResource>

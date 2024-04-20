@@ -462,3 +462,5 @@ C:\Users\ADMIN\Downloads\dume\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\o
 C:\Users\ADMIN\Downloads\dume\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySi.3CF0D20D.Up2Date
 C:\Users\ADMIN\Downloads\dume\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
 C:\Users\ADMIN\Downloads\dume\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
+C:\Users\ADMIN\Downloads\dume\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Student.User_St.resources
+C:\Users\ADMIN\Downloads\dume\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Student.xemDiem.resources
