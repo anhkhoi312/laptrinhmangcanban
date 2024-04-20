@@ -36,6 +36,7 @@
             this.btThongBao = new System.Windows.Forms.Button();
             this.btDsLop = new System.Windows.Forms.Button();
             this.btNhapDiem = new System.Windows.Forms.Button();
+            this.btn_dangxuat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panel1
@@ -43,7 +44,7 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Location = new System.Drawing.Point(314, 33);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(620, 370);
+            this.panel1.Size = new System.Drawing.Size(619, 339);
             this.panel1.TabIndex = 8;
             // 
             // bt_User
@@ -123,11 +124,21 @@
             this.btNhapDiem.UseVisualStyleBackColor = true;
             this.btNhapDiem.Click += new System.EventHandler(this.btNhapDiem_Click_1);
             // 
-            // Trangchu
+            // btn_dangxuat
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.btn_dangxuat.Location = new System.Drawing.Point(512, 396);
+            this.btn_dangxuat.Name = "btn_dangxuat";
+            this.btn_dangxuat.Size = new System.Drawing.Size(187, 36);
+            this.btn_dangxuat.TabIndex = 10;
+            this.btn_dangxuat.Text = "Đăng xuất";
+            this.btn_dangxuat.UseVisualStyleBackColor = true;
+            // 
+            // TrangChu_Tea
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(978, 444);
+            this.Controls.Add(this.btn_dangxuat);
             this.Controls.Add(this.bt_User);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
@@ -137,7 +148,7 @@
             this.Controls.Add(this.btNhapDiem);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Trangchu";
+            this.Name = "TrangChu_Tea";
             this.Text = "Trangchu";
             this.ResumeLayout(false);
 
@@ -151,5 +162,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button bt_User;
+        private System.Windows.Forms.Button btn_dangxuat;
     }
 }

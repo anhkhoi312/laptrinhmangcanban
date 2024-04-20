@@ -31,11 +31,12 @@ namespace QuanLySinhVien
             {
                 if(password==data.Password)
                 {
+                    this.Hide();
                     // Tạo cửa sổ mới
                     TrangChu_Tea trangChu = new TrangChu_Tea();
-                    trangChu.Show();
+                    trangChu.ShowDialog();
                     // Đóng cửa sổ hiện tại
-                    this.Hide();
+                    this.Close();
                 } 
                 else
                 {

@@ -19,11 +19,9 @@ E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\Quan
 E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.AssemblyReference.cache
 E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.DangNhap.resources
 E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.QuanLyDiem.resources
-E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.QuanLySinhVien.resources
 E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Properties.Resources.resources
 E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Thongbao.resources
 E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.ThongKe.resources
-E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Trangchu.resources
 E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.GenerateResource.cache
 E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.CoreCompileInputs.cache
 E:\Mon Hoc\Lap Trinh Mang Can Ban\PROJECT\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
@@ -346,3 +344,8 @@ C:\Users\LENOVO\Source\Repos\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\ob
 C:\Users\LENOVO\Source\Repos\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySi.3CF0D20D.Up2Date
 C:\Users\LENOVO\Source\Repos\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
 C:\Users\LENOVO\Source\Repos\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Student.NhanTb.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Student.TrangChu_St.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.QuanLyLop.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.TrangChu_Tea.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.User_Tea.resources
