@@ -83,6 +83,16 @@ namespace QuanLySinhVien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_class_501 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-class-501", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_local_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-local-50", resourceCulture);

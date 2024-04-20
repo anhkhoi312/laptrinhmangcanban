@@ -1,4 +1,5 @@
 ﻿using QuanLySinhVien.Classes;
+using QuanLySinhVien.Student;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace QuanLySinhVien
             FirestoreHelper.SetEnvironmentVariable();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DangNhap());
+            Application.Run(new TrangChu_St());
         }
     }
 }
