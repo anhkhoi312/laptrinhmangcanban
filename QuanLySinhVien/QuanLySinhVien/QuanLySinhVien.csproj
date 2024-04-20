@@ -236,6 +236,9 @@
     <EmbeddedResource Include="Login\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Student\NhanTb.resx">
+      <DependentUpon>NhanTb.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Teacher\QuanLyDiem.resx">
       <DependentUpon>QuanLyDiem.cs</DependentUpon>
     </EmbeddedResource>
