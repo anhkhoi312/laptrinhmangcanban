@@ -30,59 +30,57 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.TEN_GV = new System.Windows.Forms.CheckedListBox();
-            this.THONG_BAO = new System.Windows.Forms.ListBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 16);
+            this.label1.Location = new System.Drawing.Point(25, 20);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 16);
+            this.label1.Size = new System.Drawing.Size(162, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Danh sách thông báo";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(219, 16);
+            this.label2.Location = new System.Drawing.Point(246, 20);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 16);
+            this.label2.Size = new System.Drawing.Size(72, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nội dung";
             // 
-            // TEN_GV
+            // listBox1
             // 
-            this.TEN_GV.FormattingEnabled = true;
-            this.TEN_GV.Location = new System.Drawing.Point(25, 41);
-            this.TEN_GV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.TEN_GV.Name = "TEN_GV";
-            this.TEN_GV.Size = new System.Drawing.Size(143, 123);
-            this.TEN_GV.TabIndex = 2;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(29, 44);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(200, 184);
+            this.listBox1.TabIndex = 2;
             // 
-            // THONG_BAO
+            // richTextBox1
             // 
-            this.THONG_BAO.FormattingEnabled = true;
-            this.THONG_BAO.ItemHeight = 16;
-            this.THONG_BAO.Location = new System.Drawing.Point(222, 38);
-            this.THONG_BAO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.THONG_BAO.Name = "THONG_BAO";
-            this.THONG_BAO.Size = new System.Drawing.Size(143, 132);
-            this.THONG_BAO.TabIndex = 3;
+            this.richTextBox1.Location = new System.Drawing.Point(250, 44);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(202, 184);
+            this.richTextBox1.TabIndex = 3;
+            this.richTextBox1.Text = "";
             // 
             // NhanTb
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(434, 208);
-            this.Controls.Add(this.THONG_BAO);
-            this.Controls.Add(this.TEN_GV);
+            this.ClientSize = new System.Drawing.Size(488, 260);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "NhanTb";
             this.Text = "NhanTb";
             this.ResumeLayout(false);
@@ -94,7 +92,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckedListBox TEN_GV;
-        private System.Windows.Forms.ListBox THONG_BAO;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
