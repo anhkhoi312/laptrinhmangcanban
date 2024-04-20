@@ -45,38 +45,42 @@
             // 
             // bt_xemDiem
             // 
+            this.bt_xemDiem.BackColor = System.Drawing.Color.LightSkyBlue;
             this.bt_xemDiem.Location = new System.Drawing.Point(12, 12);
             this.bt_xemDiem.Name = "bt_xemDiem";
             this.bt_xemDiem.Size = new System.Drawing.Size(117, 53);
             this.bt_xemDiem.TabIndex = 1;
             this.bt_xemDiem.Text = "Xem Điểm";
-            this.bt_xemDiem.UseVisualStyleBackColor = true;
+            this.bt_xemDiem.UseVisualStyleBackColor = false;
             this.bt_xemDiem.Click += new System.EventHandler(this.bt_xemDiem_Click);
             // 
             // bt_nhanTb
             // 
+            this.bt_nhanTb.BackColor = System.Drawing.Color.LightSkyBlue;
             this.bt_nhanTb.Location = new System.Drawing.Point(12, 90);
             this.bt_nhanTb.Name = "bt_nhanTb";
             this.bt_nhanTb.Size = new System.Drawing.Size(117, 53);
             this.bt_nhanTb.TabIndex = 2;
             this.bt_nhanTb.Text = "Thông báo";
-            this.bt_nhanTb.UseVisualStyleBackColor = true;
+            this.bt_nhanTb.UseVisualStyleBackColor = false;
             this.bt_nhanTb.Click += new System.EventHandler(this.bt_nhanTb_Click);
             // 
             // bt_UserSt
             // 
+            this.bt_UserSt.BackColor = System.Drawing.Color.LightSkyBlue;
             this.bt_UserSt.Location = new System.Drawing.Point(12, 168);
             this.bt_UserSt.Name = "bt_UserSt";
             this.bt_UserSt.Size = new System.Drawing.Size(117, 53);
             this.bt_UserSt.TabIndex = 3;
             this.bt_UserSt.Text = "Tài khoản";
-            this.bt_UserSt.UseVisualStyleBackColor = true;
+            this.bt_UserSt.UseVisualStyleBackColor = false;
             this.bt_UserSt.Click += new System.EventHandler(this.bt_UserSt_Click);
             // 
             // TrangChu_St
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(978, 444);
             this.Controls.Add(this.bt_UserSt);
             this.Controls.Add(this.bt_nhanTb);
