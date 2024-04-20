@@ -55,17 +55,20 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(413, 24);
+            this.textBox5.Location = new System.Drawing.Point(792, 201);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(287, 26);
+            this.textBox5.Size = new System.Drawing.Size(410, 38);
             this.textBox5.TabIndex = 23;
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = global::QuanLySinhVien.Properties.Resources.icons8_username_48;
             this.pictureBox6.InitialImage = null;
-            this.pictureBox6.Location = new System.Drawing.Point(338, 14);
+            this.pictureBox6.Location = new System.Drawing.Point(706, 201);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(48, 48);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -74,41 +77,50 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(413, 358);
+            this.textBox4.Location = new System.Drawing.Point(792, 572);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(287, 26);
+            this.textBox4.Size = new System.Drawing.Size(410, 38);
             this.textBox4.TabIndex = 21;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(413, 290);
+            this.textBox3.Location = new System.Drawing.Point(792, 498);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(287, 26);
+            this.textBox3.Size = new System.Drawing.Size(410, 38);
             this.textBox3.TabIndex = 20;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(413, 221);
+            this.textBox2.Location = new System.Drawing.Point(792, 423);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(287, 26);
+            this.textBox2.Size = new System.Drawing.Size(410, 38);
             this.textBox2.TabIndex = 19;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(413, 152);
+            this.textBox1.Location = new System.Drawing.Point(792, 349);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(287, 26);
+            this.textBox1.Size = new System.Drawing.Size(410, 38);
             this.textBox1.TabIndex = 18;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::QuanLySinhVien.Properties.Resources.icons8_local_50;
             this.pictureBox5.InitialImage = null;
-            this.pictureBox5.Location = new System.Drawing.Point(338, 335);
+            this.pictureBox5.Location = new System.Drawing.Point(706, 572);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(50, 50);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -119,7 +131,8 @@
             // 
             this.pictureBox4.Image = global::QuanLySinhVien.Properties.Resources.icons8_phone_50;
             this.pictureBox4.InitialImage = null;
-            this.pictureBox4.Location = new System.Drawing.Point(338, 279);
+            this.pictureBox4.Location = new System.Drawing.Point(706, 498);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(50, 50);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -130,7 +143,8 @@
             // 
             this.pictureBox3.Image = global::QuanLySinhVien.Properties.Resources.icons8_birthday_50;
             this.pictureBox3.InitialImage = null;
-            this.pictureBox3.Location = new System.Drawing.Point(338, 206);
+            this.pictureBox3.Location = new System.Drawing.Point(706, 423);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(50, 50);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -141,7 +155,8 @@
             // 
             this.pictureBox2.Image = global::QuanLySinhVien.Properties.Resources.icons8_mail_50;
             this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(338, 139);
+            this.pictureBox2.Location = new System.Drawing.Point(706, 349);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(50, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -151,8 +166,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(83, 289);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(483, 406);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 25);
             this.label1.TabIndex = 13;
@@ -160,18 +176,21 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(25, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(443, 213);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(235, 274);
+            this.pictureBox1.Size = new System.Drawing.Size(172, 178);
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(25, 317);
+            this.textBox6.Location = new System.Drawing.Point(443, 442);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(235, 26);
+            this.textBox6.Size = new System.Drawing.Size(172, 31);
             this.textBox6.TabIndex = 24;
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -179,7 +198,8 @@
             // 
             this.pictureBox7.Image = global::QuanLySinhVien.Properties.Resources.icons8_class_501;
             this.pictureBox7.InitialImage = null;
-            this.pictureBox7.Location = new System.Drawing.Point(338, 74);
+            this.pictureBox7.Location = new System.Drawing.Point(706, 276);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(50, 50);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -188,18 +208,22 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(413, 88);
+            this.textBox7.Location = new System.Drawing.Point(792, 276);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(287, 26);
+            this.textBox7.Size = new System.Drawing.Size(410, 38);
             this.textBox7.TabIndex = 26;
             // 
             // User_St
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
-            this.ClientSize = new System.Drawing.Size(800, 420);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1510, 848);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.textBox6);
@@ -215,7 +239,9 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "User_St";
             this.Text = "User_St";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();

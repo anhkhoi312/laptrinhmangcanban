@@ -28,65 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrangChu_St));
             this.panel1 = new System.Windows.Forms.Panel();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.bt_xemDiem = new System.Windows.Forms.Button();
-            this.bt_nhanTb = new System.Windows.Forms.Button();
-            this.bt_UserSt = new System.Windows.Forms.Button();
+            this.bt_User = new System.Windows.Forms.Button();
+            this.btThongBao = new System.Windows.Forms.Button();
+            this.btNhapDiem = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Location = new System.Drawing.Point(155, 12);
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Location = new System.Drawing.Point(314, 68);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 420);
+            this.panel1.Size = new System.Drawing.Size(1510, 848);
             this.panel1.TabIndex = 0;
             // 
-            // bt_xemDiem
+            // bt_User
             // 
-            this.bt_xemDiem.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.bt_xemDiem.Location = new System.Drawing.Point(12, 12);
-            this.bt_xemDiem.Name = "bt_xemDiem";
-            this.bt_xemDiem.Size = new System.Drawing.Size(117, 53);
-            this.bt_xemDiem.TabIndex = 1;
-            this.bt_xemDiem.Text = "Xem Điểm";
-            this.bt_xemDiem.UseVisualStyleBackColor = false;
-            this.bt_xemDiem.Click += new System.EventHandler(this.bt_xemDiem_Click);
+            this.bt_User.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_User.Image = ((System.Drawing.Image)(resources.GetObject("bt_User.Image")));
+            this.bt_User.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_User.Location = new System.Drawing.Point(40, 339);
+            this.bt_User.Name = "bt_User";
+            this.bt_User.Size = new System.Drawing.Size(221, 82);
+            this.bt_User.TabIndex = 12;
+            this.bt_User.Text = "       Người dùng";
+            this.bt_User.UseVisualStyleBackColor = true;
             // 
-            // bt_nhanTb
+            // btThongBao
             // 
-            this.bt_nhanTb.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.bt_nhanTb.Location = new System.Drawing.Point(12, 90);
-            this.bt_nhanTb.Name = "bt_nhanTb";
-            this.bt_nhanTb.Size = new System.Drawing.Size(117, 53);
-            this.bt_nhanTb.TabIndex = 2;
-            this.bt_nhanTb.Text = "Thông báo";
-            this.bt_nhanTb.UseVisualStyleBackColor = false;
-            this.bt_nhanTb.Click += new System.EventHandler(this.bt_nhanTb_Click);
+            this.btThongBao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThongBao.Image = ((System.Drawing.Image)(resources.GetObject("btThongBao.Image")));
+            this.btThongBao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btThongBao.Location = new System.Drawing.Point(40, 215);
+            this.btThongBao.Name = "btThongBao";
+            this.btThongBao.Size = new System.Drawing.Size(221, 82);
+            this.btThongBao.TabIndex = 11;
+            this.btThongBao.Text = " Thông báo";
+            this.btThongBao.UseVisualStyleBackColor = true;
             // 
-            // bt_UserSt
+            // btNhapDiem
             // 
-            this.bt_UserSt.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.bt_UserSt.Location = new System.Drawing.Point(12, 168);
-            this.bt_UserSt.Name = "bt_UserSt";
-            this.bt_UserSt.Size = new System.Drawing.Size(117, 53);
-            this.bt_UserSt.TabIndex = 3;
-            this.bt_UserSt.Text = "Tài khoản";
-            this.bt_UserSt.UseVisualStyleBackColor = false;
-            this.bt_UserSt.Click += new System.EventHandler(this.bt_UserSt_Click);
+            this.btNhapDiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btNhapDiem.Image = ((System.Drawing.Image)(resources.GetObject("btNhapDiem.Image")));
+            this.btNhapDiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btNhapDiem.Location = new System.Drawing.Point(40, 93);
+            this.btNhapDiem.Name = "btNhapDiem";
+            this.btNhapDiem.Size = new System.Drawing.Size(221, 82);
+            this.btNhapDiem.TabIndex = 10;
+            this.btNhapDiem.Text = " Xem điểm";
+            this.btNhapDiem.UseVisualStyleBackColor = true;
             // 
             // TrangChu_St
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
-            this.ClientSize = new System.Drawing.Size(978, 444);
-            this.Controls.Add(this.bt_UserSt);
-            this.Controls.Add(this.bt_nhanTb);
-            this.Controls.Add(this.bt_xemDiem);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1902, 1033);
+            this.Controls.Add(this.bt_User);
+            this.Controls.Add(this.btThongBao);
+            this.Controls.Add(this.btNhapDiem);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.DoubleBuffered = true;
             this.Name = "TrangChu_St";
             this.Text = "TrangChu_St";
             this.ResumeLayout(false);
@@ -97,8 +104,8 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Button bt_xemDiem;
-        private System.Windows.Forms.Button bt_nhanTb;
-        private System.Windows.Forms.Button bt_UserSt;
+        private System.Windows.Forms.Button bt_User;
+        private System.Windows.Forms.Button btThongBao;
+        private System.Windows.Forms.Button btNhapDiem;
     }
 }

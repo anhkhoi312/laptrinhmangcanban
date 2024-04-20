@@ -22,5 +22,9 @@ namespace QuanLySinhVien
 
         }
 
+        private void QuanLyDiem_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

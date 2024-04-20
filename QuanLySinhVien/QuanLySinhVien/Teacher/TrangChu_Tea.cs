@@ -56,5 +56,10 @@ namespace QuanLySinhVien
         {
             openChildForm(new User_Tea ());
         }
+
+        private void TrangChu_Tea_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

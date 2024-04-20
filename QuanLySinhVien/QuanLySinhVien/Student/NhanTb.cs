@@ -16,5 +16,7 @@ namespace QuanLySinhVien.Student
         {
             InitializeComponent();
         }
+
+       
     }
 }

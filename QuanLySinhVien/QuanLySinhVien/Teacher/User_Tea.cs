@@ -16,5 +16,10 @@ namespace QuanLySinhVien
         {
             InitializeComponent();
         }
+
+        private void User_Tea_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
