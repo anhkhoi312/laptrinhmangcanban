@@ -10,22 +10,16 @@ using System.Windows.Forms;
 
 namespace QuanLySinhVien
 {
-    public partial class QuanLySinhVien : Form
+    public partial class ThongKe : Form
     {
-        public QuanLySinhVien()
+        public ThongKe()
         {
             InitializeComponent();
         }
 
-        private void button3_nhapfileexcel_Click(object sender, EventArgs e)
+        private void tracuu_Click(object sender, EventArgs e)
         {
 
         }
-
-        private void button4_xoa_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

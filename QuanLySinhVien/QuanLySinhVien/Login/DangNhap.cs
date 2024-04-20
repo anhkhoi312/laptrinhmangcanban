@@ -31,9 +31,8 @@ namespace QuanLySinhVien
             {
                 if(password==data.Password)
                 {
-                    MessageBox.Show("Đăng nhập thành công");
                     // Tạo cửa sổ mới
-                    Trangchu trangChu = new Trangchu();
+                    TrangChu_Tea trangChu = new TrangChu_Tea();
                     trangChu.Show();
                     // Đóng cửa sổ hiện tại
                     this.Hide();
@@ -49,6 +48,6 @@ namespace QuanLySinhVien
             }
         }
 
-       
+
     }
 }

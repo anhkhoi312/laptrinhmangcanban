@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLySinhVien
+namespace QuanLySinhVien.Student
 {
-    public partial class Thongbao : Form
+    public partial class TrangChu_St : Form
     {
-        public Thongbao()
+        public TrangChu_St()
         {
             InitializeComponent();
         }
