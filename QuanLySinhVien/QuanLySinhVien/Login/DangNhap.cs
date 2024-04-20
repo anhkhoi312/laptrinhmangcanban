@@ -31,16 +31,21 @@ namespace QuanLySinhVien
             {
                 if(password==data.Password)
                 {
-                    MessageBox.Show("Dang nhap thanh cong");
+                    MessageBox.Show("Đăng nhập thành công");
+                    // Tạo cửa sổ mới
+                    Trangchu trangChu = new Trangchu();
+                    trangChu.Show();
+                    // Đóng cửa sổ hiện tại
+                    this.Hide();
                 } 
                 else
                 {
-                    MessageBox.Show("Co loi xay ra");
+                    MessageBox.Show("Tài khoản không tồn tại");
                 }
             }
             else
             {
-                MessageBox.Show("Co loi xay ra");
+                MessageBox.Show("Đã xảy ra lỗi");
             }
         }
 
