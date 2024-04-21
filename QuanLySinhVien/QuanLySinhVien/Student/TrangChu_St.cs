@@ -46,5 +46,25 @@ namespace QuanLySinhVien.Student
         {
             openChildForm(new User_St());
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btXemdiem_Click(object sender, EventArgs e)
+        {
+            openChildForm(new xemDiem());
+        }
+
+        private void btThongbao_Click(object sender, EventArgs e)
+        {
+            openChildForm(new NhanTb());
+        }
+
+        private void btUser_Click(object sender, EventArgs e)
+        {
+            openChildForm(new User_St());
+        }
     }
 }

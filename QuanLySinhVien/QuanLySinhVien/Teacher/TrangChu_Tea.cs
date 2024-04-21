@@ -15,6 +15,13 @@ namespace QuanLySinhVien
         public TrangChu_Tea()
         {
             InitializeComponent();
+            Rectangle screenSize = Screen.PrimaryScreen.WorkingArea;
+
+            // Đặt kích thước của form
+            this.Size = new Size(screenSize.Width, screenSize.Height);
+
+            // Hoặc bạn có thể muốn form của bạn điền đầy màn hình
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private Form activeForm = null;

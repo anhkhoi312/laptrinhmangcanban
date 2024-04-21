@@ -52,10 +52,10 @@
             this.columnHeader6,
             this.columnHeader7});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(383, 214);
+            this.listView1.Location = new System.Drawing.Point(457, 211);
             this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(830, 482);
+            this.listView1.Size = new System.Drawing.Size(884, 482);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -100,7 +100,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(656, 122);
+            this.label1.Location = new System.Drawing.Point(758, 119);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(303, 29);
             this.label1.TabIndex = 1;
@@ -112,7 +112,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1510, 848);
+            this.ClientSize = new System.Drawing.Size(1671, 832);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listView1);
             this.DoubleBuffered = true;

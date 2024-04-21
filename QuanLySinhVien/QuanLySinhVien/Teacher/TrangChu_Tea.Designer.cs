@@ -40,11 +40,14 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(314, 68);
+            this.panel1.Location = new System.Drawing.Point(345, 63);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1510, 848);
+            this.panel1.Size = new System.Drawing.Size(1023, 611);
             this.panel1.TabIndex = 8;
             // 
             // bt_User
@@ -114,7 +117,9 @@
             // 
             // btn_dangxuat
             // 
-            this.btn_dangxuat.Location = new System.Drawing.Point(818, 948);
+            this.btn_dangxuat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_dangxuat.Location = new System.Drawing.Point(784, 697);
             this.btn_dangxuat.Name = "btn_dangxuat";
             this.btn_dangxuat.Size = new System.Drawing.Size(187, 55);
             this.btn_dangxuat.TabIndex = 10;
@@ -127,7 +132,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1902, 1033);
+            this.ClientSize = new System.Drawing.Size(1456, 776);
             this.Controls.Add(this.btn_dangxuat);
             this.Controls.Add(this.bt_User);
             this.Controls.Add(this.panel1);
@@ -140,6 +145,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TrangChu_Tea";
             this.Text = "Trangchu";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TrangChu_Tea_Load);
             this.ResumeLayout(false);
 

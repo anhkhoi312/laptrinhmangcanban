@@ -45,7 +45,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(432, 215);
+            this.label2.Location = new System.Drawing.Point(282, 152);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(113, 25);
             this.label2.TabIndex = 2;
@@ -56,7 +56,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(725, 325);
+            this.label3.Location = new System.Drawing.Point(507, 224);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(144, 29);
             this.label3.TabIndex = 3;
@@ -65,10 +65,10 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(598, 215);
+            this.dateTimePicker1.Location = new System.Drawing.Point(404, 152);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(532, 30);
+            this.dateTimePicker1.Size = new System.Drawing.Size(469, 30);
             this.dateTimePicker1.TabIndex = 4;
             // 
             // button1
@@ -98,10 +98,10 @@
             // 
             this.comboBox_mssv.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_mssv.FormattingEnabled = true;
-            this.comboBox_mssv.Location = new System.Drawing.Point(474, 69);
+            this.comboBox_mssv.Location = new System.Drawing.Point(356, 45);
             this.comboBox_mssv.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox_mssv.Name = "comboBox_mssv";
-            this.comboBox_mssv.Size = new System.Drawing.Size(770, 37);
+            this.comboBox_mssv.Size = new System.Drawing.Size(579, 37);
             this.comboBox_mssv.TabIndex = 19;
             // 
             // label_monhoc_qld
@@ -109,7 +109,7 @@
             this.label_monhoc_qld.AutoSize = true;
             this.label_monhoc_qld.BackColor = System.Drawing.Color.Transparent;
             this.label_monhoc_qld.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_monhoc_qld.Location = new System.Drawing.Point(331, 70);
+            this.label_monhoc_qld.Location = new System.Drawing.Point(213, 46);
             this.label_monhoc_qld.Name = "label_monhoc_qld";
             this.label_monhoc_qld.Size = new System.Drawing.Size(114, 29);
             this.label_monhoc_qld.TabIndex = 18;
@@ -118,7 +118,7 @@
             // richTextBox1
             // 
             this.richTextBox1.BackColor = System.Drawing.SystemColors.Info;
-            this.richTextBox1.Location = new System.Drawing.Point(431, 384);
+            this.richTextBox1.Location = new System.Drawing.Point(213, 283);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(722, 250);
@@ -141,7 +141,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1510, 848);
+            this.ClientSize = new System.Drawing.Size(1105, 611);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.comboBox_mssv);
             this.Controls.Add(this.label_monhoc_qld);
