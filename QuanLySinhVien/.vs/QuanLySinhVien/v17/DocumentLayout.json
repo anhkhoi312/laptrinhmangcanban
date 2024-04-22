@@ -3,7 +3,19 @@
   "WorkspaceRootPath": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D6D462A-25F7-46DF-A44C-06ED326F20B3}|QuanLySinhVien\\QuanLySinhVien.csproj|D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\quanlysinhvien\\student\\user_st.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5D6D462A-25F7-46DF-A44C-06ED326F20B3}|QuanLySinhVien\\QuanLySinhVien.csproj|D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\quanlysinhvien\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D6D462A-25F7-46DF-A44C-06ED326F20B3}|QuanLySinhVien\\QuanLySinhVien.csproj|solutionrelative:quanlysinhvien\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D6D462A-25F7-46DF-A44C-06ED326F20B3}|QuanLySinhVien\\QuanLySinhVien.csproj|d:\\hoc_tap\\lap trinh mang cb\\doan\\laptrinhmangcanban\\quanlysinhvien\\quanlysinhvien\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5D6D462A-25F7-46DF-A44C-06ED326F20B3}|QuanLySinhVien\\QuanLySinhVien.csproj|solutionrelative:quanlysinhvien\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D6D462A-25F7-46DF-A44C-06ED326F20B3}|QuanLySinhVien\\QuanLySinhVien.csproj|D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\quanlysinhvien\\teacher\\thongbao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5D6D462A-25F7-46DF-A44C-06ED326F20B3}|QuanLySinhVien\\QuanLySinhVien.csproj|solutionrelative:quanlysinhvien\\teacher\\thongbao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D6D462A-25F7-46DF-A44C-06ED326F20B3}|QuanLySinhVien\\QuanLySinhVien.csproj|d:\\hoc_tap\\lap trinh mang cb\\doan\\laptrinhmangcanban\\quanlysinhvien\\quanlysinhvien\\student\\user_st.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5D6D462A-25F7-46DF-A44C-06ED326F20B3}|QuanLySinhVien\\QuanLySinhVien.csproj|solutionrelative:quanlysinhvien\\student\\user_st.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -13,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5D6D462A-25F7-46DF-A44C-06ED326F20B3}|QuanLySinhVien\\QuanLySinhVien.csproj|D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\quanlysinhvien\\student\\nhantb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5D6D462A-25F7-46DF-A44C-06ED326F20B3}|QuanLySinhVien\\QuanLySinhVien.csproj|solutionrelative:quanlysinhvien\\student\\nhantb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D6D462A-25F7-46DF-A44C-06ED326F20B3}|QuanLySinhVien\\QuanLySinhVien.csproj|d:\\hoc_tap\\lap trinh mang cb\\doan\\laptrinhmangcanban\\quanlysinhvien\\quanlysinhvien\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D6D462A-25F7-46DF-A44C-06ED326F20B3}|QuanLySinhVien\\QuanLySinhVien.csproj|solutionrelative:quanlysinhvien\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D6D462A-25F7-46DF-A44C-06ED326F20B3}|QuanLySinhVien\\QuanLySinhVien.csproj|D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\quanlysinhvien\\teacher\\quanlylop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -37,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5D6D462A-25F7-46DF-A44C-06ED326F20B3}|QuanLySinhVien\\QuanLySinhVien.csproj|D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\quanlysinhvien\\teacher\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5D6D462A-25F7-46DF-A44C-06ED326F20B3}|QuanLySinhVien\\QuanLySinhVien.csproj|solutionrelative:quanlysinhvien\\teacher\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D6D462A-25F7-46DF-A44C-06ED326F20B3}|QuanLySinhVien\\QuanLySinhVien.csproj|D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\quanlysinhvien\\teacher\\thongbao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5D6D462A-25F7-46DF-A44C-06ED326F20B3}|QuanLySinhVien\\QuanLySinhVien.csproj|solutionrelative:quanlysinhvien\\teacher\\thongbao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D6D462A-25F7-46DF-A44C-06ED326F20B3}|QuanLySinhVien\\QuanLySinhVien.csproj|D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\quanlysinhvien\\student\\xemdiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -122,60 +126,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TrangChu_St.cs [Design]",
-              "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Student\\TrangChu_St.cs",
-              "RelativeDocumentMoniker": "QuanLySinhVien\\Student\\TrangChu_St.cs",
-              "ToolTip": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Student\\TrangChu_St.cs [Design]",
-              "RelativeToolTip": "QuanLySinhVien\\Student\\TrangChu_St.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T10:14:37.31Z",
-              "EditorCaption": " [Design]"
+              "Title": "packages.config",
+              "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\packages.config",
+              "RelativeDocumentMoniker": "QuanLySinhVien\\packages.config",
+              "ToolTip": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\packages.config",
+              "RelativeToolTip": "QuanLySinhVien\\packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-22T06:33:55.862Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Program.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Program.cs",
               "ToolTip": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Program.cs",
               "RelativeToolTip": "QuanLySinhVien\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAArAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-20T19:14:39.027Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "QuanLyLop.cs [Design]",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Teacher\\QuanLyLop.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Teacher\\QuanLyLop.cs",
               "ToolTip": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Teacher\\QuanLyLop.cs [Design]",
               "RelativeToolTip": "QuanLySinhVien\\Teacher\\QuanLyLop.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T20:24:16.059Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-20T20:24:16.059Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "NhanTb.cs [Design]",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Student\\NhanTb.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Student\\NhanTb.cs",
               "ToolTip": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Student\\NhanTb.cs [Design]",
               "RelativeToolTip": "QuanLySinhVien\\Student\\NhanTb.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T10:15:45.985Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-20T10:15:45.985Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "User_St.cs [Design]",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Student\\User_St.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Student\\User_St.cs",
@@ -187,19 +190,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "QuanLyDiem.cs [Design]",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Teacher\\QuanLyDiem.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Teacher\\QuanLyDiem.cs",
               "ToolTip": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Teacher\\QuanLyDiem.cs [Design]",
               "RelativeToolTip": "QuanLySinhVien\\Teacher\\QuanLyDiem.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T07:18:02.719Z",
+              "WhenOpened": "2024-04-20T07:18:02.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ThongBao.cs [Design]",
+              "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Teacher\\ThongBao.cs",
+              "RelativeDocumentMoniker": "QuanLySinhVien\\Teacher\\ThongBao.cs",
+              "ToolTip": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Teacher\\ThongBao.cs [Design]",
+              "RelativeToolTip": "QuanLySinhVien\\Teacher\\ThongBao.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T07:03:55.286Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
+              "Title": "TrangChu_St.cs [Design]",
+              "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Student\\TrangChu_St.cs",
+              "RelativeDocumentMoniker": "QuanLySinhVien\\Student\\TrangChu_St.cs",
+              "ToolTip": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Student\\TrangChu_St.cs [Design]",
+              "RelativeToolTip": "QuanLySinhVien\\Student\\TrangChu_St.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T10:14:37.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "User_Tea.cs [Design]",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Teacher\\User_Tea.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Teacher\\User_Tea.cs",
@@ -210,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "TrangChu_Tea.cs [Design]",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Teacher\\TrangChu_Tea.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Teacher\\TrangChu_Tea.cs",
@@ -221,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "ThongKe.cs [Design]",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Teacher\\ThongKe.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Teacher\\ThongKe.cs",
@@ -232,18 +257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ThongBao.cs [Design]",
-              "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Teacher\\ThongBao.cs",
-              "RelativeDocumentMoniker": "QuanLySinhVien\\Teacher\\ThongBao.cs",
-              "ToolTip": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Teacher\\ThongBao.cs [Design]",
-              "RelativeToolTip": "QuanLySinhVien\\Teacher\\ThongBao.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T07:03:55.286Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "xemDiem.cs [Design]",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Student\\xemDiem.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Student\\xemDiem.cs",
@@ -254,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "TrangChu_St.Designer.cs",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Student\\TrangChu_St.Designer.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Student\\TrangChu_St.Designer.cs",
@@ -262,12 +276,11 @@
               "RelativeToolTip": "QuanLySinhVien\\Student\\TrangChu_St.Designer.cs",
               "ViewState": "AQIAABwAAAAAAAAAAAA5wDIAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T19:12:41.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-20T19:12:41.1Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "TrangChu_St.cs",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Student\\TrangChu_St.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Student\\TrangChu_St.cs",
@@ -275,12 +288,11 @@
               "RelativeToolTip": "QuanLySinhVien\\Student\\TrangChu_St.cs",
               "ViewState": "AQIAAC8AAAAAAAAAAAAQwEIAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T19:12:08.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-20T19:12:08.295Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "TrangChu_Tea.cs",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Teacher\\TrangChu_Tea.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Teacher\\TrangChu_Tea.cs",
@@ -292,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "User_St.cs",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Student\\User_St.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Student\\User_St.cs",
@@ -305,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "QuanLyDiem.cs",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Teacher\\QuanLyDiem.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Teacher\\QuanLyDiem.cs",
@@ -313,12 +325,11 @@
               "RelativeToolTip": "QuanLySinhVien\\Teacher\\QuanLyDiem.cs",
               "ViewState": "AQIAAB0AAAAAAAAAAAAywC4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T20:35:20.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-20T20:35:20.008Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "DangNhap.cs [Design]",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Login\\DangNhap.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Login\\DangNhap.cs",
@@ -329,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "NhanTb.Designer.cs",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Student\\NhanTb.Designer.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Student\\NhanTb.Designer.cs",
@@ -337,12 +348,11 @@
               "RelativeToolTip": "QuanLySinhVien\\Student\\NhanTb.Designer.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAuwDAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T21:15:27.028Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-20T21:15:27.028Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "NhanTb.cs",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Student\\NhanTb.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Student\\NhanTb.cs",
@@ -350,12 +360,11 @@
               "RelativeToolTip": "QuanLySinhVien\\Student\\NhanTb.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T21:15:18.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-20T21:15:18.235Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "User_St.Designer.cs",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Student\\User_St.Designer.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Student\\User_St.Designer.cs",
@@ -368,7 +377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "ThongKe.Designer.cs",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Teacher\\ThongKe.Designer.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Teacher\\ThongKe.Designer.cs",
@@ -380,7 +389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "ThongKe.cs",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Teacher\\ThongKe.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Teacher\\ThongKe.cs",
@@ -392,7 +401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "ThongBao.Designer.cs",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Teacher\\ThongBao.Designer.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Teacher\\ThongBao.Designer.cs",
@@ -400,11 +409,12 @@
               "RelativeToolTip": "QuanLySinhVien\\Teacher\\ThongBao.Designer.cs",
               "ViewState": "AQIAADkAAAAAAAAAAAAuwFMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T20:48:29.405Z"
+              "WhenOpened": "2024-04-20T20:48:29.405Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "ThongBao.cs",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Teacher\\ThongBao.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Teacher\\ThongBao.cs",
@@ -412,11 +422,12 @@
               "RelativeToolTip": "QuanLySinhVien\\Teacher\\ThongBao.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T20:48:20.655Z"
+              "WhenOpened": "2024-04-20T20:48:20.655Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "QuanLyLop.Designer.cs",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Teacher\\QuanLyLop.Designer.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Teacher\\QuanLyLop.Designer.cs",
@@ -424,12 +435,11 @@
               "RelativeToolTip": "QuanLySinhVien\\Teacher\\QuanLyLop.Designer.cs",
               "ViewState": "AQIAAIcAAAAAAAAAAAAuwIsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T20:40:47.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-20T20:40:47.647Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "QuanLyLop.cs",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Teacher\\QuanLyLop.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Teacher\\QuanLyLop.cs",
@@ -437,12 +447,11 @@
               "RelativeToolTip": "QuanLySinhVien\\Teacher\\QuanLyLop.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAuwB0AAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T20:40:37.615Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-20T20:40:37.615Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "User_Tea.cs",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Teacher\\User_Tea.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Teacher\\User_Tea.cs",
@@ -454,7 +463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "DangNhap.cs",
               "DocumentMoniker": "D:\\Hoc_tap\\Lap Trinh Mang CB\\DOAN\\laptrinhmangcanban\\QuanLySinhVien\\QuanLySinhVien\\Login\\DangNhap.cs",
               "RelativeDocumentMoniker": "QuanLySinhVien\\Login\\DangNhap.cs",

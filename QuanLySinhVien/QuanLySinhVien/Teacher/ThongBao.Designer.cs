@@ -38,6 +38,8 @@
             this.label_monhoc_qld = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.btSent = new System.Windows.Forms.Button();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // label2
@@ -121,7 +123,7 @@
             this.richTextBox1.Location = new System.Drawing.Point(213, 283);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(722, 250);
+            this.richTextBox1.Size = new System.Drawing.Size(722, 189);
             this.richTextBox1.TabIndex = 6;
             this.richTextBox1.Text = "";
             // 
@@ -135,6 +137,25 @@
             this.richTextBox2.TabIndex = 20;
             this.richTextBox2.Text = "";
             // 
+            // btSent
+            // 
+            this.btSent.Location = new System.Drawing.Point(836, 543);
+            this.btSent.Name = "btSent";
+            this.btSent.Size = new System.Drawing.Size(86, 32);
+            this.btSent.TabIndex = 21;
+            this.btSent.Text = "Gửi";
+            this.btSent.UseVisualStyleBackColor = true;
+            // 
+            // richTextBox3
+            // 
+            this.richTextBox3.BackColor = System.Drawing.SystemColors.Info;
+            this.richTextBox3.Location = new System.Drawing.Point(213, 476);
+            this.richTextBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.Size = new System.Drawing.Size(722, 62);
+            this.richTextBox3.TabIndex = 22;
+            this.richTextBox3.Text = "";
+            // 
             // ThongBao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -142,6 +163,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1105, 611);
+            this.Controls.Add(this.richTextBox3);
+            this.Controls.Add(this.btSent);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.comboBox_mssv);
             this.Controls.Add(this.label_monhoc_qld);
@@ -171,5 +194,7 @@
         private System.Windows.Forms.Label label_monhoc_qld;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Button btSent;
+        private System.Windows.Forms.RichTextBox richTextBox3;
     }
 }
