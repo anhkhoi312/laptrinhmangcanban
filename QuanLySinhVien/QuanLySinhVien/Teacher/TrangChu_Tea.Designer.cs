@@ -35,7 +35,6 @@
             this.btThongBao = new System.Windows.Forms.Button();
             this.btDsLop = new System.Windows.Forms.Button();
             this.btNhapDiem = new System.Windows.Forms.Button();
-            this.btn_dangxuat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panel1
@@ -115,25 +114,13 @@
             this.btNhapDiem.UseVisualStyleBackColor = true;
             this.btNhapDiem.Click += new System.EventHandler(this.btNhapDiem_Click_1);
             // 
-            // btn_dangxuat
-            // 
-            this.btn_dangxuat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_dangxuat.Location = new System.Drawing.Point(784, 697);
-            this.btn_dangxuat.Name = "btn_dangxuat";
-            this.btn_dangxuat.Size = new System.Drawing.Size(187, 55);
-            this.btn_dangxuat.TabIndex = 10;
-            this.btn_dangxuat.Text = "Đăng xuất";
-            this.btn_dangxuat.UseVisualStyleBackColor = true;
-            // 
             // TrangChu_Tea
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1456, 776);
-            this.Controls.Add(this.btn_dangxuat);
             this.Controls.Add(this.bt_User);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btThongKe);
@@ -158,6 +145,5 @@
         private System.Windows.Forms.Button btThongKe;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button bt_User;
-        private System.Windows.Forms.Button btn_dangxuat;
     }
 }

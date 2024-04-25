@@ -41,6 +41,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.bt_dangXuat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -54,53 +55,54 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(322, 335);
+            this.label1.Location = new System.Drawing.Point(347, 390);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 29);
+            this.label1.Size = new System.Drawing.Size(168, 36);
             this.label1.TabIndex = 1;
             this.label1.Text = "Giảng viên";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(604, 196);
+            this.textBox1.Location = new System.Drawing.Point(651, 245);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(298, 50);
+            this.textBox1.Size = new System.Drawing.Size(370, 62);
             this.textBox1.TabIndex = 6;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(604, 279);
+            this.textBox2.Location = new System.Drawing.Point(651, 349);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(298, 50);
+            this.textBox2.Size = new System.Drawing.Size(370, 62);
             this.textBox2.TabIndex = 7;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(604, 363);
+            this.textBox3.Location = new System.Drawing.Point(651, 454);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(298, 50);
+            this.textBox3.Size = new System.Drawing.Size(370, 62);
             this.textBox3.TabIndex = 8;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(604, 446);
+            this.textBox4.Location = new System.Drawing.Point(651, 558);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(298, 50);
+            this.textBox4.Size = new System.Drawing.Size(370, 62);
             this.textBox4.TabIndex = 9;
             // 
             // pictureBox6
             // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = global::QuanLySinhVien.Properties.Resources.icons8_username_48;
             this.pictureBox6.InitialImage = null;
-            this.pictureBox6.Location = new System.Drawing.Point(523, 116);
+            this.pictureBox6.Location = new System.Drawing.Point(588, 159);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(48, 48);
@@ -110,9 +112,10 @@
             // 
             // pictureBox5
             // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::QuanLySinhVien.Properties.Resources.icons8_local_50;
             this.pictureBox5.InitialImage = null;
-            this.pictureBox5.Location = new System.Drawing.Point(523, 446);
+            this.pictureBox5.Location = new System.Drawing.Point(588, 558);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(50, 50);
@@ -122,9 +125,10 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::QuanLySinhVien.Properties.Resources.icons8_phone_50;
             this.pictureBox4.InitialImage = null;
-            this.pictureBox4.Location = new System.Drawing.Point(523, 363);
+            this.pictureBox4.Location = new System.Drawing.Point(588, 466);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(50, 50);
@@ -134,9 +138,10 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::QuanLySinhVien.Properties.Resources.icons8_birthday_50;
             this.pictureBox3.InitialImage = null;
-            this.pictureBox3.Location = new System.Drawing.Point(523, 279);
+            this.pictureBox3.Location = new System.Drawing.Point(588, 361);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(50, 50);
@@ -146,9 +151,10 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::QuanLySinhVien.Properties.Resources.icons8_mail_50;
             this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(523, 196);
+            this.pictureBox2.Location = new System.Drawing.Point(588, 257);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(50, 50);
@@ -158,30 +164,42 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(306, 139);
+            this.pictureBox1.Location = new System.Drawing.Point(344, 174);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(160, 171);
+            this.pictureBox1.Size = new System.Drawing.Size(180, 214);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(604, 116);
+            this.textBox5.Location = new System.Drawing.Point(651, 145);
             this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(298, 50);
+            this.textBox5.Size = new System.Drawing.Size(370, 62);
             this.textBox5.TabIndex = 11;
+            // 
+            // bt_dangXuat
+            // 
+            this.bt_dangXuat.BackColor = System.Drawing.Color.Thistle;
+            this.bt_dangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_dangXuat.Location = new System.Drawing.Point(1037, 672);
+            this.bt_dangXuat.Name = "bt_dangXuat";
+            this.bt_dangXuat.Size = new System.Drawing.Size(212, 62);
+            this.bt_dangXuat.TabIndex = 28;
+            this.bt_dangXuat.Text = "Đăng xuất";
+            this.bt_dangXuat.UseVisualStyleBackColor = false;
             // 
             // User_Tea
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1141, 611);
+            this.ClientSize = new System.Drawing.Size(1284, 764);
+            this.Controls.Add(this.bt_dangXuat);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.textBox4);
@@ -225,5 +243,6 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button bt_dangXuat;
     }
 }
