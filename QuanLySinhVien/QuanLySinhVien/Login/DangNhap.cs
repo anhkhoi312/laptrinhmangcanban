@@ -10,6 +10,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading.Tasks.Sources;
 using System.Windows.Forms;
 
 namespace QuanLySinhVien
@@ -20,10 +21,12 @@ namespace QuanLySinhVien
         {
             InitializeComponent();
         }
-
+        public static string maso {  get; set; }
+        
         private void button1_Click(object sender, EventArgs e)
         {
             string username = UserBox.Text.Trim();
+            maso = username;
             string password = PassBox.Text;
             var db = FirestoreHelper.database;
             DocumentReference docRef = db.Collection("UserData").Document(username);
@@ -47,7 +50,7 @@ namespace QuanLySinhVien
                 } 
                 else
                 {
-                    MessageBox.Show("Tài khoản không tồn tại");
+                    MessageBox.Show("Kiểm tra lại tên người dùng hoặc mật khẩu");
                 }
             }
             else

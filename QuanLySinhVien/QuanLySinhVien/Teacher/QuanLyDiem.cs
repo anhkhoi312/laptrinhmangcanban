@@ -17,39 +17,5 @@ namespace QuanLySinhVien
             InitializeComponent();
         }
 
-        private void comboBox_mssv_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void QuanLyDiem_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button_them_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label_monhoc_qld_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
