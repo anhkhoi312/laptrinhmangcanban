@@ -17,8 +17,17 @@ namespace QuanLySinhVien
             InitializeComponent();
         }
 
-       
-        private void button2_Click(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            DateTime dateTime = DateTime.Now;
+            timerLabel.Text = dateTime.ToString();
+        }
+        private void ThongBao_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void comboBox_mssv_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

@@ -14,6 +14,7 @@ namespace QuanLySinhVien.Classes
         public string Username { get; set; }
         [FirestoreProperty]
         public string Password { get; set; }
-
+        [FirestoreProperty]
+        public string Type { get; set; }
     }
 }

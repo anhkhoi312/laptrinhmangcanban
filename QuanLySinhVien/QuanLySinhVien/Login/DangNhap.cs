@@ -1,6 +1,7 @@
 ﻿using Google.Cloud.Firestore;
 using Google.Cloud.Firestore.V1;
 using QuanLySinhVien.Classes;
+using QuanLySinhVien.Student;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,10 +32,16 @@ namespace QuanLySinhVien
             {
                 if(password==data.Password)
                 {
-                    this.Hide();
-                    // Tạo cửa sổ mới
-                    TrangChu_Tea trangChu = new TrangChu_Tea();
-                    trangChu.ShowDialog();
+                    if (data.Type == "gv")
+                    {
+                        TrangChu_Tea trangChu = new TrangChu_Tea();
+                        trangChu.ShowDialog();
+                    }
+                    else if (data.Type == "st")
+                    {
+                        TrangChu_St trangChu = new TrangChu_St();
+                        trangChu.ShowDialog();
+                    }
                     // Đóng cửa sổ hiện tại
                     this.Close();
                 } 
@@ -49,6 +56,9 @@ namespace QuanLySinhVien
             }
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
