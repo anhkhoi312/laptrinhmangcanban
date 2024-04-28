@@ -70,7 +70,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(447, 154);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 25);
+            this.label1.Size = new System.Drawing.Size(111, 29);
             this.label1.TabIndex = 8;
             this.label1.Text = "Qua môn";
             // 
@@ -81,7 +81,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(793, 151);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 25);
+            this.label2.Size = new System.Drawing.Size(50, 29);
             this.label2.TabIndex = 9;
             this.label2.Text = "Rớt";
             // 
@@ -92,7 +92,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(90, 151);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 25);
+            this.label3.Size = new System.Drawing.Size(129, 29);
             this.label3.TabIndex = 10;
             this.label3.Text = "Tổng cộng";
             // 
@@ -136,7 +136,7 @@
             this.comboBox_mssv.Location = new System.Drawing.Point(297, 44);
             this.comboBox_mssv.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox_mssv.Name = "comboBox_mssv";
-            this.comboBox_mssv.Size = new System.Drawing.Size(448, 37);
+            this.comboBox_mssv.Size = new System.Drawing.Size(448, 44);
             this.comboBox_mssv.TabIndex = 21;
             this.comboBox_mssv.SelectedIndexChanged += new System.EventHandler(this.comboBox_mssv_SelectedIndexChanged);
             // 
@@ -147,7 +147,7 @@
             this.label_monhoc_qld.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_monhoc_qld.Location = new System.Drawing.Point(154, 45);
             this.label_monhoc_qld.Name = "label_monhoc_qld";
-            this.label_monhoc_qld.Size = new System.Drawing.Size(114, 29);
+            this.label_monhoc_qld.Size = new System.Drawing.Size(136, 36);
             this.label_monhoc_qld.TabIndex = 20;
             this.label_monhoc_qld.Text = "Chọn lớp";
             // 
@@ -158,7 +158,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(495, 234);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(170, 29);
+            this.label5.Size = new System.Drawing.Size(200, 36);
             this.label5.TabIndex = 32;
             this.label5.Text = "DANH SÁCH";
             // 
@@ -237,8 +237,8 @@
             // 
             // ThongKe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1101, 611);

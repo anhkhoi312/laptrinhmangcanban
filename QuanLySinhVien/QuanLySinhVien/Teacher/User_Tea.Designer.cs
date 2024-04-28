@@ -42,6 +42,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.bt_dangXuat = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -55,7 +56,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(347, 390);
+            this.label1.Location = new System.Drawing.Point(365, 390);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(168, 36);
             this.label1.TabIndex = 1;
@@ -164,7 +165,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(344, 174);
+            this.pictureBox1.Location = new System.Drawing.Point(353, 174);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(180, 214);
@@ -184,21 +185,34 @@
             // 
             this.bt_dangXuat.BackColor = System.Drawing.Color.Thistle;
             this.bt_dangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_dangXuat.Location = new System.Drawing.Point(1037, 672);
+            this.bt_dangXuat.Location = new System.Drawing.Point(916, 668);
             this.bt_dangXuat.Name = "bt_dangXuat";
             this.bt_dangXuat.Size = new System.Drawing.Size(212, 62);
-            this.bt_dangXuat.TabIndex = 28;
+            this.bt_dangXuat.TabIndex = 29;
             this.bt_dangXuat.Text = "Đăng xuất";
             this.bt_dangXuat.UseVisualStyleBackColor = false;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Thistle;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(419, 141);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(114, 28);
+            this.button2.TabIndex = 32;
+            this.button2.Text = "Tải ảnh lên";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // User_Tea
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1284, 764);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.bt_dangXuat);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.pictureBox6);
@@ -244,5 +258,6 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button bt_dangXuat;
+        private System.Windows.Forms.Button button2;
     }
 }
