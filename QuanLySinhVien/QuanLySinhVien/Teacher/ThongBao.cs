@@ -1,57 +1,105 @@
-﻿using Google.Type;
-using System;
-using Google.Cloud.Firestore;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using QuanLySinhVien;
-using System.Threading.Tasks.Sources;
-
+using Google.Cloud.Firestore;
 
 namespace QuanLySinhVien
 {
     public partial class ThongBao : Form
     {
+        private FirestoreDb db = FirestoreDb.Create("ltmcb-7d1a6");
+        private string teacherId;
+        private bool isViewingNotifications = false; // Biến cờ để theo dõi trạng thái xem thông báo
 
-        FirestoreDb db = FirestoreDb.Create("ltmcb-7d1a6");
         public ThongBao()
         {
             InitializeComponent();
-
+            teacherId = DangNhap.maso;
+            InitializeRichTextBox();
+            LoadManagedClasses(teacherId);
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private async Task LoadManagedClasses(string teacherId)
         {
-            System.DateTime now = System.DateTime.Now;
-            timerLabel.Text = now.ToString();
-        }
-        private async void ThongBao_Load(object sender, EventArgs e)
-        {
-            timer1.Start();
-
-            CollectionReference infoTeacherRef = db.Collection("InfoTeacher");
-
-            string maso = DangNhap.maso;
-            DocumentReference docRef = infoTeacherRef.Document(maso);
-
-            DocumentSnapshot snapshot = await docRef.GetSnapshotAsync();
-            // Lấy giá trị của trường "Manage" (giả sử trường Manage là một mảng các danh sách lớp)
-            List<string> manage = snapshot.GetValue<List<string>>("Manage");
-            // Kiểm tra xem mảng manage có dữ liệu không trước khi gán vào ComboBox
-            if (manage != null && manage.Count > 0)
+            try
             {
-                // Gán dữ liệu vào ComboBox
-                comboBox1.Items.AddRange(manage.ToArray());
+                CollectionReference infoTeacherRef = db.Collection("InfoTeacher");
+                DocumentReference docRef = infoTeacherRef.Document(teacherId);
+                DocumentSnapshot snapshot = await docRef.GetSnapshotAsync();
+
+                List<string> manage = snapshot.GetValue<List<string>>("Manage");
+                if (manage != null && manage.Count > 0)
+                {
+                    comboBox1.Items.AddRange(manage.ToArray());
+                }
+                else
+                {
+                    MessageBox.Show("Bạn đang không quản lý lớp nào !");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Bạn đang không quản lý lớp nào !");
+                MessageBox.Show("Đã xảy ra lỗi khi tải danh sách lớp: " + ex.Message);
+            }
+        }
+
+        private async Task ShowNotifications(string teacherId)
+        {
+            try
+            {
+                DocumentReference teacherRef = db.Collection("InfoTeacher").Document(teacherId);
+                DocumentSnapshot teacherSnapshot = await teacherRef.GetSnapshotAsync();
+                List<string> notifications = teacherSnapshot.GetValue<List<string>>("Noti");
+                if (notifications != null && notifications.Count > 0)
+                {
+                    notifications.Reverse(); // Đảo ngược danh sách để hiển thị thông báo mới nhất lên trên
+                    foreach (string notification in notifications)
+                    {
+                        int startIndex = notification.IndexOf("###");
+                        int endIndex = notification.LastIndexOf("###");
+
+                        if (startIndex != -1 && endIndex != -1 && startIndex != endIndex)
+                        {
+                            string beforePart = notification.Substring(0, startIndex);
+                            string boldPart = notification.Substring(startIndex + 3, endIndex - startIndex - 3).ToUpper(); // In hoa phần trong dấu "###"
+                            string afterPart = notification.Substring(endIndex + 3);
+
+                            string boldText = "{\\rtf1\\ansi\\b " + boldPart + "\\b0}";
+                            string normalText = beforePart + afterPart;
+                            string rtfText = $"{boldText}{normalText}\\line";
+                            richTextBox1.Rtf += rtfText;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Thông báo không hợp lệ: " + notification);
+                        }
+                    }
+                }
+                else
+                {
+                    richTextBox1.Text = "Bạn chưa có thông báo nào.";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đã xảy ra lỗi khi hiển thị thông báo: " + ex.Message);
+            }
+        }
+
+        private async Task SaveNoti(string teacherId, string notification)
+        {
+            try
+            {
+                DocumentReference teacherRef = db.Collection("InfoTeacher").Document(teacherId);
+                DocumentSnapshot teacherSnapshot = await teacherRef.GetSnapshotAsync();
+                List<string> notifications = teacherSnapshot.GetValue<List<string>>("Noti") ?? new List<string>();
+                notifications.Add(notification);
+                await teacherRef.UpdateAsync("Noti", notifications);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đã xảy ra lỗi khi lưu thông báo: " + ex.Message);
             }
         }
 
@@ -59,32 +107,26 @@ namespace QuanLySinhVien
         {
             try
             {
-                // Tìm tài liệu lớp trong collection "InfoClasses " với tên là className
                 DocumentReference classRef = db.Collection("InfoClasses").Document(className);
                 DocumentSnapshot classSnapshot = await classRef.GetSnapshotAsync();
+
                 if (classSnapshot.Exists)
                 {
-                    // Lấy danh sách sinh viên từ trường "StudentList"
                     List<string> studentList = classSnapshot.GetValue<List<string>>("StudentList");
                     if (studentList != null && studentList.Count > 0)
                     {
-                        // Duyệt qua danh sách sinh viên và gửi tin nhắn cho mỗi sinh viên
                         foreach (string studentId in studentList)
                         {
-                            // Tìm tài liệu sinh viên trong collection "InfoStudent" với ID là studentId
                             DocumentReference studentRef = db.Collection("InfoStudent").Document(studentId);
                             DocumentSnapshot studentSnapshot = await studentRef.GetSnapshotAsync();
                             if (studentSnapshot.Exists)
                             {
-                                // Gán nội dung tin nhắn vào mảng Messages của sinh viên
                                 List<string> messages = studentSnapshot.GetValue<List<string>>("Messages");
                                 if (messages == null)
                                 {
                                     messages = new List<string>();
                                 }
                                 messages.Add(message);
-
-                                // Cập nhật lại trường "Messages" của sinh viên
                                 await studentRef.UpdateAsync("Messages", messages);
                             }
                             else
@@ -109,25 +151,79 @@ namespace QuanLySinhVien
                 MessageBox.Show("Đã xảy ra lỗi: " + ex.Message);
             }
         }
-        private void btSend_Click(object sender, EventArgs e)
+
+        private void InitializeRichTextBox()
         {
-            // Lấy tên lớp và nội dung tin nhắn từ ComboBox và RichTextBox
-            string className = comboBox1.SelectedItem?.ToString();
-            string time = timerLabel.Text;
-            string messageContent = richTextBox1.Text;
+            // Thiết lập nội dung mặc định hoặc gợi ý
+            richTextBox1.Text = "Nhập nội dung thông báo";
 
-            string message = $"[{time}] {className}: {messageContent}";
+            // Gắn sự kiện GotFocus để xóa nội dung gợi ý khi control nhận focus
+            richTextBox1.GotFocus += RichTextBox_GotFocus;
+        }
 
-            // Kiểm tra xem có tên lớp và nội dung tin nhắn không trước khi gửi
-            if (!string.IsNullOrEmpty(className) && !string.IsNullOrEmpty(message))
+        private void RichTextBox_GotFocus(object sender, EventArgs e)
+        {
+            if (richTextBox1.Text == "Nhập nội dung thông báo")
             {
-                // Gửi tin nhắn đến lớp
+                richTextBox1.Text = string.Empty;
+            }
+        }
+
+        private async void btSend_Click(object sender, EventArgs e)
+        {
+            string className = comboBox1.SelectedItem?.ToString();
+            string time = DateTime.Now.ToString();
+            string messageContent = richTextBox1.Text;
+            if (!string.IsNullOrEmpty(className) && !string.IsNullOrEmpty(messageContent))
+            {
+                DocumentReference classRef = db.Collection("InfoClasses").Document(className);
+                DocumentSnapshot classSnapshot = await classRef.GetSnapshotAsync();
+                string obj = classSnapshot.GetValue<string>("Obj");
+                // Tạo chuỗi message với phần in đậm
+                string message = $"[{time}]\n###{className}({obj})###\n{messageContent}";
+
                 SendMessageToClass(className, message);
+                string maso = DangNhap.maso;
+                await SaveNoti(maso, message);
             }
             else
             {
-                MessageBox.Show("Vui lòng chọn tên lớp và nhập nội dung tin nhắn.");
+                if (string.IsNullOrEmpty(className))
+                {
+                    MessageBox.Show("Vui lòng chọn lớp.");
+                }
+                else if (string.IsNullOrEmpty(messageContent))
+                {
+                    MessageBox.Show("Vui lòng nhập nội dung.");
+                }
             }
+
+        }
+
+        private async void bt_ListNoti_Click(object sender, EventArgs e)
+        {
+            string maso = DangNhap.maso;
+            await ShowNotifications(maso);
+            isViewingNotifications = true; // Đặt biến cờ thành true khi đang xem thông báo
+            richTextBox1.ReadOnly = true; // Ngăn người dùng chỉnh sửa nội dung
+        }
+
+        // Override sự kiện KeyPress của richTextBox để ngăn việc nhập liệu khi ở chế độ xem thông báo
+        private void richTextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (isViewingNotifications)
+            {
+                e.Handled = true; // Ngăn việc nhập liệu
+            }
+        }
+
+        private void btn_Tb_Click(object sender, EventArgs e)
+        {
+            // Quay về trạng thái nhập thông báo
+            richTextBox1.Text = "Nhập nội dung thông báo";
+            comboBox1.SelectedIndex = -1; // Chọn không có lớp nào
+            isViewingNotifications = false; // Đặt biến cờ thành false khi thoát khỏi chế độ xem thông báo
+            richTextBox1.ReadOnly = false; // Cho phép người dùng chỉnh sửa lại
         }
     }
 }

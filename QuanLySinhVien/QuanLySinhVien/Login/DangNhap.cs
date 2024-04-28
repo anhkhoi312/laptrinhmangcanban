@@ -1,16 +1,7 @@
 ﻿using Google.Cloud.Firestore;
-using Google.Cloud.Firestore.V1;
 using QuanLySinhVien.Classes;
 using QuanLySinhVien.Student;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Threading.Tasks.Sources;
 using System.Windows.Forms;
 
 namespace QuanLySinhVien

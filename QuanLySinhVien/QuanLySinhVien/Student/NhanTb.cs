@@ -1,10 +1,10 @@
 ﻿using Google.Cloud.Firestore;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using QuanLySinhVien;
 
 namespace QuanLySinhVien.Student
 {
@@ -29,7 +29,7 @@ namespace QuanLySinhVien.Student
             {
                 if (db == null)
                 {
-                    MessageBox.Show("Không thể kết nối đến cơ sở dữ liệu.");
+                    listBox1.DataSource = "Không thể kết nối với database";
                     return;
                 }
 
@@ -49,12 +49,32 @@ namespace QuanLySinhVien.Student
                 }
                 else
                 {
-                    MessageBox.Show("Không có thông báo nào.");
+                    listBox1.DataSource = null;
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Đã xảy ra lỗi: " + ex.Message);
+            }
+        }
+
+
+        private async Task DisplayNotificationDetail(string selectedNotification)
+        {
+            richTextBox1.Text = selectedNotification;
+        }
+
+        private async void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+           
+
+        }
+        private async void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedItem != null)
+            {
+                string selectedNotification = listBox1.SelectedItem.ToString();
+                await DisplayNotificationDetail(selectedNotification);
             }
         }
     }
