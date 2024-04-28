@@ -20,7 +20,7 @@ namespace QuanLySinhVien
             FirestoreHelper.SetEnvironmentVariable();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ThongKe());
+            Application.Run(new DangNhap());
         }
     }
 }
