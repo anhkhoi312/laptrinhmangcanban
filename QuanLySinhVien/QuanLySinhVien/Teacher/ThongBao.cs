@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Google.Cloud.Firestore;
@@ -51,30 +52,11 @@ namespace QuanLySinhVien
                 DocumentReference teacherRef = db.Collection("InfoTeacher").Document(teacherId);
                 DocumentSnapshot teacherSnapshot = await teacherRef.GetSnapshotAsync();
                 List<string> notifications = teacherSnapshot.GetValue<List<string>>("Noti");
+
                 if (notifications != null && notifications.Count > 0)
                 {
                     notifications.Reverse(); // Đảo ngược danh sách để hiển thị thông báo mới nhất lên trên
-                    foreach (string notification in notifications)
-                    {
-                        int startIndex = notification.IndexOf("###");
-                        int endIndex = notification.LastIndexOf("###");
-
-                        if (startIndex != -1 && endIndex != -1 && startIndex != endIndex)
-                        {
-                            string beforePart = notification.Substring(0, startIndex);
-                            string boldPart = notification.Substring(startIndex + 3, endIndex - startIndex - 3).ToUpper(); // In hoa phần trong dấu "###"
-                            string afterPart = notification.Substring(endIndex + 3);
-
-                            string boldText = "{\\rtf1\\ansi\\b " + boldPart + "\\b0}";
-                            string normalText = beforePart + afterPart;
-                            string rtfText = $"{boldText}{normalText}\\line";
-                            richTextBox1.Rtf += rtfText;
-                        }
-                        else
-                        {
-                            MessageBox.Show("Thông báo không hợp lệ: " + notification);
-                        }
-                    }
+                    richTextBox1.Text = string.Join("\n\n", notifications);
                 }
                 else
                 {
@@ -180,7 +162,7 @@ namespace QuanLySinhVien
                 DocumentSnapshot classSnapshot = await classRef.GetSnapshotAsync();
                 string obj = classSnapshot.GetValue<string>("Obj");
                 // Tạo chuỗi message với phần in đậm
-                string message = $"[{time}]\n###{className}({obj})###\n{messageContent}";
+                string message = $"[{time}]\n{className}({obj})\n{messageContent}";
 
                 SendMessageToClass(className, message);
                 string maso = DangNhap.maso;
@@ -202,6 +184,7 @@ namespace QuanLySinhVien
 
         private async void bt_ListNoti_Click(object sender, EventArgs e)
         {
+            richTextBox1.Text = "ĐANG LẤY NỘI DUNG VUI LÒNG CHỜ 1 CHÚT..";
             string maso = DangNhap.maso;
             await ShowNotifications(maso);
             isViewingNotifications = true; // Đặt biến cờ thành true khi đang xem thông báo
@@ -219,11 +202,13 @@ namespace QuanLySinhVien
 
         private void btn_Tb_Click(object sender, EventArgs e)
         {
+
             // Quay về trạng thái nhập thông báo
             richTextBox1.Text = "Nhập nội dung thông báo";
             comboBox1.SelectedIndex = -1; // Chọn không có lớp nào
             isViewingNotifications = false; // Đặt biến cờ thành false khi thoát khỏi chế độ xem thông báo
             richTextBox1.ReadOnly = false; // Cho phép người dùng chỉnh sửa lại
         }
+
     }
 }
