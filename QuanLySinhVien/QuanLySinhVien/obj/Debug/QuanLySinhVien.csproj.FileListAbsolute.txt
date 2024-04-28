@@ -579,3 +579,251 @@ D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVi
 D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySi.3CF0D20D.Up2Date
 D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
 D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\grpc_csharp_ext.x86.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\grpc_csharp_ext.x64.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\libgrpc_csharp_ext.x64.so
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\libgrpc_csharp_ext.x64.dylib
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe.config
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\FireSharp.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.CommonProtos.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.Grpc.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.Rest.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Auth.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Core.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Storage.v1.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Firestore.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Firestore.V1.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Location.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Storage.V1.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.LongRunning.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Protobuf.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Auth.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Core.Api.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Core.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Net.Client.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Net.Common.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Threading.Tasks.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Newtonsoft.Json.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Buffers.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.CodeDom.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Collections.Immutable.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Linq.Async.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Memory.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Net.Http.Extensions.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Net.Http.Primitives.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Net.Http.WinHttpHandler.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Numerics.Vectors.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.ValueTuple.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.CommonProtos.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.CommonProtos.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.Grpc.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.Grpc.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.Rest.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.Rest.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Auth.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Auth.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Core.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Core.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Storage.v1.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Storage.v1.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Firestore.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Firestore.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Firestore.V1.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Firestore.V1.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Location.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Location.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Storage.V1.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Storage.V1.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.LongRunning.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.LongRunning.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Protobuf.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Protobuf.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Auth.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Auth.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Core.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Core.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Core.Api.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Core.Api.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Net.Client.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Net.Client.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Net.Common.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Net.Common.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Threading.Tasks.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Newtonsoft.Json.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Buffers.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.CodeDom.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Collections.Immutable.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Linq.Async.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Memory.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Net.Http.Extensions.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Net.Http.Primitives.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Net.Http.WinHttpHandler.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Numerics.Vectors.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.ValueTuple.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.App.config
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.AssemblyReference.cache
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.DangNhap.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Student.NhanTb.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Student.TrangChu_St.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Student.User_St.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Student.xemDiem.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.QuanLyDiem.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.QuanLyLop.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Properties.Resources.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.ThongBao.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.ThongKe.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.TrangChu_Tea.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.User_Tea.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.GenerateResource.cache
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.CoreCompileInputs.cache
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySi.3CF0D20D.Up2Date
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch TN\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\grpc_csharp_ext.x86.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\grpc_csharp_ext.x64.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\libgrpc_csharp_ext.x64.so
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\libgrpc_csharp_ext.x64.dylib
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe.config
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\FireSharp.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.CommonProtos.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.Grpc.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.Rest.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Auth.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Core.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Storage.v1.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Firestore.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Firestore.V1.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Location.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Storage.V1.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.LongRunning.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Protobuf.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Auth.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Core.Api.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Core.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Net.Client.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Net.Common.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Threading.Tasks.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Newtonsoft.Json.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Buffers.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.CodeDom.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Collections.Immutable.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Linq.Async.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Memory.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Net.Http.Extensions.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Net.Http.Primitives.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Net.Http.WinHttpHandler.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Numerics.Vectors.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.ValueTuple.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.CommonProtos.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.CommonProtos.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.Grpc.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.Grpc.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.Rest.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.Rest.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Auth.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Auth.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Core.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Core.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Storage.v1.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Storage.v1.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Firestore.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Firestore.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Firestore.V1.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Firestore.V1.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Location.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Location.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Storage.V1.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Storage.V1.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.LongRunning.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.LongRunning.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Protobuf.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Protobuf.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Auth.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Auth.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Core.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Core.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Core.Api.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Core.Api.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Net.Client.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Net.Client.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Net.Common.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Grpc.Net.Common.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Threading.Tasks.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\Newtonsoft.Json.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Buffers.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.CodeDom.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Collections.Immutable.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Linq.Async.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Memory.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Net.Http.Extensions.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Net.Http.Primitives.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Net.Http.WinHttpHandler.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Numerics.Vectors.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.ValueTuple.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.App.config
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.AssemblyReference.cache
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.DangNhap.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Student.NhanTb.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Student.TrangChu_St.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Student.User_St.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Student.xemDiem.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.QuanLyDiem.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.QuanLyLop.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Properties.Resources.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.ThongBao.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.ThongKe.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.TrangChu_Tea.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.User_Tea.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.GenerateResource.cache
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.CoreCompileInputs.cache
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySi.3CF0D20D.Up2Date
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\tngan\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
