@@ -54,5 +54,21 @@ namespace QuanLySinhVien
         {
 
         }
+
+        private void showpass_CheckedChanged(object sender, EventArgs e)
+        {
+            if(showpass.Checked == true)
+            {
+                PassBox.UseSystemPasswordChar = false;
+            } else
+            {
+                PassBox.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void DangNhap_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
