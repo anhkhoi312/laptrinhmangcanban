@@ -2,6 +2,7 @@
 using QuanLySinhVien.Classes;
 using QuanLySinhVien.Student;
 using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace QuanLySinhVien
@@ -19,6 +20,12 @@ namespace QuanLySinhVien
             string username = UserBox.Text.Trim();
             maso = username;
             string password = PassBox.Text;
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                errorLabel.Visible = true; // Hiển thị thông báo
+                return; // Dừng lại ở đây để không thực hiện các thao tác tiếp theo
+            }
+            
             var db = FirestoreHelper.database;
             DocumentReference docRef = db.Collection("UserData").Document(username);
             UserData data = docRef.GetSnapshotAsync().Result.ConvertTo<UserData>();
@@ -28,11 +35,13 @@ namespace QuanLySinhVien
                 {
                     if (data.Type == "gv")
                     {
+                        
                         TrangChu_Tea trangChu = new TrangChu_Tea();
                         trangChu.ShowDialog();
                     }
                     else if (data.Type == "st")
                     {
+                       
                         TrangChu_St trangChu = new TrangChu_St();
                         trangChu.ShowDialog();
                     }

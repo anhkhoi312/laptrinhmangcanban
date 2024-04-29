@@ -1,4 +1,6 @@
-﻿namespace QuanLySinhVien
+﻿using System.Windows.Forms;
+
+namespace QuanLySinhVien
 {
     partial class DangNhap
     {
@@ -39,6 +41,7 @@
             this.showpass = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.errorLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -88,6 +91,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.NavajoWhite;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(350, 308);
             this.button1.Name = "button1";
@@ -101,6 +105,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.OldLace;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(493, 308);
             this.button2.Name = "button2";
@@ -136,6 +141,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel1.Location = new System.Drawing.Point(350, 202);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(294, 1);
@@ -143,10 +149,24 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.Location = new System.Drawing.Point(350, 264);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(294, 1);
             this.panel2.TabIndex = 13;
+            // 
+            // errorLabel
+            // 
+            this.errorLabel.AutoSize = true;
+            this.errorLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(164)))), ((int)(((byte)(227)))));
+            this.errorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorLabel.ForeColor = System.Drawing.Color.Firebrick;
+            this.errorLabel.Location = new System.Drawing.Point(324, 365);
+            this.errorLabel.Name = "errorLabel";
+            this.errorLabel.Size = new System.Drawing.Size(238, 20);
+            this.errorLabel.TabIndex = 14;
+            this.errorLabel.Text = "Vui lòng nhập đầy đủ thông tin!";
+            this.errorLabel.Visible = false;
             // 
             // DangNhap
             // 
@@ -155,6 +175,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(886, 521);
+            this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.showpass);
@@ -192,5 +213,6 @@
         private System.Windows.Forms.CheckBox showpass;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private Label errorLabel;
     }
 }
