@@ -89,10 +89,10 @@ namespace QuanLySinhVien
                 int failedCount = 0;
                 foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
-                    if (row.Cells["CK"].Value != null && row.Cells["CK"].Value.ToString() != "N/A")
+                    if (row.Cells["TBM"].Value != null && row.Cells["TBM"].Value.ToString() != "N/A")
                     {
                         double ckScore;
-                        if (double.TryParse(row.Cells["CK"].Value.ToString(), out ckScore))
+                        if (double.TryParse(row.Cells["TBM"].Value.ToString(), out ckScore))
                         {
                             if (ckScore >= 5)
                                 passedCount++;
@@ -160,6 +160,7 @@ namespace QuanLySinhVien
                         row.Cells["QT"].Value = grades.ContainsKey("QT") ? grades["QT"].ToString() : "N/A";
                         row.Cells["GK"].Value = grades.ContainsKey("GK") ? grades["GK"].ToString() : "N/A";
                         row.Cells["CK"].Value = grades.ContainsKey("CK") ? grades["CK"].ToString() : "N/A";
+                        row.Cells["TBM"].Value = grades.ContainsKey("TBM") ? grades["TBM"].ToString() : "N/A";
                     }
                     else
                     {
@@ -167,6 +168,7 @@ namespace QuanLySinhVien
                         row.Cells["QT"].Value = "N/A";
                         row.Cells["GK"].Value = "N/A";
                         row.Cells["CK"].Value = "N/A";
+                        row.Cells["TBM"].Value = "N/A";
                     }
                 }
             }
