@@ -1391,3 +1391,29 @@ E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch khu lam chinh\laptrinhmangcanban\QuanLy
 E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch khu lam chinh\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySi.3CF0D20D.Up2Date
 E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch khu lam chinh\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
 E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch khu lam chinh\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.Licensing.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.UI.WinForms.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.Utils.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.Rest.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Storage.v1.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Storage.V1.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\RestSharp.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Text.Encodings.Web.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Text.Json.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.UI.WinForms.xml
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.Rest.pdb
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.Rest.xml
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Storage.v1.pdb
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Storage.v1.xml
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Storage.V1.pdb
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Storage.V1.xml
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\RestSharp.xml
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Text.Encodings.Web.xml
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Text.Json.xml
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.SuggestedBindingRedirects.cache
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe.config

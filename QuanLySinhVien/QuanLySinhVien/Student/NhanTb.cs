@@ -77,5 +77,7 @@ namespace QuanLySinhVien.Student
                 await DisplayNotificationDetail(selectedNotification);
             }
         }
+
+      
     }
 }
