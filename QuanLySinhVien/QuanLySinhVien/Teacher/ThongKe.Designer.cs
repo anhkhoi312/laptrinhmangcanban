@@ -47,6 +47,7 @@
             this.QT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GK = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TBM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,7 +56,7 @@
             this.tracuu.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tracuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tracuu.Location = new System.Drawing.Point(702, 35);
-            this.tracuu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tracuu.Margin = new System.Windows.Forms.Padding(2);
             this.tracuu.Name = "tracuu";
             this.tracuu.Size = new System.Drawing.Size(116, 37);
             this.tracuu.TabIndex = 2;
@@ -103,7 +104,7 @@
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(192, 126);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -114,7 +115,7 @@
             // 
             this.tb_rotmon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_rotmon.Location = new System.Drawing.Point(736, 126);
-            this.tb_rotmon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_rotmon.Margin = new System.Windows.Forms.Padding(2);
             this.tb_rotmon.Multiline = true;
             this.tb_rotmon.Name = "tb_rotmon";
             this.tb_rotmon.ReadOnly = true;
@@ -125,7 +126,7 @@
             // 
             this.tb_quamon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_quamon.Location = new System.Drawing.Point(485, 126);
-            this.tb_quamon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_quamon.Margin = new System.Windows.Forms.Padding(2);
             this.tb_quamon.Multiline = true;
             this.tb_quamon.Name = "tb_quamon";
             this.tb_quamon.ReadOnly = true;
@@ -182,7 +183,8 @@
             this.MSSV,
             this.QT,
             this.GK,
-            this.CK});
+            this.CK,
+            this.TBM});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -192,7 +194,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(98, 257);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -240,6 +242,14 @@
             this.CK.ReadOnly = true;
             this.CK.Width = 125;
             // 
+            // TBM
+            // 
+            this.TBM.HeaderText = "TBM";
+            this.TBM.MinimumWidth = 6;
+            this.TBM.Name = "TBM";
+            this.TBM.ReadOnly = true;
+            this.TBM.Width = 125;
+            // 
             // ThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -261,7 +271,7 @@
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ThongKe";
             this.Text = "ThongKe";
             this.Load += new System.EventHandler(this.ThongKe_Load);
@@ -287,5 +297,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn QT;
         private System.Windows.Forms.DataGridViewTextBoxColumn GK;
         private System.Windows.Forms.DataGridViewTextBoxColumn CK;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TBM;
     }
 }

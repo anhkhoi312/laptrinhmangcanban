@@ -50,7 +50,7 @@ namespace QuanLySinhVien.Student
                     tb_gmail.Text = studentData.ContainsKey("Mail") ? studentData["Mail"].ToString() : "";
                     tb_major.Text = studentData.ContainsKey("Major") ? studentData["Major"].ToString() : "";
                     tb_phonenum.Text = studentData.ContainsKey("PhoneNumber") ? studentData["PhoneNumber"].ToString() : "";
-                    
+
                     if (studentData.ContainsKey("Avatar_url"))
                     {
                         string avatarUrl = studentData["Avatar_url"].ToString();
@@ -67,7 +67,7 @@ namespace QuanLySinhVien.Student
                 MessageBox.Show("Lỗi khi hiển thị thông tin sinh viên: " + ex.Message);
             }
         }
-        
+
 
         private async Task DisplayAvatar(string avatarUrl)
         {
@@ -108,11 +108,44 @@ namespace QuanLySinhVien.Student
 
         }
 
-        private void btn_taianh_Click(object sender, EventArgs e)
+        private async void btn_taianh_Click(object sender, EventArgs e)
         {
+            try
+            {
+                // Mở dialog để chọn ảnh từ máy tính
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                openFileDialog.Filter = "Image Files (*.png;*.jpg;*.jpeg;*.gif;*.bmp)|*.png;*.jpg;*.jpeg;*.gif;*.bmp";
 
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    // Lấy đường dẫn của file ảnh đã chọn
+                    string filePath = openFileDialog.FileName;
+
+                    // Tải ảnh lên Firebase Storage
+                    string bucketName = "ltmcb-7d1a6.appspot.com";
+                    string mssv = DangNhap.maso;
+                    string objectName = $"{mssv}/avatar.png"; // Tên object để lưu trữ ảnh
+
+                    using (FileStream fileStream = new FileStream(filePath, FileMode.Open))
+                    {
+                        await storageClient.UploadObjectAsync(bucketName, objectName, null, fileStream);
+                    }
+
+                    // Cập nhật URL avatar mới vào Firestore
+                    string newAvatarUrl = $"gs://{bucketName}/{objectName}";
+                    DocumentReference docRef = firestoreDb.Collection("InfoStudent").Document(DangNhap.maso);
+                    await docRef.UpdateAsync("Avatar_url", newAvatarUrl);
+
+                    // Hiển thị ảnh mới
+                    await DisplayAvatar(newAvatarUrl);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải ảnh lên: " + ex.Message);
+            }
         }
 
-        
+
     }
 }
