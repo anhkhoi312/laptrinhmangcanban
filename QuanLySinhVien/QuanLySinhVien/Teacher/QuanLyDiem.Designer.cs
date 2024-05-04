@@ -49,17 +49,18 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.MSSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.QT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GK = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TBM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label_mssv_qld
@@ -141,6 +142,7 @@
             this.button_capnhat.TabIndex = 8;
             this.button_capnhat.Text = "Tải file lên";
             this.button_capnhat.UseVisualStyleBackColor = false;
+            this.button_capnhat.Click += new System.EventHandler(this.button_capnhat_Click);
             // 
             // comboBox_mssv
             // 
@@ -314,6 +316,26 @@
             this.panel3.Size = new System.Drawing.Size(957, 685);
             this.panel3.TabIndex = 35;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MSSV,
+            this.QT,
+            this.GK,
+            this.CK,
+            this.TBM});
+            this.dataGridView1.Location = new System.Drawing.Point(70, 106);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(819, 532);
+            this.dataGridView1.TabIndex = 35;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
@@ -325,25 +347,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(549, 325);
             this.panel4.TabIndex = 36;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MSSV,
-            this.QT,
-            this.GK,
-            this.CK});
-            this.dataGridView1.Location = new System.Drawing.Point(70, 106);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(819, 532);
-            this.dataGridView1.TabIndex = 35;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // MSSV
             // 
@@ -377,6 +380,14 @@
             this.CK.ReadOnly = true;
             this.CK.Width = 125;
             // 
+            // TBM
+            // 
+            this.TBM.HeaderText = "TBM";
+            this.TBM.MinimumWidth = 10;
+            this.TBM.Name = "TBM";
+            this.TBM.ReadOnly = true;
+            this.TBM.Width = 200;
+            // 
             // QuanLyDiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
@@ -402,9 +413,9 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -438,5 +449,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn QT;
         private System.Windows.Forms.DataGridViewTextBoxColumn GK;
         private System.Windows.Forms.DataGridViewTextBoxColumn CK;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TBM;
     }
 }
