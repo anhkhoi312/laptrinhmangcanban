@@ -1532,3 +1532,26 @@ D:\HOCTAP\HK4\LTMCB\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\Q
 D:\HOCTAP\HK4\LTMCB\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySi.3CF0D20D.Up2Date
 D:\HOCTAP\HK4\LTMCB\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
 D:\HOCTAP\HK4\LTMCB\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.Licensing.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.UI.WinForms.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.Utils.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.Rest.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Storage.v1.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Storage.V1.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\RestSharp.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Text.Encodings.Web.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Text.Json.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.UI.WinForms.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.Rest.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.Rest.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Storage.v1.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Storage.v1.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Storage.V1.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Storage.V1.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\RestSharp.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Text.Encodings.Web.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Text.Json.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.SuggestedBindingRedirects.cache
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe.config
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Student.User_St.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Student.xemDiem.resources

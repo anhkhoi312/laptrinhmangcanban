@@ -17,13 +17,6 @@ namespace QuanLySinhVien
             public Dictionary<string, object> Grade { get; set; }
         }
 
-        public class Grade
-        {
-            public int QT { get; set; }
-            public int GK { get; set; }
-            public int CK { get; set; }
-            public double TBM { get; set; }
-        }
 
         public ThongKe()
         {
@@ -91,21 +84,27 @@ namespace QuanLySinhVien
                 int count = await CountStudentsInClassAsync(selectedClassName);
                 textBox1.Text = count.ToString();
                 List<Student> students = await GetStudentsInClassAsync(selectedClassName);
-                // Xóa nội dung cũ trong RichTextBox
-                //richTextBox1.Clear();
-
-                //foreach (Student student in students)
-                //{
-                //    richTextBox1.AppendText($"MSSV: {student.Mssv}\n");
-                //    richTextBox1.AppendText("Grade:\n");
-                //    foreach (var item in student.Grade)
-                //    {
-                //        richTextBox1.AppendText($"{item.Key}: {item.Value}\n");
-                //    }
-                //    richTextBox1.AppendText("\n");
-                //}
-                // Cập nhật listView1 với thông tin sinh viên trong lớp được chọn
                 await UpdateListViewWithStudentGrades(selectedClassName);
+                int passedCount = 0;
+                int failedCount = 0;
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    if (row.Cells["CK"].Value != null && row.Cells["CK"].Value.ToString() != "N/A")
+                    {
+                        double ckScore;
+                        if (double.TryParse(row.Cells["CK"].Value.ToString(), out ckScore))
+                        {
+                            if (ckScore >= 5)
+                                passedCount++;
+                            else
+                                failedCount++;
+                        }
+                    }
+                }
+
+                // Hiển thị số lượng sinh viên qua môn và rớt môn
+                tb_quamon.Text = passedCount.ToString();
+                tb_rotmon.Text = failedCount.ToString();
             }
             catch (Exception ex)
             {
@@ -177,13 +176,6 @@ namespace QuanLySinhVien
             }
         }
 
-
-
-
-        private void comboBox_mssv_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
 
     }
