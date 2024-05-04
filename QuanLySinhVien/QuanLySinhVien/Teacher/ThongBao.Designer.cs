@@ -31,7 +31,6 @@ namespace QuanLySinhVien
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThongBao));
-            this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label_monhoc_qld = new System.Windows.Forms.Label();
             this.btSend = new System.Windows.Forms.Button();
@@ -39,17 +38,6 @@ namespace QuanLySinhVien
             this.bt_ListNoti = new System.Windows.Forms.Button();
             this.btn_Tb = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Location = new System.Drawing.Point(1069, 916);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 51);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "GỬI";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // comboBox1
             // 
@@ -96,7 +84,7 @@ namespace QuanLySinhVien
             this.richTextBox1.Location = new System.Drawing.Point(256, 292);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.richTextBox1.Size = new System.Drawing.Size(796, 364);
+            this.richTextBox1.Size = new System.Drawing.Size(796, 373);
             this.richTextBox1.TabIndex = 23;
             this.richTextBox1.Text = "";
             this.richTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.richTextBox1_KeyPress);
@@ -140,7 +128,6 @@ namespace QuanLySinhVien
             this.Controls.Add(this.btSend);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label_monhoc_qld);
-            this.Controls.Add(this.button1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -152,7 +139,6 @@ namespace QuanLySinhVien
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label_monhoc_qld;
         private System.Windows.Forms.Button btSend;

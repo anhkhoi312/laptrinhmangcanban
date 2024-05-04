@@ -12,9 +12,4 @@ namespace QuanLySinhVien.Classes
         [FirestoreProperty]
         public string Type { get; set; }
     }
-
-    internal class InforStudent
-    {
-      
-    }
 }
