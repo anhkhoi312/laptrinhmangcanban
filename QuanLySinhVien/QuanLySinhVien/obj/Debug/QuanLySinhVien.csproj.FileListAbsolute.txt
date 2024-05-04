@@ -951,8 +951,6 @@ C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\
 C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySi.3CF0D20D.Up2Date
 C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
 C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
-C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.SuggestedBindingRedirects.cache
-C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe.config
 C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.Licensing.dll
 C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.UI.WinForms.dll
 C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.Utils.dll
@@ -1830,3 +1828,9 @@ E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch khu lam chinh\main\QuanLySinhVien\QuanL
 E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch khu lam chinh\main\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySi.3CF0D20D.Up2Date
 E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch khu lam chinh\main\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
 E:\Mon Hoc\Lap Trinh Mang Can Ban\Branch khu lam chinh\main\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
+C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\ExcelDataReader.dll
+C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\ExcelDataReader.pdb
+C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\ExcelDataReader.xml
+C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\ExcelDataReader.DataSet.xml
