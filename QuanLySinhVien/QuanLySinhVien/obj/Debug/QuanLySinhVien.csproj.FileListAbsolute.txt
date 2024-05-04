@@ -954,11 +954,6 @@ C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\
 C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.SuggestedBindingRedirects.cache
 C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe.config
 C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.Licensing.dll
-C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
-C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
-C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
-C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll
-C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
 C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.UI.WinForms.dll
 C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.Utils.dll
 C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\RestSharp.dll
