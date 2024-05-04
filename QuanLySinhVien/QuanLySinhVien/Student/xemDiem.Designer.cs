@@ -29,72 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(xemDiem));
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.MSSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MA_MH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TBM = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // listView1
-            // 
-            this.listView1.BackColor = System.Drawing.SystemColors.Info;
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5,
-            this.columnHeader6,
-            this.columnHeader7});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(686, 330);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1324, 751);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "MAMH";
-            this.columnHeader1.Width = 100;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "MÔN";
-            this.columnHeader2.Width = 100;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "QT";
-            this.columnHeader3.Width = 80;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "GK";
-            this.columnHeader4.Width = 80;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "CK";
-            this.columnHeader5.Width = 80;
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "TBM";
-            this.columnHeader6.Width = 80;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "LOẠI";
-            this.columnHeader7.Width = 100;
             // 
             // label1
             // 
@@ -108,6 +52,73 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "BẢNG ĐIỂM SINH VIÊN";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MSSV,
+            this.MA_MH,
+            this.QT,
+            this.GK,
+            this.CK,
+            this.TBM});
+            this.dataGridView1.Location = new System.Drawing.Point(570, 324);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1441, 584);
+            this.dataGridView1.TabIndex = 35;
+            // 
+            // MSSV
+            // 
+            this.MSSV.HeaderText = "MSSV";
+            this.MSSV.MinimumWidth = 6;
+            this.MSSV.Name = "MSSV";
+            this.MSSV.ReadOnly = true;
+            this.MSSV.Width = 125;
+            // 
+            // MA_MH
+            // 
+            this.MA_MH.HeaderText = "MA_MH";
+            this.MA_MH.MinimumWidth = 10;
+            this.MA_MH.Name = "MA_MH";
+            this.MA_MH.ReadOnly = true;
+            this.MA_MH.Width = 200;
+            // 
+            // QT
+            // 
+            this.QT.HeaderText = "QT";
+            this.QT.MinimumWidth = 6;
+            this.QT.Name = "QT";
+            this.QT.ReadOnly = true;
+            this.QT.Width = 125;
+            // 
+            // GK
+            // 
+            this.GK.HeaderText = "GK";
+            this.GK.MinimumWidth = 6;
+            this.GK.Name = "GK";
+            this.GK.ReadOnly = true;
+            this.GK.Width = 125;
+            // 
+            // CK
+            // 
+            this.CK.HeaderText = "CK";
+            this.CK.MinimumWidth = 6;
+            this.CK.Name = "CK";
+            this.CK.ReadOnly = true;
+            this.CK.Width = 125;
+            // 
+            // TBM
+            // 
+            this.TBM.HeaderText = "TBM";
+            this.TBM.MinimumWidth = 6;
+            this.TBM.Name = "TBM";
+            this.TBM.ReadOnly = true;
+            this.TBM.Width = 125;
+            // 
             // xemDiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -115,28 +126,27 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(2506, 1300);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listView1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "xemDiem";
             this.Text = "xemDiem";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
-        private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MSSV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MA_MH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GK;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CK;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TBM;
     }
 }
