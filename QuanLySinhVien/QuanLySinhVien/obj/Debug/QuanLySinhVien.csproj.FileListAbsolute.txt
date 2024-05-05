@@ -1834,3 +1834,28 @@ C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\
 C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\ExcelDataReader.xml
 C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\ExcelDataReader.DataSet.pdb
 C:\Users\ADMIN\Downloads\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\ExcelDataReader.DataSet.xml
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.Licensing.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.UI.WinForms.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.Utils.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\ExcelDataReader.DataSet.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\ExcelDataReader.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.Rest.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Storage.v1.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Storage.V1.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\RestSharp.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Text.Encodings.Web.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Text.Json.dll
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.UI.WinForms.xml
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\ExcelDataReader.pdb
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\ExcelDataReader.xml
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\ExcelDataReader.DataSet.pdb
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\ExcelDataReader.DataSet.xml
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.Rest.pdb
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Api.Gax.Rest.xml
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Storage.v1.pdb
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Apis.Storage.v1.xml
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Storage.V1.pdb
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Google.Cloud.Storage.V1.xml
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\RestSharp.xml
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Text.Encodings.Web.xml
+D:\Hoc_tap\Lap Trinh Mang CB\DOAN\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Text.Json.xml

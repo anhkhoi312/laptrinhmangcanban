@@ -35,6 +35,8 @@
             this.btThongBao = new System.Windows.Forms.Button();
             this.btDsLop = new System.Windows.Forms.Button();
             this.btNhapDiem = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -43,10 +45,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(345, 63);
+            this.panel1.Location = new System.Drawing.Point(345, 38);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1023, 611);
+            this.panel1.Size = new System.Drawing.Size(796, 603);
             this.panel1.TabIndex = 8;
             // 
             // bt_User
@@ -54,7 +58,7 @@
             this.bt_User.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_User.Image = ((System.Drawing.Image)(resources.GetObject("bt_User.Image")));
             this.bt_User.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bt_User.Location = new System.Drawing.Point(40, 543);
+            this.bt_User.Location = new System.Drawing.Point(63, 542);
             this.bt_User.Name = "bt_User";
             this.bt_User.Size = new System.Drawing.Size(221, 82);
             this.bt_User.TabIndex = 9;
@@ -67,7 +71,7 @@
             this.btThongKe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btThongKe.Image = ((System.Drawing.Image)(resources.GetObject("btThongKe.Image")));
             this.btThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btThongKe.Location = new System.Drawing.Point(40, 203);
+            this.btThongKe.Location = new System.Drawing.Point(63, 202);
             this.btThongKe.Name = "btThongKe";
             this.btThongKe.Size = new System.Drawing.Size(221, 82);
             this.btThongKe.TabIndex = 5;
@@ -80,7 +84,7 @@
             this.btThongBao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btThongBao.Image = ((System.Drawing.Image)(resources.GetObject("btThongBao.Image")));
             this.btThongBao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btThongBao.Location = new System.Drawing.Point(40, 315);
+            this.btThongBao.Location = new System.Drawing.Point(63, 314);
             this.btThongBao.Name = "btThongBao";
             this.btThongBao.Size = new System.Drawing.Size(221, 82);
             this.btThongBao.TabIndex = 4;
@@ -93,7 +97,7 @@
             this.btDsLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btDsLop.Image = global::QuanLySinhVien.Properties.Resources.icons8_class_50;
             this.btDsLop.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btDsLop.Location = new System.Drawing.Point(40, 428);
+            this.btDsLop.Location = new System.Drawing.Point(63, 427);
             this.btDsLop.Name = "btDsLop";
             this.btDsLop.Size = new System.Drawing.Size(221, 82);
             this.btDsLop.TabIndex = 3;
@@ -106,7 +110,7 @@
             this.btNhapDiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btNhapDiem.Image = ((System.Drawing.Image)(resources.GetObject("btNhapDiem.Image")));
             this.btNhapDiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btNhapDiem.Location = new System.Drawing.Point(40, 93);
+            this.btNhapDiem.Location = new System.Drawing.Point(63, 92);
             this.btNhapDiem.Name = "btNhapDiem";
             this.btNhapDiem.Size = new System.Drawing.Size(221, 82);
             this.btNhapDiem.TabIndex = 2;
@@ -114,19 +118,30 @@
             this.btNhapDiem.UseVisualStyleBackColor = true;
             this.btNhapDiem.Click += new System.EventHandler(this.btNhapDiem_Click_1);
             // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.btDsLop);
+            this.panel2.Controls.Add(this.bt_User);
+            this.panel2.Controls.Add(this.btNhapDiem);
+            this.panel2.Controls.Add(this.btThongBao);
+            this.panel2.Controls.Add(this.btThongKe);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(346, 680);
+            this.panel2.TabIndex = 10;
+            // 
             // TrangChu_Tea
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1456, 776);
-            this.Controls.Add(this.bt_User);
+            this.ClientSize = new System.Drawing.Size(1189, 680);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btThongKe);
-            this.Controls.Add(this.btThongBao);
-            this.Controls.Add(this.btDsLop);
-            this.Controls.Add(this.btNhapDiem);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -134,6 +149,7 @@
             this.Text = "Trangchu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TrangChu_Tea_Load);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -145,5 +161,6 @@
         private System.Windows.Forms.Button btThongKe;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button bt_User;
+        private System.Windows.Forms.Panel panel2;
     }
 }
