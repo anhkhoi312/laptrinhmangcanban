@@ -11,38 +11,11 @@ namespace QuanLySinhVien
     {
         private FirestoreDb db = FirestoreDb.Create("ltmcb-7d1a6");
         private string teacherId;
-        private bool isViewingNotifications = false; // Biến cờ để theo dõi trạng thái xem thông báo
-
         public ThongBao()
         {
             InitializeComponent();
             teacherId = DangNhap.maso;
             InitializeRichTextBox();
-            LoadManagedClasses(teacherId);
-        }
-
-        private async Task LoadManagedClasses(string teacherId)
-        {
-            try
-            {
-                CollectionReference infoTeacherRef = db.Collection("InfoTeacher");
-                DocumentReference docRef = infoTeacherRef.Document(teacherId);
-                DocumentSnapshot snapshot = await docRef.GetSnapshotAsync();
-
-                List<string> manage = snapshot.GetValue<List<string>>("Manage");
-                if (manage != null && manage.Count > 0)
-                {
-                    comboBox1.Items.AddRange(manage.ToArray());
-                }
-                else
-                {
-                    MessageBox.Show("Bạn đang không quản lý lớp nào !");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Đã xảy ra lỗi khi tải danh sách lớp: " + ex.Message);
-            }
         }
 
         private async Task ShowNotifications(string teacherId)
@@ -56,11 +29,13 @@ namespace QuanLySinhVien
                 if (notifications != null && notifications.Count > 0)
                 {
                     notifications.Reverse(); // Đảo ngược danh sách để hiển thị thông báo mới nhất lên trên
-                    richTextBox1.Text = string.Join("\n\n", notifications);
+                    string separator = new string('-', 130);
+                    string joinedNotifications = string.Join($"\n\n{separator}\n\n", notifications);
+                    richTextBox2.Text = joinedNotifications;
                 }
                 else
                 {
-                    richTextBox1.Text = "Bạn chưa có thông báo nào.";
+                    richTextBox2.Text = "Bạn chưa có thông báo nào.";
                 }
             }
             catch (Exception ex)
@@ -184,31 +159,34 @@ namespace QuanLySinhVien
 
         private async void bt_ListNoti_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text = "ĐANG LẤY NỘI DUNG VUI LÒNG CHỜ 1 CHÚT..";
+            richTextBox2.Text = "ĐANG LẤY NỘI DUNG VUI LÒNG CHỜ 1 CHÚT..";
             string maso = DangNhap.maso;
             await ShowNotifications(maso);
-            isViewingNotifications = true; // Đặt biến cờ thành true khi đang xem thông báo
-            richTextBox1.ReadOnly = true; // Ngăn người dùng chỉnh sửa nội dung
+            richTextBox2.ReadOnly = true; // Ngăn người dùng chỉnh sửa nội dung
         }
 
-        // Override sự kiện KeyPress của richTextBox để ngăn việc nhập liệu khi ở chế độ xem thông báo
-        private void richTextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        private async void ThongBao_Load(object sender, EventArgs e)
         {
-            if (isViewingNotifications)
+            try
             {
-                e.Handled = true; // Ngăn việc nhập liệu
+                CollectionReference infoTeacherRef = db.Collection("InfoTeacher");
+                DocumentReference docRef = infoTeacherRef.Document(teacherId);
+                DocumentSnapshot snapshot = await docRef.GetSnapshotAsync();
+
+                List<string> manage = snapshot.GetValue<List<string>>("Manage");
+                if (manage != null && manage.Count > 0)
+                {
+                    comboBox1.Items.AddRange(manage.ToArray());
+                }
+                else
+                {
+                    MessageBox.Show("Bạn đang không quản lý lớp nào !");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đã xảy ra lỗi khi tải danh sách lớp: " + ex.Message);
             }
         }
-
-        private void btn_Tb_Click(object sender, EventArgs e)
-        {
-
-            // Quay về trạng thái nhập thông báo
-            richTextBox1.Text = "Nhập nội dung thông báo";
-            comboBox1.SelectedIndex = -1; // Chọn không có lớp nào
-            isViewingNotifications = false; // Đặt biến cờ thành false khi thoát khỏi chế độ xem thông báo
-            richTextBox1.ReadOnly = false; // Cho phép người dùng chỉnh sửa lại
-        }
-
     }
 }

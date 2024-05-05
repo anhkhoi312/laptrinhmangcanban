@@ -36,7 +36,7 @@ namespace QuanLySinhVien
             this.btSend = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.bt_ListNoti = new System.Windows.Forms.Button();
-            this.btn_Tb = new System.Windows.Forms.Button();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -46,7 +46,7 @@ namespace QuanLySinhVien
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(687, 184);
+            this.comboBox1.Location = new System.Drawing.Point(722, 31);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(235, 44);
@@ -60,7 +60,7 @@ namespace QuanLySinhVien
             this.label_monhoc_qld.AutoSize = true;
             this.label_monhoc_qld.BackColor = System.Drawing.Color.Transparent;
             this.label_monhoc_qld.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_monhoc_qld.Location = new System.Drawing.Point(321, 192);
+            this.label_monhoc_qld.Location = new System.Drawing.Point(356, 39);
             this.label_monhoc_qld.Name = "label_monhoc_qld";
             this.label_monhoc_qld.Size = new System.Drawing.Size(360, 36);
             this.label_monhoc_qld.TabIndex = 18;
@@ -70,7 +70,7 @@ namespace QuanLySinhVien
             // 
             this.btSend.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btSend.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSend.Location = new System.Drawing.Point(955, 670);
+            this.btSend.Location = new System.Drawing.Point(118, 83);
             this.btSend.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btSend.Name = "btSend";
             this.btSend.Size = new System.Drawing.Size(97, 44);
@@ -81,19 +81,18 @@ namespace QuanLySinhVien
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(256, 292);
+            this.richTextBox1.Location = new System.Drawing.Point(275, 96);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.richTextBox1.Size = new System.Drawing.Size(796, 373);
+            this.richTextBox1.Size = new System.Drawing.Size(796, 189);
             this.richTextBox1.TabIndex = 23;
             this.richTextBox1.Text = "";
-            this.richTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.richTextBox1_KeyPress);
             // 
             // bt_ListNoti
             // 
             this.bt_ListNoti.BackColor = System.Drawing.Color.Thistle;
             this.bt_ListNoti.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_ListNoti.Location = new System.Drawing.Point(33, 350);
+            this.bt_ListNoti.Location = new System.Drawing.Point(33, 307);
             this.bt_ListNoti.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_ListNoti.Name = "bt_ListNoti";
             this.bt_ListNoti.Size = new System.Drawing.Size(217, 109);
@@ -102,18 +101,14 @@ namespace QuanLySinhVien
             this.bt_ListNoti.UseVisualStyleBackColor = false;
             this.bt_ListNoti.Click += new System.EventHandler(this.bt_ListNoti_Click);
             // 
-            // btn_Tb
+            // richTextBox2
             // 
-            this.btn_Tb.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_Tb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Tb.Location = new System.Drawing.Point(33, 292);
-            this.btn_Tb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Tb.Name = "btn_Tb";
-            this.btn_Tb.Size = new System.Drawing.Size(217, 54);
-            this.btn_Tb.TabIndex = 26;
-            this.btn_Tb.Text = "Thông báo";
-            this.btn_Tb.UseVisualStyleBackColor = false;
-            this.btn_Tb.Click += new System.EventHandler(this.btn_Tb_Click);
+            this.richTextBox2.Location = new System.Drawing.Point(256, 307);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.richTextBox2.Size = new System.Drawing.Size(834, 243);
+            this.richTextBox2.TabIndex = 27;
+            this.richTextBox2.Text = "";
             // 
             // ThongBao
             // 
@@ -122,7 +117,7 @@ namespace QuanLySinhVien
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1243, 764);
-            this.Controls.Add(this.btn_Tb);
+            this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.bt_ListNoti);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.btSend);
@@ -133,6 +128,7 @@ namespace QuanLySinhVien
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ThongBao";
             this.Text = "Thongbao";
+            this.Load += new System.EventHandler(this.ThongBao_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -144,6 +140,6 @@ namespace QuanLySinhVien
         private System.Windows.Forms.Button btSend;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button bt_ListNoti;
-        private System.Windows.Forms.Button btn_Tb;
+        private RichTextBox richTextBox2;
     }
 }
