@@ -1,121 +1,68 @@
 ﻿using Google.Cloud.Firestore;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using FireSharp;
-using FireSharp.Interfaces;
 
 namespace QuanLySinhVien.Student
 {
     public partial class xemDiem : Form
     {
-        FirestoreDb firestoreDb;
-
-
-        public class MonHoc
-        {
-
-            public string Ma_MH { get; set; }
-            public Dictionary<string, object> Grade { get; set; }
-        }
+        private FirestoreDb Db = FirestoreDb.Create("ltmcb-7d1a6");
 
         public xemDiem()
         {
             InitializeComponent();
         }
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private async Task<List<MonHoc>> GetGradeAsync(string mssv)
-        {
-            List<MonHoc> monHocs = new List<MonHoc>();
-            DocumentReference student = firestoreDb.Collection("InfoStudent").Document(DangNhap.maso);
-
-            QuerySnapshot querySnapshot = await student.Collection("Grade").GetSnapshotAsync();
-            foreach (DocumentSnapshot documentSnapshot in querySnapshot.Documents)
-            {
-                string classId = documentSnapshot.Id;
-                DocumentReference gradeRef = firestoreDb.Collection("InfoStudent").Document(mssv).Collection("Grade").Document(classId);
-                DocumentSnapshot gradeSnapshot = await gradeRef.GetSnapshotAsync();
-
-                if (gradeSnapshot.Exists)
-                {
-                    // Chuyển dữ liệu điểm từ DocumentSnapshot sang Dictionary
-                    Dictionary<string, object> gradeData = documentSnapshot.ToDictionary();
-
-                    MonHoc monHoc = new MonHoc
-                    {
-                        Ma_MH = classId,
-                        Grade = gradeData
-                    };
-                    monHocs.Add(monHoc);
-                }
-            }
-
-            return monHocs;
-        }
-
 
         private async Task UpdateListViewWithStudentGrades(string mssv)
         {
             try
             {
-                List<MonHoc> monHocs = await GetGradeAsync(mssv);
-                dataGridView1.Rows.Clear(); // Xóa nội dung cũ
+                // Reference đến tài liệu sinh viên trong bảng "InfoStudent"
+                DocumentReference sinhVienRef = Db.Collection("InfoStudent").Document(mssv);
 
-                foreach (var monHoc in monHocs)
+                // Lấy tất cả các điểm của sinh viên từ subcollection "Grade"
+                QuerySnapshot querySnapshot = await sinhVienRef.Collection("Grade").GetSnapshotAsync();
+
+                // Kiểm tra dataGridView1 trước khi cập nhật
+                if (dataGridView1 != null)
                 {
-                    // Tạo một hàng mới cho sinh viên
-                    int rowIndex = dataGridView1.Rows.Add();
-                    DataGridViewRow row = dataGridView1.Rows[rowIndex];
+                    // Xóa dữ liệu cũ trong dataGridView1
+                    dataGridView1.Rows.Clear();
 
-                    // Đặt giá trị của các ô cột
-                    row.Cells["MSSV"].Value = mssv;
-
-                    row.Cells["MA_MONHOC"].Value = monHoc.Ma_MH;
-
-
-                    // Truy cập dữ liệu điểm của sinh viên cho lớp đã chọn
-                    var grades = monHoc.Grade;
-                    if (grades != null)
+                    // Lặp qua từng tài liệu (môn học) trong subcollection "Grade"
+                    foreach (DocumentSnapshot docSnapshot in querySnapshot.Documents)
                     {
-                        row.Cells["QT"].Value = grades.ContainsKey("QT") ? grades["QT"].ToString() : "N/A";
-                        row.Cells["GK"].Value = grades.ContainsKey("GK") ? grades["GK"].ToString() : "N/A";
-                        row.Cells["CK"].Value = grades.ContainsKey("CK") ? grades["CK"].ToString() : "N/A";
-                        row.Cells["TBM"].Value = grades.ContainsKey("TBM") ? grades["TBM"].ToString() : "N/A";
-                    }
-                    else
-                    {
-                        // Nếu không có điểm, đặt giá trị mặc định là "N/A"
-                        row.Cells["QT"].Value = "N/A";
-                        row.Cells["GK"].Value = "N/A";
-                        row.Cells["CK"].Value = "N/A";
-                        row.Cells["TBM"].Value = "N/A";
+                        // Lấy ID của môn học (tài liệu con)
+                        string maMonHoc = docSnapshot.Id;
+
+                        // Lấy dữ liệu điểm từ tài liệu con
+                        Dictionary<string, object> diem = docSnapshot.ToDictionary();
+
+                        // Thêm dữ liệu vào dataGridView1
+                        int rowIndex = dataGridView1.Rows.Add();
+                        DataGridViewRow row = dataGridView1.Rows[rowIndex];
+
+                        // Thiết lập giá trị cho các cột trong dataGridView1
+                        row.Cells["MA_MH"].Value = maMonHoc;
+                        row.Cells["QT"].Value = diem.ContainsKey("QT") ? diem["QT"].ToString() : "N/A";
+                        row.Cells["GK"].Value = diem.ContainsKey("GK") ? diem["GK"].ToString() : "N/A";
+                        row.Cells["CK"].Value = diem.ContainsKey("CK") ? diem["CK"].ToString() : "N/A";
+                        row.Cells["TBM"].Value = diem.ContainsKey("TBM") ? diem["TBM"].ToString() : "N/A";
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message);
+                MessageBox.Show("Lỗi khi cập nhật DataGridView: " + ex.Message);
             }
         }
 
-        private async void xemDiem_Load(object sender, EventArgs e)
+        private async void xemDiem_Load_1(object sender, EventArgs e)
         {
             string mssv = DangNhap.maso;
-            List<MonHoc> monHocs = await GetGradeAsync(mssv);
-
             await UpdateListViewWithStudentGrades(mssv);
-
-
         }
     }
 }
