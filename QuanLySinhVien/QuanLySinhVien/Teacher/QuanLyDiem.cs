@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ExcelDataReader;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace QuanLySinhVien
 {
@@ -19,6 +20,7 @@ namespace QuanLySinhVien
     {
         FirestoreDb firestoreDb;
 
+        string teacherId;
 
         public class Student
         {
@@ -33,39 +35,32 @@ namespace QuanLySinhVien
             InitializeComponent();
             string projectId = "ltmcb-7d1a6";
             firestoreDb = FirestoreDb.Create(projectId);
+            teacherId = DangNhap.maso;
         }
 
-        private Task<List<string>> GetClassesAsync()
+        private async void QuanLyDiem_Load(object sender, EventArgs e)
         {
-            return firestoreDb.Collection("InfoClasses").GetSnapshotAsync()
-                .ContinueWith(queryTask =>
-                {
-                    List<string> classNames = new List<string>();
-                    QuerySnapshot querySnapshot = queryTask.Result;
-                    foreach (DocumentSnapshot documentSnapshot in querySnapshot.Documents)
-                    {
-                        string className = documentSnapshot.Id;
-                        classNames.Add(className);
-                    }
-                    return classNames;
-                });
-        }
-
-        private void QuanLyDiem_Load(object sender, EventArgs e)
-        {
-            Task<List<string>> task = GetClassesAsync();
-            task.ContinueWith(completedTask =>
+            try
             {
-                if (completedTask.Status == TaskStatus.RanToCompletion)
+                CollectionReference infoTeacherRef = firestoreDb.Collection("InfoTeacher");
+                DocumentReference docRef = infoTeacherRef.Document(teacherId);
+                DocumentSnapshot snapshot = await docRef.GetSnapshotAsync();
+
+                List<string> manage = snapshot.GetValue<List<string>>("Manage");
+                if (manage != null && manage.Count > 0)
                 {
-                    List<string> Danhsach = completedTask.Result;
-                    comboBox_mssv.DataSource = Danhsach;
+                    comboBox_mssv.Items.AddRange(manage.ToArray());
                 }
-                else if (completedTask.IsFaulted)
+                else
                 {
-                    // Xử lý lỗi nếu có
+                    MessageBox.Show("Bạn đang không quản lý lớp nào !");
                 }
-            }, TaskScheduler.FromCurrentSynchronizationContext());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đã xảy ra lỗi khi tải danh sách lớp: " + ex.Message);
+            }
+
         }
 
         private async void button_them_Click(object sender, EventArgs e)
@@ -85,7 +80,7 @@ namespace QuanLySinhVien
 
         }
 
-
+        
         private async Task AddOrUpdateGradeAsync(string mssv, string className, Dictionary<string, object> gradeData)
         {
             // Tham chiếu đến tài liệu của sinh viên trong bộ sưu tập "InfoStudent"
@@ -96,89 +91,6 @@ namespace QuanLySinhVien
 
             // Thêm hoặc cập nhật dữ liệu điểm vào Firebase
             await grade.SetAsync(gradeData);
-        }
-
-
-        private async Task<List<Student>> GetStudentsInClassAsync(string className)
-        {
-            List<Student> students = new List<Student>();
-            QuerySnapshot querySnapshot = await firestoreDb.Collection("InfoStudent").GetSnapshotAsync();
-            foreach (DocumentSnapshot documentSnapshot in querySnapshot.Documents)
-            {
-                string mssv = documentSnapshot.Id;
-                DocumentReference gradeRef = firestoreDb.Collection("InfoStudent").Document(mssv).Collection("Grade").Document(className);
-                DocumentSnapshot gradeSnapshot = await gradeRef.GetSnapshotAsync();
-                if (gradeSnapshot.Exists)
-                {
-                    if (mssv == textBox_mssv.Text)
-                    {
-                        // Lấy điểm từ TextBox
-                        float grade_QT = float.Parse(textBox_qt.Text);
-                        float grade_GK = float.Parse(textBox_gk.Text);
-                        float grade_CK = float.Parse(textBox_ck.Text);
-                        double grade_TBM;
-                        grade_TBM = (grade_QT * 0.15) + (grade_GK * 0.25) + (grade_CK * 0.5);
-                        // Tạo Dictionary chứa dữ liệu điểm
-                        Dictionary<string, object> gradeData = new Dictionary<string, object>();
-                        gradeData.Add("QT", grade_QT);
-                        gradeData.Add("GK", grade_GK);
-                        gradeData.Add("CK", grade_CK);
-                        gradeData.Add("TBM", grade_TBM);
-                        Student student = new Student
-                        {
-                            Mssv = mssv,
-                            Grade = gradeData
-                        };
-                        students.Add(student);
-
-                        // Thêm hoặc cập nhật dữ liệu điểm của sinh viên vào Firebase
-                        await AddOrUpdateGradeAsync(mssv, className, gradeData);
-                    }
-                }
-            }
-            return students;
-        }
-
-        private async Task UpdateListViewWithStudentGrades(string className)
-        {
-            try
-            {
-                List<Student> students = await GetStudentsInClassAsync(className);
-                dataGridView1.Rows.Clear(); // Xóa nội dung cũ
-
-                foreach (var student in students)
-                {
-                    // Tạo một hàng mới cho sinh viên
-                    int rowIndex = dataGridView1.Rows.Add();
-                    DataGridViewRow row = dataGridView1.Rows[rowIndex];
-
-                    // Đặt giá trị của các ô cột
-                    row.Cells["MSSV"].Value = student.Mssv;
-
-
-                    // Truy cập dữ liệu điểm của sinh viên cho lớp đã chọn
-                    var grades = student.Grade;
-                    if (grades != null)
-                    {
-                        row.Cells["QT"].Value = grades.ContainsKey("QT") ? grades["QT"].ToString() : "N/A";
-                        row.Cells["GK"].Value = grades.ContainsKey("GK") ? grades["GK"].ToString() : "N/A";
-                        row.Cells["CK"].Value = grades.ContainsKey("CK") ? grades["CK"].ToString() : "N/A";
-                        row.Cells["TBM"].Value = grades.ContainsKey("TBM") ? grades["TBM"].ToString() : "N/A";
-                    }
-                    else
-                    {
-                        // Nếu không có điểm, đặt giá trị mặc định là "N/A"
-                        row.Cells["QT"].Value = "N/A";
-                        row.Cells["GK"].Value = "N/A";
-                        row.Cells["CK"].Value = "N/A";
-                        row.Cells["TBM"].Value = "N/A";
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
         }
 
 
@@ -199,7 +111,7 @@ namespace QuanLySinhVien
                 string selectedClassName = comboBox_mssv.SelectedItem.ToString();
                 List<Student> students = await GetStudentsInClassByExcelAsync(selectedClassName, dt);
 
-                await UpdateListViewWithStudentGradesByExcel(selectedClassName, dt);
+                await UpdateListViewWithStudentGrades(selectedClassName);
             }
             catch (Exception ex)
             {
@@ -236,6 +148,51 @@ namespace QuanLySinhVien
             }
             return null;
         }
+
+        
+        private async void comboBox_mssv_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            string selectedClassName = comboBox_mssv.SelectedItem.ToString();
+            if (!string.IsNullOrEmpty(selectedClassName))
+            {
+                await UpdateListViewWithStudentGrades(selectedClassName);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn lớp");
+            } 
+                
+        }
+
+
+
+        //--------------------------------------------------------------------------
+
+
+        private async Task<List<Student>> GetStudentAsync(string className)
+        {
+            List<Student> students = new List<Student>();
+            QuerySnapshot querySnapshot = await firestoreDb.Collection("InfoStudent").GetSnapshotAsync();
+            foreach (DocumentSnapshot documentSnapshot in querySnapshot.Documents)
+            {
+                string mssv = documentSnapshot.Id;
+                DocumentReference gradeRef = firestoreDb.Collection("InfoStudent").Document(mssv).Collection("Grade").Document(className);
+                DocumentSnapshot gradeSnapshot = await gradeRef.GetSnapshotAsync();
+                if (gradeSnapshot.Exists)
+                {
+                    Dictionary<string, object> gradeData = gradeSnapshot.ToDictionary();
+                    Student student = new Student
+                    {
+                        Mssv = mssv,
+                        Grade = gradeData
+                    };
+                    students.Add(student);
+                }
+            }
+            return students;
+        }
+
 
         private async Task<List<Student>> GetStudentsInClassByExcelAsync(string className, DataTable dt)
         {
@@ -284,7 +241,96 @@ namespace QuanLySinhVien
             }
             return students;
         }
-        private async Task UpdateListViewWithStudentGradesByExcel(string className, DataTable dt)
+
+
+
+
+        private async Task<List<Student>> GetStudentsInClassAsync(string className)
+        {
+            List<Student> students = new List<Student>();
+            QuerySnapshot querySnapshot = await firestoreDb.Collection("InfoStudent").GetSnapshotAsync();
+            foreach (DocumentSnapshot documentSnapshot in querySnapshot.Documents)
+            {
+                string mssv = documentSnapshot.Id;
+                DocumentReference gradeRef = firestoreDb.Collection("InfoStudent").Document(mssv).Collection("Grade").Document(className);
+                DocumentSnapshot gradeSnapshot = await gradeRef.GetSnapshotAsync();
+                if (gradeSnapshot.Exists)
+                {
+                    if (mssv == textBox_mssv.Text)
+                    {
+                        // Lấy điểm từ TextBox
+                        float grade_QT = float.Parse(textBox_qt.Text);
+                        float grade_GK = float.Parse(textBox_gk.Text);
+                        float grade_CK = float.Parse(textBox_ck.Text);
+                        double grade_TBM;
+                        grade_TBM = (grade_QT * 0.15) + (grade_GK * 0.25) + (grade_CK * 0.5);
+                        // Tạo Dictionary chứa dữ liệu điểm
+                        Dictionary<string, object> gradeData = new Dictionary<string, object>();
+                        gradeData.Add("QT", grade_QT);
+                        gradeData.Add("GK", grade_GK);
+                        gradeData.Add("CK", grade_CK);
+                        gradeData.Add("TBM", grade_TBM);
+                        Student student = new Student
+                        {
+                            Mssv = mssv,
+                            Grade = gradeData
+                        };
+                        students.Add(student);
+
+                        // Thêm hoặc cập nhật dữ liệu điểm của sinh viên vào Firebase
+                        await AddOrUpdateGradeAsync(mssv, className, gradeData);
+                    }
+                }
+            }
+            return students;
+        }
+
+
+
+        //------------------------------------------------------------
+        private async Task UpdateListViewWithStudentGrades(string className)
+        {
+            try
+            {
+                List<Student> students = await GetStudentAsync(className);
+                dataGridView1.Rows.Clear(); // Xóa nội dung cũ
+
+                foreach (var student in students)
+                {
+                    // Tạo một hàng mới cho sinh viên
+                    int rowIndex = dataGridView1.Rows.Add();
+                    DataGridViewRow row = dataGridView1.Rows[rowIndex];
+
+                    // Đặt giá trị của các ô cột
+                    row.Cells["MSSV"].Value = student.Mssv;
+
+
+                    // Truy cập dữ liệu điểm của sinh viên cho lớp đã chọn
+                    var grades = student.Grade;
+                    if (grades != null)
+                    {
+                        row.Cells["QT"].Value = grades.ContainsKey("QT") ? grades["QT"].ToString() : "N/A";
+                        row.Cells["GK"].Value = grades.ContainsKey("GK") ? grades["GK"].ToString() : "N/A";
+                        row.Cells["CK"].Value = grades.ContainsKey("CK") ? grades["CK"].ToString() : "N/A";
+                        row.Cells["TBM"].Value = grades.ContainsKey("TBM") ? grades["TBM"].ToString() : "N/A";
+                    }
+                    else
+                    {
+                        // Nếu không có điểm, đặt giá trị mặc định là "N/A"
+                        row.Cells["QT"].Value = "N/A";
+                        row.Cells["GK"].Value = "N/A";
+                        row.Cells["CK"].Value = "N/A";
+                        row.Cells["TBM"].Value = "N/A";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        /*private async Task UpdateListViewWithStudentGradesByExcel(string className, DataTable dt)
         {
             try
             {
@@ -324,6 +370,6 @@ namespace QuanLySinhVien
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
-        }
+        }*/
     }
 }
