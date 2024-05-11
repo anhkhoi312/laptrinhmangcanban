@@ -80,20 +80,6 @@ namespace QuanLySinhVien
 
         }
 
-        
-        private async Task AddOrUpdateGradeAsync(string mssv, string className, Dictionary<string, object> gradeData)
-        {
-            // Tham chiếu đến tài liệu của sinh viên trong bộ sưu tập "InfoStudent"
-            DocumentReference student = firestoreDb.Collection("InfoStudent").Document(mssv);
-
-            // Tham chiếu đến tài liệu điểm của sinh viên trong bộ sưu tập "Grade"
-            DocumentReference grade = student.Collection("Grade").Document(className);
-
-            // Thêm hoặc cập nhật dữ liệu điểm vào Firebase
-            await grade.SetAsync(gradeData);
-        }
-
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -118,37 +104,6 @@ namespace QuanLySinhVien
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
-
-        public DataTable Doc_Excel(string path)
-        {
-            var stream = File.Open(path, FileMode.Open, FileAccess.Read);
-            var reader = ExcelReaderFactory.CreateReader(stream);
-            var students = reader.AsDataSet();
-            var tables = students.Tables.Cast<DataTable>().ToList();
-
-            foreach (DataTable table in tables)
-            {
-                // Tạo một DataTable mới để chứa dữ liệu từ dòng thứ 2 trở đi
-                DataTable newTable = table.Clone();
-
-                // Lặp qua từng dòng (bỏ qua dòng đầu tiên)
-                for (int i = 1; i < table.Rows.Count; i++)
-                {
-                    // Tạo một DataRow mới cho DataTable mới
-                    DataRow newRow = newTable.Rows.Add();
-
-                    // Copy dữ liệu từ các ô trong dòng hiện tại sang dòng mới
-                    for (int j = 0; j < table.Columns.Count; j++)
-                    {
-                        newRow[j] = table.Rows[i][j];
-                    }
-                }
-
-                return newTable;
-            }
-            return null;
-        }
-
         
         private async void comboBox_mssv_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -167,9 +122,9 @@ namespace QuanLySinhVien
 
 
 
-        //--------------------------------------------------------------------------
+        // Hàm lấy danh sách sinh viên------------------------------------------------------------------------
 
-
+                //Hàm lấy danh sách từ firebase
         private async Task<List<Student>> GetStudentAsync(string className)
         {
             List<Student> students = new List<Student>();
@@ -192,8 +147,7 @@ namespace QuanLySinhVien
             }
             return students;
         }
-
-
+                //Hàm thêm điểm sinh viên từ excel
         private async Task<List<Student>> GetStudentsInClassByExcelAsync(string className, DataTable dt)
         {
 
@@ -244,7 +198,7 @@ namespace QuanLySinhVien
 
 
 
-
+                //Hàm thêm điểm sinh viên từ textbox
         private async Task<List<Student>> GetStudentsInClassAsync(string className)
         {
             List<Student> students = new List<Student>();
@@ -285,9 +239,22 @@ namespace QuanLySinhVien
             return students;
         }
 
+        //Hàm thêm dữ liệu sinh viên vào firebase
+        private async Task AddOrUpdateGradeAsync(string mssv, string className, Dictionary<string, object> gradeData)
+        {
+            // Tham chiếu đến tài liệu của sinh viên trong bộ sưu tập "InfoStudent"
+            DocumentReference student = firestoreDb.Collection("InfoStudent").Document(mssv);
+
+            // Tham chiếu đến tài liệu điểm của sinh viên trong bộ sưu tập "Grade"
+            DocumentReference grade = student.Collection("Grade").Document(className);
+
+            // Thêm hoặc cập nhật dữ liệu điểm vào Firebase
+            await grade.SetAsync(gradeData);
+        }
 
 
-        //------------------------------------------------------------
+
+        //Cập nhật danh sách sinh viên từ firebase in lên listview  ------------------------------------------------------------
         private async Task UpdateListViewWithStudentGrades(string className)
         {
             try
@@ -330,46 +297,36 @@ namespace QuanLySinhVien
             }
         }
 
-        /*private async Task UpdateListViewWithStudentGradesByExcel(string className, DataTable dt)
+        //Hàm đọc file excel
+        public DataTable Doc_Excel(string path)
         {
-            try
+            var stream = File.Open(path, FileMode.Open, FileAccess.Read);
+            var reader = ExcelReaderFactory.CreateReader(stream);
+            var students = reader.AsDataSet();
+            var tables = students.Tables.Cast<DataTable>().ToList();
+
+            foreach (DataTable table in tables)
             {
-                List<Student> students = await GetStudentsInClassByExcelAsync(className, dt);
-                dataGridView1.Rows.Clear(); // Xóa nội dung cũ
+                // Tạo một DataTable mới để chứa dữ liệu từ dòng thứ 2 trở đi
+                DataTable newTable = table.Clone();
 
-                foreach (var student in students)
+                // Lặp qua từng dòng (bỏ qua dòng đầu tiên)
+                for (int i = 1; i < table.Rows.Count; i++)
                 {
-                    // Tạo một hàng mới cho sinh viên
-                    int rowIndex = dataGridView1.Rows.Add();
-                    DataGridViewRow row = dataGridView1.Rows[rowIndex];
+                    // Tạo một DataRow mới cho DataTable mới
+                    DataRow newRow = newTable.Rows.Add();
 
-                    // Đặt giá trị của các ô cột
-                    row.Cells["MSSV"].Value = student.Mssv;
-
-
-                    // Truy cập dữ liệu điểm của sinh viên cho lớp đã chọn
-                    var grades = student.Grade;
-                    if (grades != null)
+                    // Copy dữ liệu từ các ô trong dòng hiện tại sang dòng mới
+                    for (int j = 0; j < table.Columns.Count; j++)
                     {
-                        row.Cells["QT"].Value = grades.ContainsKey("QT") ? grades["QT"].ToString() : "N/A";
-                        row.Cells["GK"].Value = grades.ContainsKey("GK") ? grades["GK"].ToString() : "N/A";
-                        row.Cells["CK"].Value = grades.ContainsKey("CK") ? grades["CK"].ToString() : "N/A";
-                        row.Cells["TBM"].Value = grades.ContainsKey("TBM") ? grades["TBM"].ToString() : "N/A";
-                    }
-                    else
-                    {
-                        // Nếu không có điểm, đặt giá trị mặc định là "N/A"
-                        row.Cells["QT"].Value = "N/A";
-                        row.Cells["GK"].Value = "N/A";
-                        row.Cells["CK"].Value = "N/A";
-                        row.Cells["TBM"].Value = "N/A";
+                        newRow[j] = table.Rows[i][j];
                     }
                 }
+
+                return newTable;
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
-        }*/
+            return null;
+        }
+
     }
 }
