@@ -103,12 +103,6 @@ namespace QuanLySinhVien.Student
             }
         }
 
-        private void btn_dangxuat_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            DangNhap form = new DangNhap();
-            form.ShowDialog();
-        }
 
         private async void btn_taianh_Click(object sender, EventArgs e)
         {
@@ -148,6 +142,5 @@ namespace QuanLySinhVien.Student
             }
         }
 
-      
     }
 }

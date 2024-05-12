@@ -62,5 +62,12 @@ namespace QuanLySinhVien
         {
 
         }
+
+        private void bt_dangXuat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            DangNhap form = new DangNhap();
+            form.ShowDialog();
+        }
     }
 }

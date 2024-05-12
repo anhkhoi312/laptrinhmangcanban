@@ -29,7 +29,7 @@ namespace QuanLySinhVien
                 if (notifications != null && notifications.Count > 0)
                 {
                     notifications.Reverse(); // Đảo ngược danh sách để hiển thị thông báo mới nhất lên trên
-                    string separator = new string('-', 130);
+                    string separator = new string('-', 125);
                     string joinedNotifications = string.Join($"\n\n{separator}\n\n", notifications);
                     richTextBox2.Text = joinedNotifications;
                 }
@@ -91,7 +91,7 @@ namespace QuanLySinhVien
                                 MessageBox.Show($"Không tìm thấy thông tin sinh viên với mã số {studentId}");
                             }
                         }
-                        MessageBox.Show("Đã gửi tin nhắn thành công cho lớp " + className);
+                        MessageBox.Show("Đã gửi thông báo thành công cho lớp " + className);
                     }
                     else
                     {
