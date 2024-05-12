@@ -46,10 +46,10 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(338, 34);
+            this.panel1.Location = new System.Drawing.Point(338, 2);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(937, 531);
+            this.panel1.Size = new System.Drawing.Size(978, 593);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -59,9 +59,9 @@
             this.btXemdiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btXemdiem.Image = ((System.Drawing.Image)(resources.GetObject("btXemdiem.Image")));
             this.btXemdiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btXemdiem.Location = new System.Drawing.Point(23, 104);
+            this.btXemdiem.Location = new System.Drawing.Point(3, 2);
             this.btXemdiem.Name = "btXemdiem";
-            this.btXemdiem.Size = new System.Drawing.Size(285, 82);
+            this.btXemdiem.Size = new System.Drawing.Size(333, 88);
             this.btXemdiem.TabIndex = 13;
             this.btXemdiem.Text = " Xem điểm";
             this.btXemdiem.UseVisualStyleBackColor = true;
@@ -73,9 +73,9 @@
             this.btThongbao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btThongbao.Image = ((System.Drawing.Image)(resources.GetObject("btThongbao.Image")));
             this.btThongbao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btThongbao.Location = new System.Drawing.Point(23, 234);
+            this.btThongbao.Location = new System.Drawing.Point(3, 85);
             this.btThongbao.Name = "btThongbao";
-            this.btThongbao.Size = new System.Drawing.Size(285, 82);
+            this.btThongbao.Size = new System.Drawing.Size(333, 91);
             this.btThongbao.TabIndex = 14;
             this.btThongbao.Text = "Thông báo";
             this.btThongbao.UseVisualStyleBackColor = true;
@@ -87,9 +87,9 @@
             this.btUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btUser.Image = ((System.Drawing.Image)(resources.GetObject("btUser.Image")));
             this.btUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btUser.Location = new System.Drawing.Point(23, 365);
+            this.btUser.Location = new System.Drawing.Point(3, 173);
             this.btUser.Name = "btUser";
-            this.btUser.Size = new System.Drawing.Size(285, 82);
+            this.btUser.Size = new System.Drawing.Size(333, 82);
             this.btUser.TabIndex = 15;
             this.btUser.Text = "Người dùng";
             this.btUser.UseVisualStyleBackColor = true;
