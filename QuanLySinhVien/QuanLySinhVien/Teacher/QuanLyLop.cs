@@ -14,7 +14,7 @@ namespace QuanLySinhVien
     public partial class QuanLyLop : Form
     {
         FirestoreDb firestoreDb;
-
+        string teacherId;
 
         public class Student
         {
@@ -29,6 +29,7 @@ namespace QuanLySinhVien
             InitializeComponent();
             string projectId = "ltmcb-7d1a6";
             firestoreDb = FirestoreDb.Create(projectId);
+            teacherId = DangNhap.maso;
         }
 
         private void button3_nhapfileexcel_Click(object sender, EventArgs e)
@@ -39,28 +40,13 @@ namespace QuanLySinhVien
         {
 
         }
-        private Task<List<string>> GetClassesAsync()
-        {
-            return firestoreDb.Collection("InfoClasses").GetSnapshotAsync()
-                .ContinueWith(queryTask =>
-                {
-                    List<string> classNames = new List<string>();
-                    QuerySnapshot querySnapshot = queryTask.Result;
-                    foreach (DocumentSnapshot documentSnapshot in querySnapshot.Documents)
-                    {
-                        string className = documentSnapshot.Id;
-                        classNames.Add(className);
-                    }
-                    return classNames;
-                });
-        }
+      
 
-     
-
+    
         private async Task AddStudentAsync(string classId, string mssv)
         {
             // Tham chiếu đến tài liệu của lớp trong bộ sưu tập "InfoClass"
-            DocumentReference classRef = firestoreDb.Collection("InfoClass").Document(classId);
+            DocumentReference classRef = firestoreDb.Collection("InfoClasses").Document(classId);
 
             DocumentSnapshot classSnapshot = await classRef.GetSnapshotAsync();
             List<string> studentList = new List<string>();
@@ -79,7 +65,7 @@ namespace QuanLySinhVien
         private async Task<List<string>> GetStudentsInClassAsync(string classId)
         {
             // Tham chiếu đến tài liệu của lớp trong bộ sưu tập "InfoClass"
-            DocumentReference classRef = firestoreDb.Collection("InfoClass").Document(classId);
+            DocumentReference classRef = firestoreDb.Collection("InfoClasses").Document(classId);
 
             DocumentSnapshot classSnapshot = await classRef.GetSnapshotAsync();
             List<string> studentList = new List<string>();
@@ -158,8 +144,6 @@ namespace QuanLySinhVien
 
                 }
             }
-
-
         }
 
        
@@ -168,7 +152,7 @@ namespace QuanLySinhVien
             try
             {
                 // Tham chiếu đến tài liệu của lớp trong bộ sưu tập "InfoClass"
-                DocumentReference classRef = firestoreDb.Collection("InfoClass").Document(classId);
+                DocumentReference classRef = firestoreDb.Collection("InfoClasses").Document(classId);
 
                 // Lấy danh sách sinh viên từ tài liệu lớp
                 DocumentSnapshot classSnapshot = await classRef.GetSnapshotAsync();
@@ -190,21 +174,28 @@ namespace QuanLySinhVien
             }
         }
 
-        private void QuanLyLop_Load_1(object sender, EventArgs e)
+        private async void QuanLyLop_Load_1(object sender, EventArgs e)
         {
-            Task<List<string>> task = GetClassesAsync();
-            task.ContinueWith(completedTask =>
+            try
             {
-                if (completedTask.Status == TaskStatus.RanToCompletion)
+                CollectionReference infoTeacherRef = firestoreDb.Collection("InfoTeacher");
+                DocumentReference docRef = infoTeacherRef.Document(teacherId);
+                DocumentSnapshot snapshot = await docRef.GetSnapshotAsync();
+
+                List<string> manage = snapshot.GetValue<List<string>>("Manage");
+                if (manage != null && manage.Count > 0)
                 {
-                    List<string> Danhsach = completedTask.Result;
-                    comboBox_mssv.DataSource = Danhsach;
+                    comboBox_mssv.Items.AddRange(manage.ToArray());
                 }
-                else if (completedTask.IsFaulted)
+                else
                 {
-                    // Xử lý lỗi nếu có
+                    MessageBox.Show("Bạn đang không quản lý lớp nào !");
                 }
-            }, TaskScheduler.FromCurrentSynchronizationContext());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đã xảy ra lỗi khi tải danh sách lớp: " + ex.Message);
+            }
         }
 
         private async void button1_Click_1(object sender, EventArgs e)
@@ -235,6 +226,19 @@ namespace QuanLySinhVien
         private void button3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private async void comboBox_mssv_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedClassName = comboBox_mssv.SelectedItem.ToString();
+            if (!string.IsNullOrEmpty(selectedClassName))
+            {
+                await UpdateListViewWithStudent(selectedClassName);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn lớp");
+            }
         }
     }
 }
