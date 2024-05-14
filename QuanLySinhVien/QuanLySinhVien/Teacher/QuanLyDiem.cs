@@ -218,6 +218,7 @@ namespace QuanLySinhVien
                         float grade_CK = float.Parse(textBox_ck.Text);
                         double grade_TBM = (grade_QT * 0.15) + (grade_GK * 0.25) + (grade_CK * 0.5);
                         grade_TBM = Math.Round(grade_TBM, 1);
+
                         // Tạo Dictionary chứa dữ liệu điểm
                         Dictionary<string, object> gradeData = new Dictionary<string, object>();
                         gradeData.Add("QT", grade_QT);

@@ -74,5 +74,12 @@ namespace QuanLySinhVien.Student
                 form.ShowDialog();
 
         }
+
+        private void btDeadline_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Deadline form = new Deadline();
+            form.ShowDialog();
+        }
     }
 }
