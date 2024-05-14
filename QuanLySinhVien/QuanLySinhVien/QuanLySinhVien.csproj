@@ -222,6 +222,12 @@
     <Compile Include="Login\DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="Student\Deadline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\Deadline.Designer.cs">
+      <DependentUpon>Deadline.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student\NhanTb.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -245,6 +251,12 @@
     </Compile>
     <Compile Include="Student\xemDiem.Designer.cs">
       <DependentUpon>xemDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\giaoTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher\giaoTask.Designer.cs">
+      <DependentUpon>giaoTask.cs</DependentUpon>
     </Compile>
     <Compile Include="Teacher\QuanLyDiem.cs">
       <SubType>Form</SubType>
@@ -298,6 +310,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Student\xemDiem.resx">
       <DependentUpon>xemDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\giaoTask.resx">
+      <DependentUpon>giaoTask.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Teacher\QuanLyDiem.resx">
       <DependentUpon>QuanLyDiem.cs</DependentUpon>

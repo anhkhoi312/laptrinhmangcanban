@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThongKe));
             this.tracuu = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,6 +48,7 @@
             this.GK = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CK = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TBM = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -188,15 +188,8 @@
             this.QT,
             this.GK,
             this.CK,
-            this.TBM});
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
+            this.TBM,
+            this.type});
             this.dataGridView1.Location = new System.Drawing.Point(14, 46);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
@@ -215,7 +208,7 @@
             this.panel1.Controls.Add(this.comboBox_mssv);
             this.panel1.Controls.Add(this.label_monhoc_qld);
             this.panel1.Location = new System.Drawing.Point(133, 14);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(648, 91);
             this.panel1.TabIndex = 35;
@@ -232,7 +225,7 @@
             this.panel2.Controls.Add(this.tb_quamon);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Location = new System.Drawing.Point(76, 130);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(972, 83);
             this.panel2.TabIndex = 36;
@@ -247,14 +240,14 @@
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Location = new System.Drawing.Point(100, 220);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(930, 362);
             this.panel3.TabIndex = 37;
             // 
             // MSSV
             // 
-            this.MSSV.HeaderText = "Mã số sinh viên";
+            this.MSSV.HeaderText = "MSSV";
             this.MSSV.MinimumWidth = 6;
             this.MSSV.Name = "MSSV";
             this.MSSV.ReadOnly = true;
@@ -291,6 +284,14 @@
             this.TBM.Name = "TBM";
             this.TBM.ReadOnly = true;
             this.TBM.Width = 125;
+            // 
+            // type
+            // 
+            this.type.HeaderText = "Xếp loại";
+            this.type.MinimumWidth = 8;
+            this.type.Name = "type";
+            this.type.ReadOnly = true;
+            this.type.Width = 115;
             // 
             // ThongKe
             // 
@@ -341,5 +342,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn GK;
         private System.Windows.Forms.DataGridViewTextBoxColumn CK;
         private System.Windows.Forms.DataGridViewTextBoxColumn TBM;
+        private System.Windows.Forms.DataGridViewTextBoxColumn type;
     }
 }

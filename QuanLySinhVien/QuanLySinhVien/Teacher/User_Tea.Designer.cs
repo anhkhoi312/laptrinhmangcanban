@@ -61,7 +61,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(155, 456);
+            this.label1.Location = new System.Drawing.Point(162, 423);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(168, 36);
@@ -73,11 +73,12 @@
             this.tb_mail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_mail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tb_mail.Location = new System.Drawing.Point(127, 258);
+            this.tb_mail.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_mail.Location = new System.Drawing.Point(127, 280);
             this.tb_mail.Margin = new System.Windows.Forms.Padding(2);
             this.tb_mail.Multiline = true;
             this.tb_mail.Name = "tb_mail";
-            this.tb_mail.Size = new System.Drawing.Size(813, 92);
+            this.tb_mail.Size = new System.Drawing.Size(750, 70);
             this.tb_mail.TabIndex = 6;
             // 
             // tb_birth
@@ -85,11 +86,12 @@
             this.tb_birth.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_birth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tb_birth.Location = new System.Drawing.Point(127, 443);
+            this.tb_birth.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_birth.Location = new System.Drawing.Point(127, 454);
             this.tb_birth.Margin = new System.Windows.Forms.Padding(2);
             this.tb_birth.Multiline = true;
             this.tb_birth.Name = "tb_birth";
-            this.tb_birth.Size = new System.Drawing.Size(813, 92);
+            this.tb_birth.Size = new System.Drawing.Size(750, 70);
             this.tb_birth.TabIndex = 7;
             // 
             // tb_phonenum
@@ -97,11 +99,12 @@
             this.tb_phonenum.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_phonenum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tb_phonenum.Location = new System.Drawing.Point(127, 625);
+            this.tb_phonenum.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_phonenum.Location = new System.Drawing.Point(127, 641);
             this.tb_phonenum.Margin = new System.Windows.Forms.Padding(2);
             this.tb_phonenum.Multiline = true;
             this.tb_phonenum.Name = "tb_phonenum";
-            this.tb_phonenum.Size = new System.Drawing.Size(813, 92);
+            this.tb_phonenum.Size = new System.Drawing.Size(750, 70);
             this.tb_phonenum.TabIndex = 8;
             // 
             // tb_address
@@ -109,11 +112,12 @@
             this.tb_address.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_address.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tb_address.Location = new System.Drawing.Point(127, 798);
+            this.tb_address.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_address.Location = new System.Drawing.Point(127, 818);
             this.tb_address.Margin = new System.Windows.Forms.Padding(2);
             this.tb_address.Multiline = true;
             this.tb_address.Name = "tb_address";
-            this.tb_address.Size = new System.Drawing.Size(813, 89);
+            this.tb_address.Size = new System.Drawing.Size(750, 70);
             this.tb_address.TabIndex = 9;
             // 
             // pictureBox6
@@ -197,11 +201,12 @@
             this.tb_name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tb_name.Location = new System.Drawing.Point(127, 68);
+            this.tb_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_name.Location = new System.Drawing.Point(127, 92);
             this.tb_name.Margin = new System.Windows.Forms.Padding(2);
             this.tb_name.Multiline = true;
             this.tb_name.Name = "tb_name";
-            this.tb_name.Size = new System.Drawing.Size(813, 104);
+            this.tb_name.Size = new System.Drawing.Size(736, 61);
             this.tb_name.TabIndex = 11;
             // 
             // btn_UpLoadAva
@@ -209,10 +214,10 @@
             this.btn_UpLoadAva.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_UpLoadAva.BackColor = System.Drawing.Color.Thistle;
             this.btn_UpLoadAva.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_UpLoadAva.Location = new System.Drawing.Point(312, 55);
+            this.btn_UpLoadAva.Location = new System.Drawing.Point(269, 102);
             this.btn_UpLoadAva.Margin = new System.Windows.Forms.Padding(2);
             this.btn_UpLoadAva.Name = "btn_UpLoadAva";
-            this.btn_UpLoadAva.Size = new System.Drawing.Size(114, 50);
+            this.btn_UpLoadAva.Size = new System.Drawing.Size(114, 39);
             this.btn_UpLoadAva.TabIndex = 32;
             this.btn_UpLoadAva.Text = "Tải ảnh lên";
             this.btn_UpLoadAva.UseVisualStyleBackColor = false;
@@ -226,7 +231,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(469, 1106);
             this.panel1.TabIndex = 33;
@@ -247,7 +252,7 @@
             this.panel2.Controls.Add(this.tb_mail);
             this.panel2.Controls.Add(this.tb_birth);
             this.panel2.Location = new System.Drawing.Point(476, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1001, 1115);
             this.panel2.TabIndex = 34;
@@ -260,7 +265,7 @@
             this.panel3.Controls.Add(this.panel1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1477, 1106);
             this.panel3.TabIndex = 35;

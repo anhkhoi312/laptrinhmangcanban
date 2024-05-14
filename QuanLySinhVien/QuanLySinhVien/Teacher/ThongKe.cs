@@ -77,13 +77,18 @@ namespace QuanLySinhVien
         private async void tracuu_Click(object sender, EventArgs e)
         {
             try
-            {  // lấy tên lớp được chọn từ comboBox
-                string selectedClassName = comboBox_mssv.SelectedItem.ToString();
+            {
+                // Hiển thị thông báo đang tải dữ liệu
+                dataGridView1.Rows.Clear();
+                int temp = dataGridView1.Rows.Add();
+                DataGridViewRow loadingRow = dataGridView1.Rows[temp];
+                loadingRow.Cells["MSSV"].Value = "Đang lấy dữ liệu...";
 
+                // lấy tên lớp được chọn từ comboBox
+                string selectedClassName = comboBox_mssv.SelectedItem.ToString();
 
                 int count = await CountStudentsInClassAsync(selectedClassName);
                 textBox1.Text = count.ToString();
-                List<Student> students = await GetStudentsInClassAsync(selectedClassName);
                 await UpdateListViewWithStudentGrades(selectedClassName);
                 int passedCount = 0;
                 int failedCount = 0;
@@ -141,6 +146,7 @@ namespace QuanLySinhVien
         {
             try
             {
+
                 List<Student> students = await GetStudentsInClassAsync(className);
                 dataGridView1.Rows.Clear(); // Xóa nội dung cũ
 
@@ -161,6 +167,32 @@ namespace QuanLySinhVien
                         row.Cells["GK"].Value = grades.ContainsKey("GK") ? grades["GK"].ToString() : "N/A";
                         row.Cells["CK"].Value = grades.ContainsKey("CK") ? grades["CK"].ToString() : "N/A";
                         row.Cells["TBM"].Value = grades.ContainsKey("TBM") ? grades["TBM"].ToString() : "N/A";
+
+                        double tbm = double.Parse(row.Cells["TBM"].Value.ToString());
+                        if (tbm < 5)
+                        {
+                            row.Cells["Type"].Value = "F";
+                        }
+                        else if (tbm >=5 && tbm<6)
+                        {
+                            row.Cells["Type"].Value = "C";
+                        }
+                        else if (tbm >= 6 && tbm < 7)
+                        {
+                            row.Cells["Type"].Value = "B";
+                        }
+                        else if (tbm >= 7 && tbm < 8)
+                        {
+                            row.Cells["Type"].Value = "B+";
+                        }
+                        else if (tbm >= 8 && tbm < 9)
+                        {
+                            row.Cells["Type"].Value = "A";
+                        }
+                        else if (tbm >= 9 && tbm <=10)
+                        {
+                            row.Cells["Type"].Value = "A+";
+                        }
                     }
                     else
                     {

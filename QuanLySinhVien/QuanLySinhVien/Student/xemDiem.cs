@@ -30,6 +30,8 @@ namespace QuanLySinhVien.Student
                 {
                     // Xóa dữ liệu cũ trong dataGridView1
                     dataGridView1.Rows.Clear();
+                    double totalTBMxTC = 0;
+                    int totalTC = 0;
 
                     // Lặp qua từng tài liệu (môn học) trong subcollection "Grade"
                     foreach (DocumentSnapshot docSnapshot in querySnapshot.Documents)
@@ -50,12 +52,95 @@ namespace QuanLySinhVien.Student
                         row.Cells["GK"].Value = diem.ContainsKey("GK") ? diem["GK"].ToString() : "N/A";
                         row.Cells["CK"].Value = diem.ContainsKey("CK") ? diem["CK"].ToString() : "N/A";
                         row.Cells["TBM"].Value = diem.ContainsKey("TBM") ? diem["TBM"].ToString() : "N/A";
+
+                        // Lấy giá trị của cột "TC" từ "InfoClasses"
+                        int tc = await GetTCFromInfoClasses(maMonHoc);
+                        row.Cells["TC"].Value = tc.ToString();
+
+                        // Cập nhật tổng TBMxTC và tổng số tín chỉ
+                        if (diem.ContainsKey("TBM"))
+                        {
+                            double tbm = Convert.ToDouble(diem["TBM"]);
+                            totalTBMxTC += tbm * tc;
+                            totalTC += tc;
+                        }
+                    }
+                    // Tính trung bình chung
+                    double averageTBM = totalTBMxTC / totalTC;
+
+                    // Thêm hàng trung bình chung vào cuối bảng điểm
+                    int averageRowIndex = dataGridView1.Rows.Add();
+                    DataGridViewRow averageRow = dataGridView1.Rows[averageRowIndex];
+                    averageRow.Cells["MA_MH"].Value = "Trung bình chung";
+                    averageRow.Cells["TC"].Value = averageTBM.ToString();
+
+                    //XẾP LOẠI
+                    if (averageTBM < 3)
+                    {
+                        averageRow.Cells["QT"].Value = "F";
+                    }
+                    if (averageTBM >= 3 && averageTBM < 4)
+                    {
+                        averageRow.Cells["QT"].Value = "D (Kém)";
+                    }
+                    if (averageTBM >= 4 && averageTBM < 5)
+                    {
+                        averageRow.Cells["QT"].Value = "D+ (Yếu)";
+                    }
+                    else if (averageTBM >= 5 && averageTBM < 6)
+                    {
+                        averageRow.Cells["QT"].Value = "C (Trung bình)";
+                    }
+                    else if (averageTBM >= 6 && averageTBM < 7)
+                    {
+                        averageRow.Cells["QT"].Value = "B (TB Khá)";
+                    }
+                    else if (averageTBM >= 7 && averageTBM < 8)
+                    {
+                        averageRow.Cells["QT"].Value = "B+ (Khá)";
+                    }
+                    else if (averageTBM >= 8 && averageTBM < 9)
+                    {
+                        averageRow.Cells["QT"].Value = "A (Giỏi)";
+                    }
+                    else if (averageTBM >= 9 && averageTBM <= 10)
+                    {
+                        averageRow.Cells["QT"].Value = "A+ (Xuất sắc)";
                     }
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi khi cập nhật DataGridView: " + ex.Message);
+            }
+        }
+
+        private async Task<int> GetTCFromInfoClasses(string maMonHoc)
+        {
+            try
+            {
+                // Reference đến tài liệu lớp học trong bảng "InfoClasses"
+                DocumentReference lopHocRef = Db.Collection("InfoClasses").Document(maMonHoc);
+
+                // Lấy dữ liệu từ tài liệu lớp học
+                DocumentSnapshot docSnapshot = await lopHocRef.GetSnapshotAsync();
+
+                // Kiểm tra xem tài liệu có tồn tại không
+                if (docSnapshot.Exists)
+                {
+                    // Lấy giá trị của trường "TC" từ tài liệu
+                    int tc = docSnapshot.GetValue<int>("TC");
+                    return tc;
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi lấy dữ liệu từ InfoClasses: " + ex.Message);
+                return 0;
             }
         }
 

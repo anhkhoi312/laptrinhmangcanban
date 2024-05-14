@@ -1,5 +1,7 @@
-﻿using System;
+﻿using QuanLySinhVien.Teacher;
+using System;
 using System.Drawing;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace QuanLySinhVien
@@ -67,6 +69,13 @@ namespace QuanLySinhVien
         {
             this.Close();
             DangNhap form = new DangNhap();
+            form.ShowDialog();
+        }
+
+        private void btTask_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            giaoTask form = new giaoTask();
             form.ShowDialog();
         }
     }
