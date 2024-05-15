@@ -1,11 +1,6 @@
 ﻿using Google.Cloud.Firestore;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -20,10 +15,7 @@ namespace QuanLySinhVien
         {
             public string Mssv { get; set; }
             public Dictionary<string, object> info { get; set; }
-
-
         }
-
         public QuanLyLop()
         {
             InitializeComponent();
@@ -32,17 +24,6 @@ namespace QuanLySinhVien
             teacherId = DangNhap.maso;
         }
 
-        private void button3_nhapfileexcel_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-      
-
-    
         private async Task AddStudentAsync(string classId, string mssv)
         {
             // Tham chiếu đến tài liệu của lớp trong bộ sưu tập "InfoClass"
@@ -76,7 +57,6 @@ namespace QuanLySinhVien
 
             return studentList;
         }
-
 
         private async Task<List<Student>> GetStudentsAsync(string classId)
         {
@@ -146,7 +126,6 @@ namespace QuanLySinhVien
             }
         }
 
-       
         private async Task RemoveStudentAsync(string classId, string mssv)
         {
             try
@@ -174,7 +153,7 @@ namespace QuanLySinhVien
             }
         }
 
-        private async void QuanLyLop_Load_1(object sender, EventArgs e)
+        private async void QuanLyLop_Load(object sender, EventArgs e)
         {
             try
             {
@@ -197,8 +176,31 @@ namespace QuanLySinhVien
                 MessageBox.Show("Đã xảy ra lỗi khi tải danh sách lớp: " + ex.Message);
             }
         }
+        private async void comboBox_mssv_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
-        private async void button1_Click_1(object sender, EventArgs e)
+            string selectedClassName = comboBox_mssv.SelectedItem.ToString();
+            if (!string.IsNullOrEmpty(selectedClassName))
+            {
+                await UpdateListViewWithStudent(selectedClassName);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn lớp");
+            }
+        }
+
+        private async void button1_them_Click(object sender, EventArgs e)
+        {
+
+            // lấy tên lớp được chọn từ comboBox
+            string classId = comboBox_mssv.SelectedItem.ToString();
+            string mssv = textBox1.Text;
+            await AddStudentAsync(classId, mssv);
+            await UpdateListViewWithStudent(classId);
+        }
+
+        private async void button1_Click(object sender, EventArgs e)
         {
             try
             {  // lấy tên lớp được chọn từ comboBox
@@ -211,33 +213,6 @@ namespace QuanLySinhVien
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
-            }
-        }
-
-        private async void button1_them_Click_1(object sender, EventArgs e)
-        {
-            // lấy tên lớp được chọn từ comboBox
-            string classId = comboBox_mssv.SelectedItem.ToString();
-            string mssv = textBox1.Text;
-            await AddStudentAsync(classId, mssv);
-            await UpdateListViewWithStudent(classId);
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private async void comboBox_mssv_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string selectedClassName = comboBox_mssv.SelectedItem.ToString();
-            if (!string.IsNullOrEmpty(selectedClassName))
-            {
-                await UpdateListViewWithStudent(selectedClassName);
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng chọn lớp");
             }
         }
     }

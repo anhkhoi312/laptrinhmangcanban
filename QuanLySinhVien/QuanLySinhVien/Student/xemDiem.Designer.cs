@@ -34,6 +34,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.MA_MH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.QT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GK = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CK = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,6 +64,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MA_MH,
+            this.TC,
             this.QT,
             this.GK,
             this.CK,
@@ -108,7 +110,15 @@
             this.MA_MH.MinimumWidth = 10;
             this.MA_MH.Name = "MA_MH";
             this.MA_MH.ReadOnly = true;
-            this.MA_MH.Width = 200;
+            this.MA_MH.Width = 150;
+            // 
+            // TC
+            // 
+            this.TC.HeaderText = "TC";
+            this.TC.MinimumWidth = 8;
+            this.TC.Name = "TC";
+            this.TC.ReadOnly = true;
+            this.TC.Width = 50;
             // 
             // QT
             // 
@@ -171,6 +181,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridViewTextBoxColumn MA_MH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TC;
         private System.Windows.Forms.DataGridViewTextBoxColumn QT;
         private System.Windows.Forms.DataGridViewTextBoxColumn GK;
         private System.Windows.Forms.DataGridViewTextBoxColumn CK;

@@ -66,13 +66,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_major.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.tb_major.Cursor = System.Windows.Forms.Cursors.Default;
-            this.tb_major.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_major.Location = new System.Drawing.Point(122, 42);
+            this.tb_major.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_major.Location = new System.Drawing.Point(111, 42);
             this.tb_major.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_major.Multiline = true;
             this.tb_major.Name = "tb_major";
             this.tb_major.ReadOnly = true;
-            this.tb_major.Size = new System.Drawing.Size(762, 76);
+            this.tb_major.Size = new System.Drawing.Size(700, 70);
             this.tb_major.TabIndex = 23;
             // 
             // pictureBox6
@@ -93,13 +93,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_address.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.tb_address.Cursor = System.Windows.Forms.Cursors.Default;
-            this.tb_address.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_address.Location = new System.Drawing.Point(122, 956);
+            this.tb_address.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_address.Location = new System.Drawing.Point(122, 934);
             this.tb_address.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_address.Multiline = true;
             this.tb_address.Name = "tb_address";
             this.tb_address.ReadOnly = true;
-            this.tb_address.Size = new System.Drawing.Size(762, 76);
+            this.tb_address.Size = new System.Drawing.Size(700, 70);
             this.tb_address.TabIndex = 21;
             // 
             // tb_phonenum
@@ -108,13 +108,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_phonenum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.tb_phonenum.Cursor = System.Windows.Forms.Cursors.Default;
-            this.tb_phonenum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_phonenum.Location = new System.Drawing.Point(122, 775);
+            this.tb_phonenum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_phonenum.Location = new System.Drawing.Point(122, 766);
             this.tb_phonenum.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_phonenum.Multiline = true;
             this.tb_phonenum.Name = "tb_phonenum";
             this.tb_phonenum.ReadOnly = true;
-            this.tb_phonenum.Size = new System.Drawing.Size(762, 76);
+            this.tb_phonenum.Size = new System.Drawing.Size(700, 70);
             this.tb_phonenum.TabIndex = 20;
             // 
             // tb_dateofbirth
@@ -123,13 +123,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_dateofbirth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.tb_dateofbirth.Cursor = System.Windows.Forms.Cursors.Default;
-            this.tb_dateofbirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_dateofbirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_dateofbirth.Location = new System.Drawing.Point(122, 581);
             this.tb_dateofbirth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_dateofbirth.Multiline = true;
             this.tb_dateofbirth.Name = "tb_dateofbirth";
             this.tb_dateofbirth.ReadOnly = true;
-            this.tb_dateofbirth.Size = new System.Drawing.Size(762, 76);
+            this.tb_dateofbirth.Size = new System.Drawing.Size(700, 70);
             this.tb_dateofbirth.TabIndex = 19;
             // 
             // tb_gmail
@@ -138,13 +138,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_gmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.tb_gmail.Cursor = System.Windows.Forms.Cursors.Default;
-            this.tb_gmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_gmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_gmail.Location = new System.Drawing.Point(122, 392);
             this.tb_gmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_gmail.Multiline = true;
             this.tb_gmail.Name = "tb_gmail";
             this.tb_gmail.ReadOnly = true;
-            this.tb_gmail.Size = new System.Drawing.Size(762, 78);
+            this.tb_gmail.Size = new System.Drawing.Size(700, 70);
             this.tb_gmail.TabIndex = 18;
             // 
             // pictureBox5
@@ -249,24 +249,24 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_class.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.tb_class.Cursor = System.Windows.Forms.Cursors.Default;
-            this.tb_class.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_class.Location = new System.Drawing.Point(122, 215);
+            this.tb_class.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_class.Location = new System.Drawing.Point(111, 221);
             this.tb_class.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_class.Multiline = true;
             this.tb_class.Name = "tb_class";
             this.tb_class.ReadOnly = true;
-            this.tb_class.Size = new System.Drawing.Size(762, 76);
+            this.tb_class.Size = new System.Drawing.Size(700, 70);
             this.tb_class.TabIndex = 26;
             // 
             // btn_taianh
             // 
             this.btn_taianh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_taianh.BackColor = System.Drawing.Color.Thistle;
-            this.btn_taianh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_taianh.Location = new System.Drawing.Point(215, 10);
+            this.btn_taianh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_taianh.Location = new System.Drawing.Point(195, 22);
             this.btn_taianh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_taianh.Name = "btn_taianh";
-            this.btn_taianh.Size = new System.Drawing.Size(148, 48);
+            this.btn_taianh.Size = new System.Drawing.Size(124, 36);
             this.btn_taianh.TabIndex = 31;
             this.btn_taianh.Text = "Tải ảnh lên";
             this.btn_taianh.UseVisualStyleBackColor = false;

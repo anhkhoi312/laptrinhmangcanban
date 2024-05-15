@@ -135,7 +135,7 @@ namespace QuanLySinhVien
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.label_monhoc_qld);
             this.panel1.Location = new System.Drawing.Point(268, 38);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(757, 80);
             this.panel1.TabIndex = 28;
@@ -148,7 +148,7 @@ namespace QuanLySinhVien
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.richTextBox1);
             this.panel2.Location = new System.Drawing.Point(235, 169);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(835, 227);
             this.panel2.TabIndex = 29;
@@ -162,7 +162,7 @@ namespace QuanLySinhVien
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Controls.Add(this.richTextBox2);
             this.panel3.Location = new System.Drawing.Point(236, 428);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(834, 286);
             this.panel3.TabIndex = 30;
