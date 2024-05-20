@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLySinhVien.Chat;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -77,9 +78,15 @@ namespace QuanLySinhVien.Student
 
         private void btDeadline_Click(object sender, EventArgs e)
         {
-            this.Close();
             Deadline form = new Deadline();
-            form.ShowDialog();
+            form.Show();
+        }
+
+        private void btChat_Click(object sender, EventArgs e)
+        {
+            BATDAU bATDAU = new BATDAU();
+            bATDAU.Show();
+           
         }
     }
 }

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net.Mail;
 using System.Net;
 using System.Windows.Forms;
+using QuanLySinhVien.Chat;
 
 namespace QuanLySinhVien
 {
@@ -50,13 +51,13 @@ namespace QuanLySinhVien
                 {
                     if (data.Type == "gv")
                     {
-
+                        BATDAU.maso = maso;
                         TrangChu_Tea trangChu = new TrangChu_Tea();
                         trangChu.ShowDialog();
                     }
                     else if (data.Type == "st")
                     {
-
+                        BATDAU.maso = maso;
                         TrangChu_St trangChu = new TrangChu_St();
                         trangChu.ShowDialog();
                     }
@@ -142,5 +143,18 @@ namespace QuanLySinhVien
             return new string(Enumerable.Repeat(chars, 8).Select(s => s[random.Next(s.Length)]).ToArray());
         }
 
+        private void btn_Login_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btn_Login.PerformClick();
+            }
+        }
+
+        private void DangNhap_Load(object sender, EventArgs e)
+        {
+            this.KeyPreview = true;
+            this.KeyDown += btn_Login_KeyDown;
+        }
     }
 }

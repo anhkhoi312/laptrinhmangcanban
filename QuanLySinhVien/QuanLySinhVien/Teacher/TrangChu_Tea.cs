@@ -1,4 +1,5 @@
-﻿using QuanLySinhVien.Teacher;
+﻿using QuanLySinhVien.Chat;
+using QuanLySinhVien.Teacher;
 using System;
 using System.Drawing;
 using System.Threading.Tasks;
@@ -74,9 +75,15 @@ namespace QuanLySinhVien
 
         private void btTask_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //this.Close();
             giaoTask form = new giaoTask();
-            form.ShowDialog();
+            form.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BATDAU aTDAU = new BATDAU();
+            aTDAU.Show();
         }
     }
 }

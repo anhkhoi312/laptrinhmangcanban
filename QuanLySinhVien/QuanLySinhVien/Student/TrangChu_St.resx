@@ -4846,7 +4846,7 @@
   <data name="btDeadline.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAABNpJREFUaEPtmE+IHEUUxmcV/IMKHjyJBFFE8aQiKCiYBMQYQ3fP4HhN9CBeFFTi
+        DwAACw8BkvkDpQAABNpJREFUaEPtmE+IHEUUxmcV/IMKHjyJBFFE8aQiKCiYBMQYQ3fP4HhN9CBeFFTi
         dI+BiVeJhxAvXj0vIt6jIAbXk95cRdFoVgkJzlTPRjRK2u+rfjVOT3fV1HTaZoP5wWO23lf1qqrr/3aW
         0e9n18ah2p+E6Yk4Sk/FYfpdEqXbNPi/TiL1CX7fGnbHD0mRyyLuTvYlofoZ8TNaHKmf6BO5HqOD2Q3o
         wDcm6FJD3rg77Xc62ZqEWBk2fDEufSLXgx3BCHyLkdjE79uD7nRv3Jvc9fqTv95EOxKoe4fh5Cl04Dj0
@@ -4871,12 +4871,12 @@
 </value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>27</value>
+    <value>25</value>
   </metadata>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4CAYAAADo08FDAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAA/7JJREFUeF7s/eHaHceVnQnOZYxsDDQac1D8ii4JMIpQ0SBgWBBpiHK5bLer1LCr
+        vAAADrwBlbxySQAA/7JJREFUeF7s/eHaHceVnQnOZYxsDDQac1D8ii4JMIpQ0SBgWBBpiHK5bLer1LCr
         uu3uuf9bqDkRsVfEihU7MjNORh5SUvx4H5x35SZv4H2+zP/H93/x//znxWKxWCwWi8Vi8cfEzwhvu/El
         oZv5f7j9DqjHzfgPX/6LiHoC97zN5F8a5k+330A33PKN8clQ722JZ4T6AH9pqHtb9v8Xgee8+fzO2PPe
         lnhOeNuNrwhvO8zPDfXCD4a6t3k3mX9tZP9/F+LGbvDNVH5BeNsv/vn3hG7Z/yqhHgmuW+T/Q3jbdfzH

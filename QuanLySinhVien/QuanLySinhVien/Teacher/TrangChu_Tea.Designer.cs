@@ -38,6 +38,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btTask = new System.Windows.Forms.Button();
             this.bt_dangXuat = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -125,6 +126,7 @@
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.btTask);
             this.panel2.Controls.Add(this.bt_dangXuat);
             this.panel2.Controls.Add(this.btDsLop);
@@ -165,9 +167,19 @@
             this.bt_dangXuat.UseVisualStyleBackColor = false;
             this.bt_dangXuat.Click += new System.EventHandler(this.bt_dangXuat_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(4, 551);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(335, 70);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "CHAT";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // TrangChu_Tea
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -196,5 +208,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button bt_dangXuat;
         private System.Windows.Forms.Button btTask;
+        private System.Windows.Forms.Button button1;
     }
 }

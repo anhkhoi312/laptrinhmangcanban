@@ -1544,8 +1544,6 @@ E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\Quan
 E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\RestSharp.xml
 E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Text.Encodings.Web.xml
 E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Text.Json.xml
-E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.SuggestedBindingRedirects.cache
-E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe.config
 E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Student.User_St.resources
 E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Student.xemDiem.resources
 D:\HOCTAP\HK4\LTMCB\1\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\grpc_csharp_ext.x86.dll
@@ -1999,3 +1997,19 @@ D:\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVi
 D:\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySi.3CF0D20D.Up2Date
 D:\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
 D:\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\ExcelDataReader.DataSet.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\ExcelDataReader.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Firebase.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\LiteDB.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Reactive.dll
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\ExcelDataReader.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\ExcelDataReader.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\ExcelDataReader.DataSet.pdb
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\ExcelDataReader.DataSet.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Firebase.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\LiteDB.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Reactive.xml
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Chat.BATDAU.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Chat.Chat_Student.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Chat.Chat_Teacher.resources
+E:\Mon Hoc\Lap Trinh Mang Can Ban\Project\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Teacher.giaoTask.resources
