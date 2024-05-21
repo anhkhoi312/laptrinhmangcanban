@@ -108,7 +108,7 @@ namespace QuanLySinhVien.Chat
             //}
             else
             {
-                MessageBox.Show("Ma so khong hop le roi");
+                MessageBox.Show("Mã số không tìm thấy");
             }
         }
 

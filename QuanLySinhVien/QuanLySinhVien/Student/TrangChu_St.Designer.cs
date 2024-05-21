@@ -35,9 +35,11 @@
             this.btThongbao = new System.Windows.Forms.Button();
             this.btUser = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_video = new System.Windows.Forms.Button();
             this.btChat = new System.Windows.Forms.Button();
             this.btDeadline = new System.Windows.Forms.Button();
             this.bt_dangXuat = new System.Windows.Forms.Button();
+            this.btn_Shedule = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,10 +51,10 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(338, 2);
+            this.panel1.Location = new System.Drawing.Point(380, 2);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(978, 593);
+            this.panel1.Size = new System.Drawing.Size(1100, 741);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -62,9 +64,10 @@
             this.btXemdiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btXemdiem.Image = ((System.Drawing.Image)(resources.GetObject("btXemdiem.Image")));
             this.btXemdiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btXemdiem.Location = new System.Drawing.Point(3, 2);
+            this.btXemdiem.Location = new System.Drawing.Point(2, 491);
+            this.btXemdiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btXemdiem.Name = "btXemdiem";
-            this.btXemdiem.Size = new System.Drawing.Size(333, 88);
+            this.btXemdiem.Size = new System.Drawing.Size(375, 100);
             this.btXemdiem.TabIndex = 13;
             this.btXemdiem.Text = " Xem điểm";
             this.btXemdiem.UseVisualStyleBackColor = true;
@@ -76,9 +79,10 @@
             this.btThongbao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btThongbao.Image = ((System.Drawing.Image)(resources.GetObject("btThongbao.Image")));
             this.btThongbao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btThongbao.Location = new System.Drawing.Point(3, 85);
+            this.btThongbao.Location = new System.Drawing.Point(3, 100);
+            this.btThongbao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btThongbao.Name = "btThongbao";
-            this.btThongbao.Size = new System.Drawing.Size(333, 91);
+            this.btThongbao.Size = new System.Drawing.Size(375, 100);
             this.btThongbao.TabIndex = 14;
             this.btThongbao.Text = "Thông báo";
             this.btThongbao.UseVisualStyleBackColor = true;
@@ -90,9 +94,10 @@
             this.btUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btUser.Image = ((System.Drawing.Image)(resources.GetObject("btUser.Image")));
             this.btUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btUser.Location = new System.Drawing.Point(3, 252);
+            this.btUser.Location = new System.Drawing.Point(2, 589);
+            this.btUser.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btUser.Name = "btUser";
-            this.btUser.Size = new System.Drawing.Size(333, 82);
+            this.btUser.Size = new System.Drawing.Size(375, 100);
             this.btUser.TabIndex = 15;
             this.btUser.Text = "Người dùng";
             this.btUser.UseVisualStyleBackColor = true;
@@ -102,6 +107,8 @@
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.btn_Shedule);
+            this.panel2.Controls.Add(this.btn_video);
             this.panel2.Controls.Add(this.btChat);
             this.panel2.Controls.Add(this.btDeadline);
             this.panel2.Controls.Add(this.bt_dangXuat);
@@ -110,18 +117,37 @@
             this.panel2.Controls.Add(this.btThongbao);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(339, 595);
+            this.panel2.Size = new System.Drawing.Size(381, 744);
             this.panel2.TabIndex = 16;
+            // 
+            // btn_video
+            // 
+            this.btn_video.AutoSize = true;
+            this.btn_video.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_video.Image = ((System.Drawing.Image)(resources.GetObject("btn_video.Image")));
+            this.btn_video.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_video.Location = new System.Drawing.Point(3, 394);
+            this.btn_video.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_video.Name = "btn_video";
+            this.btn_video.Size = new System.Drawing.Size(375, 100);
+            this.btn_video.TabIndex = 33;
+            this.btn_video.Text = "Kho bài giảng";
+            this.btn_video.UseVisualStyleBackColor = true;
+            this.btn_video.Click += new System.EventHandler(this.btn_video_Click);
             // 
             // btChat
             // 
-            this.btChat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btChat.Location = new System.Drawing.Point(3, 340);
+            this.btChat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btChat.Image = ((System.Drawing.Image)(resources.GetObject("btChat.Image")));
+            this.btChat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btChat.Location = new System.Drawing.Point(3, 296);
+            this.btChat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btChat.Name = "btChat";
-            this.btChat.Size = new System.Drawing.Size(329, 80);
+            this.btChat.Size = new System.Drawing.Size(375, 100);
             this.btChat.TabIndex = 32;
-            this.btChat.Text = "CHAT";
+            this.btChat.Text = "Chat";
             this.btChat.UseVisualStyleBackColor = true;
             this.btChat.Click += new System.EventHandler(this.btChat_Click);
             // 
@@ -131,9 +157,10 @@
             this.btDeadline.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btDeadline.Image = ((System.Drawing.Image)(resources.GetObject("btDeadline.Image")));
             this.btDeadline.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btDeadline.Location = new System.Drawing.Point(3, 174);
+            this.btDeadline.Location = new System.Drawing.Point(3, 198);
+            this.btDeadline.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btDeadline.Name = "btDeadline";
-            this.btDeadline.Size = new System.Drawing.Size(333, 82);
+            this.btDeadline.Size = new System.Drawing.Size(375, 100);
             this.btDeadline.TabIndex = 31;
             this.btDeadline.Text = "Deadline";
             this.btDeadline.UseVisualStyleBackColor = true;
@@ -143,31 +170,49 @@
             // 
             this.bt_dangXuat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.bt_dangXuat.BackColor = System.Drawing.Color.Thistle;
-            this.bt_dangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_dangXuat.Location = new System.Drawing.Point(2, 547);
+            this.bt_dangXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_dangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_dangXuat.Location = new System.Drawing.Point(2, 686);
             this.bt_dangXuat.Margin = new System.Windows.Forms.Padding(2);
             this.bt_dangXuat.Name = "bt_dangXuat";
-            this.bt_dangXuat.Size = new System.Drawing.Size(334, 46);
+            this.bt_dangXuat.Size = new System.Drawing.Size(375, 54);
             this.bt_dangXuat.TabIndex = 30;
             this.bt_dangXuat.Text = "Đăng xuất";
             this.bt_dangXuat.UseVisualStyleBackColor = false;
             this.bt_dangXuat.Click += new System.EventHandler(this.bt_dangXuat_Click);
             // 
+            // btn_Shedule
+            // 
+            this.btn_Shedule.AutoSize = true;
+            this.btn_Shedule.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Shedule.Image = ((System.Drawing.Image)(resources.GetObject("btn_Shedule.Image")));
+            this.btn_Shedule.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Shedule.Location = new System.Drawing.Point(3, 4);
+            this.btn_Shedule.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Shedule.Name = "btn_Shedule";
+            this.btn_Shedule.Size = new System.Drawing.Size(375, 100);
+            this.btn_Shedule.TabIndex = 34;
+            this.btn_Shedule.Text = "Thời khóa biểu";
+            this.btn_Shedule.UseVisualStyleBackColor = true;
+            // 
             // TrangChu_St
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1316, 595);
+            this.ClientSize = new System.Drawing.Size(1480, 744);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "TrangChu_St";
             this.Text = "TrangChu_St";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.TrangChu_St_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -184,5 +229,7 @@
         private System.Windows.Forms.Button bt_dangXuat;
         private System.Windows.Forms.Button btDeadline;
         private System.Windows.Forms.Button btChat;
+        private System.Windows.Forms.Button btn_video;
+        private System.Windows.Forms.Button btn_Shedule;
     }
 }

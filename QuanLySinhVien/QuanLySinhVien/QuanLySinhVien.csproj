@@ -276,6 +276,12 @@
     <Compile Include="Student\User_St.Designer.cs">
       <DependentUpon>User_St.cs</DependentUpon>
     </Compile>
+    <Compile Include="Student\video.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\video.Designer.cs">
+      <DependentUpon>video.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student\xemDiem.cs">
       <SubType>Form</SubType>
     </Compile>

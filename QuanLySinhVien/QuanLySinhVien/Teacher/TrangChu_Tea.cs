@@ -75,15 +75,12 @@ namespace QuanLySinhVien
 
         private void btTask_Click(object sender, EventArgs e)
         {
-            //this.Close();
-            giaoTask form = new giaoTask();
-            form.Show();
+            openChildForm(new giaoTask());
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            BATDAU aTDAU = new BATDAU();
-            aTDAU.Show();
+            openChildForm(new BATDAU());
         }
     }
 }

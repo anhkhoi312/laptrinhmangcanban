@@ -78,15 +78,23 @@ namespace QuanLySinhVien.Student
 
         private void btDeadline_Click(object sender, EventArgs e)
         {
-            Deadline form = new Deadline();
-            form.Show();
+            openChildForm(new Deadline());
         }
 
         private void btChat_Click(object sender, EventArgs e)
         {
-            BATDAU bATDAU = new BATDAU();
-            bATDAU.Show();
+            openChildForm(new BATDAU());
            
+        }
+
+        private void btn_video_Click(object sender, EventArgs e)
+        {
+            openChildForm(new video());
+        }
+
+        private void TrangChu_St_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
