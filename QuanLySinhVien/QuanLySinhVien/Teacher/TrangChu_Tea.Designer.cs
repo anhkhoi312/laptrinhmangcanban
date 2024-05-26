@@ -39,6 +39,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btTask = new System.Windows.Forms.Button();
             this.bt_dangXuat = new System.Windows.Forms.Button();
+
+            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +69,6 @@
             this.bt_User.TabIndex = 9;
             this.bt_User.Text = "       Người dùng";
             this.bt_User.UseVisualStyleBackColor = true;
-            this.bt_User.Click += new System.EventHandler(this.bt_User_Click);
             // 
             // btThongKe
             // 
@@ -80,7 +81,6 @@
             this.btThongKe.TabIndex = 5;
             this.btThongKe.Text = "Thống kê";
             this.btThongKe.UseVisualStyleBackColor = true;
-            this.btThongKe.Click += new System.EventHandler(this.btThongKe_Click_1);
             // 
             // btThongBao
             // 
@@ -93,7 +93,6 @@
             this.btThongBao.TabIndex = 4;
             this.btThongBao.Text = " Thông báo";
             this.btThongBao.UseVisualStyleBackColor = true;
-            this.btThongBao.Click += new System.EventHandler(this.btThongBao_Click_1);
             // 
             // btDsLop
             // 
@@ -106,7 +105,6 @@
             this.btDsLop.TabIndex = 3;
             this.btDsLop.Text = "       Danh sách lớp";
             this.btDsLop.UseVisualStyleBackColor = true;
-            this.btDsLop.Click += new System.EventHandler(this.btDsLop_Click_1);
             // 
             // btNhapDiem
             // 
@@ -120,7 +118,6 @@
             this.btNhapDiem.TabIndex = 2;
             this.btNhapDiem.Text = " Nhập điểm";
             this.btNhapDiem.UseVisualStyleBackColor = true;
-            this.btNhapDiem.Click += new System.EventHandler(this.btNhapDiem_Click_1);
             // 
             // panel2
             // 
@@ -151,7 +148,6 @@
             this.button1.TabIndex = 32;
             this.button1.Text = "Chat";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btTask
             // 
@@ -164,7 +160,6 @@
             this.btTask.TabIndex = 31;
             this.btTask.Text = "Giao bài tập";
             this.btTask.UseVisualStyleBackColor = true;
-            this.btTask.Click += new System.EventHandler(this.btTask_Click);
             // 
             // bt_dangXuat
             // 
@@ -179,7 +174,7 @@
             this.bt_dangXuat.Text = "Đăng xuất";
             this.bt_dangXuat.UseVisualStyleBackColor = false;
             this.bt_dangXuat.Click += new System.EventHandler(this.bt_dangXuat_Click);
-            // 
+
             // TrangChu_Tea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -198,6 +193,7 @@
             this.Text = "Trangchu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TrangChu_Tea_Load);
+            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 

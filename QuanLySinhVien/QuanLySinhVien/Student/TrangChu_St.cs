@@ -1,100 +1,89 @@
 ﻿using QuanLySinhVien.Chat;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace QuanLySinhVien.Student
 {
     public partial class TrangChu_St : Form
     {
+        private List<Button> buttons;
+        private Form activeForm = null;
+        private Color activeButtonColor = Color.Gray;
+        private Color defaultButtonColor = Color.White;
+
         public TrangChu_St()
         {
             InitializeComponent();
+            InitializeButtons();
         }
-        private Form activeForm = null;
-        private void openChildForm(Form ChildForm)
+
+        private void InitializeButtons()
+        {
+            // Thêm các Button vào danh sách
+            buttons = new List<Button> { btXemdiem, btThongbao, btDeadline, btChat, btn_video, btUser, bt_dangXuat };
+
+            // Gán sự kiện Click cho mỗi Button
+            foreach (var button in buttons)
+            {
+                button.Click += Button_Click;
+            }
+
+            // Gán form tương ứng cho mỗi nút bằng cách sử dụng thuộc tính Tag
+            btXemdiem.Tag = new xemDiem();
+            btThongbao.Tag = new NhanTb();
+            btDeadline.Tag = new Deadline();
+            btChat.Tag = new chatBox();
+            btn_video.Tag = new video();
+            btUser.Tag = new User_St();
+        }
+
+        private void Button_Click(object sender, EventArgs e)
+        {
+            Button clickedButton = sender as Button;
+
+            // Đặt tất cả các Button về màu mặc định
+            foreach (var button in buttons)
+            {
+                button.BackColor = defaultButtonColor;
+            }
+
+            // Đặt màu xám cho Button được nhấn
+            clickedButton.BackColor = activeButtonColor;
+
+            // Mở Form tương ứng với Button được nhấn
+            if (clickedButton.Tag is Form)
+            {
+                openChildForm(clickedButton.Tag as Form);
+            }
+        }
+
+        private void openChildForm(Form childForm)
         {
             if (activeForm != null)
             {
                 activeForm.Close();
             }
-            activeForm = ChildForm;
-            ChildForm.TopLevel = false;
-            ChildForm.FormBorderStyle = FormBorderStyle.None;
-            ChildForm.Dock = DockStyle.Fill;
-            panel1.Controls.Add(ChildForm);
-            ChildForm.BringToFront();
-            ChildForm.Show();
-        }
-
-        private void bt_xemDiem_Click(object sender, EventArgs e)
-        {
-            openChildForm(new xemDiem());
-        }
-
-        private void bt_nhanTb_Click(object sender, EventArgs e)
-        {
-            openChildForm(new NhanTb());
-        }
-
-        private void bt_UserSt_Click(object sender, EventArgs e)
-        {
-            openChildForm(new User_St());
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btXemdiem_Click(object sender, EventArgs e)
-        {
-            openChildForm(new xemDiem());
-        }
-
-        private void btThongbao_Click(object sender, EventArgs e)
-        {
-            openChildForm(new NhanTb());
-        }
-
-        private void btUser_Click(object sender, EventArgs e)
-        {
-            openChildForm(new User_St());
-        }
-
-        private void bt_dangXuat_Click(object sender, EventArgs e)
-        {
-                this.Close();
-                DangNhap form = new DangNhap();
-                form.ShowDialog();
-
-        }
-
-        private void btDeadline_Click(object sender, EventArgs e)
-        {
-            openChildForm(new Deadline());
-        }
-
-        private void btChat_Click(object sender, EventArgs e)
-        {
-            openChildForm(new BATDAU());
-           
-        }
-
-        private void btn_video_Click(object sender, EventArgs e)
-        {
-            openChildForm(new video());
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panel1.Controls.Add(childForm);
+            panel1.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
 
         private void TrangChu_St_Load(object sender, EventArgs e)
         {
 
+        }
+        private void bt_dangXuat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            DangNhap form = new DangNhap();
+            form.ShowDialog();
         }
     }
 }

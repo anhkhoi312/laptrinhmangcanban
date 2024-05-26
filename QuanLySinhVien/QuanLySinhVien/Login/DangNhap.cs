@@ -51,13 +51,11 @@ namespace QuanLySinhVien
                 {
                     if (data.Type == "gv")
                     {
-                        BATDAU.maso = maso;
                         TrangChu_Tea trangChu = new TrangChu_Tea();
                         trangChu.ShowDialog();
                     }
                     else if (data.Type == "st")
                     {
-                        BATDAU.maso = maso;
                         TrangChu_St trangChu = new TrangChu_St();
                         trangChu.ShowDialog();
                     }
@@ -66,12 +64,12 @@ namespace QuanLySinhVien
                 }
                 else
                 {
-                    MessageBox.Show("Kiểm tra lại tên người dùng hoặc mật khẩu");
+                    MessageBox.Show("Vui lòng kiểm tra lại tên người dùng hoặc mật khẩu");
                 }
             }
             else
             {
-                MessageBox.Show("Đã xảy ra lỗi");
+                MessageBox.Show("Kiểm vui lòn kiểm tra lại tên người dùng hoặc mật khẩu");
             }
         }
 

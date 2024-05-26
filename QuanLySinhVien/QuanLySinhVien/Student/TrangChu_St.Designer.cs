@@ -35,11 +35,11 @@
             this.btThongbao = new System.Windows.Forms.Button();
             this.btUser = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_Shedule = new System.Windows.Forms.Button();
             this.btn_video = new System.Windows.Forms.Button();
             this.btChat = new System.Windows.Forms.Button();
             this.btDeadline = new System.Windows.Forms.Button();
             this.bt_dangXuat = new System.Windows.Forms.Button();
-            this.btn_Shedule = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +56,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1100, 741);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btXemdiem
             // 
@@ -71,7 +70,6 @@
             this.btXemdiem.TabIndex = 13;
             this.btXemdiem.Text = " Xem điểm";
             this.btXemdiem.UseVisualStyleBackColor = true;
-            this.btXemdiem.Click += new System.EventHandler(this.btXemdiem_Click);
             // 
             // btThongbao
             // 
@@ -86,7 +84,6 @@
             this.btThongbao.TabIndex = 14;
             this.btThongbao.Text = "Thông báo";
             this.btThongbao.UseVisualStyleBackColor = true;
-            this.btThongbao.Click += new System.EventHandler(this.btThongbao_Click);
             // 
             // btUser
             // 
@@ -101,7 +98,6 @@
             this.btUser.TabIndex = 15;
             this.btUser.Text = "Người dùng";
             this.btUser.UseVisualStyleBackColor = true;
-            this.btUser.Click += new System.EventHandler(this.btUser_Click);
             // 
             // panel2
             // 
@@ -122,6 +118,20 @@
             this.panel2.Size = new System.Drawing.Size(381, 744);
             this.panel2.TabIndex = 16;
             // 
+            // btn_Shedule
+            // 
+            this.btn_Shedule.AutoSize = true;
+            this.btn_Shedule.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Shedule.Image = ((System.Drawing.Image)(resources.GetObject("btn_Shedule.Image")));
+            this.btn_Shedule.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Shedule.Location = new System.Drawing.Point(3, 4);
+            this.btn_Shedule.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Shedule.Name = "btn_Shedule";
+            this.btn_Shedule.Size = new System.Drawing.Size(375, 100);
+            this.btn_Shedule.TabIndex = 34;
+            this.btn_Shedule.Text = "Thời khóa biểu";
+            this.btn_Shedule.UseVisualStyleBackColor = true;
+            // 
             // btn_video
             // 
             this.btn_video.AutoSize = true;
@@ -135,7 +145,6 @@
             this.btn_video.TabIndex = 33;
             this.btn_video.Text = "Kho bài giảng";
             this.btn_video.UseVisualStyleBackColor = true;
-            this.btn_video.Click += new System.EventHandler(this.btn_video_Click);
             // 
             // btChat
             // 
@@ -149,7 +158,6 @@
             this.btChat.TabIndex = 32;
             this.btChat.Text = "Chat";
             this.btChat.UseVisualStyleBackColor = true;
-            this.btChat.Click += new System.EventHandler(this.btChat_Click);
             // 
             // btDeadline
             // 
@@ -164,7 +172,6 @@
             this.btDeadline.TabIndex = 31;
             this.btDeadline.Text = "Deadline";
             this.btDeadline.UseVisualStyleBackColor = true;
-            this.btDeadline.Click += new System.EventHandler(this.btDeadline_Click);
             // 
             // bt_dangXuat
             // 
@@ -180,20 +187,6 @@
             this.bt_dangXuat.Text = "Đăng xuất";
             this.bt_dangXuat.UseVisualStyleBackColor = false;
             this.bt_dangXuat.Click += new System.EventHandler(this.bt_dangXuat_Click);
-            // 
-            // btn_Shedule
-            // 
-            this.btn_Shedule.AutoSize = true;
-            this.btn_Shedule.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Shedule.Image = ((System.Drawing.Image)(resources.GetObject("btn_Shedule.Image")));
-            this.btn_Shedule.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Shedule.Location = new System.Drawing.Point(3, 4);
-            this.btn_Shedule.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_Shedule.Name = "btn_Shedule";
-            this.btn_Shedule.Size = new System.Drawing.Size(375, 100);
-            this.btn_Shedule.TabIndex = 34;
-            this.btn_Shedule.Text = "Thời khóa biểu";
-            this.btn_Shedule.UseVisualStyleBackColor = true;
             // 
             // TrangChu_St
             // 

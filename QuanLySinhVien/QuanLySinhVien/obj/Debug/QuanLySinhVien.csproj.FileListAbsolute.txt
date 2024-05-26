@@ -2019,7 +2019,8 @@ D:\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.React
 D:\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Firebase.xml
 D:\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\LiteDB.xml
 D:\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.Reactive.xml
-D:\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Chat.BATDAU.resources
-D:\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Chat.Chat_Student.resources
-D:\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Chat.Chat_Teacher.resources
 D:\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Teacher.giaoTask.resources
+D:\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Chat.chatBox.resources
+D:\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe.licenses
+D:\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.Dataviz.WinForms.dll
+D:\ltmcb\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Bunifu.Dataviz.WinForms.xml
