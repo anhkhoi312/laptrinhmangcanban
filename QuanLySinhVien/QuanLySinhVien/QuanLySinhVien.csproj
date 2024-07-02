@@ -247,6 +247,18 @@
     <Compile Include="Chat\chatBox.Designer.cs">
       <DependentUpon>chatBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="Chat\chatBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat\chatBox1.Designer.cs">
+      <DependentUpon>chatBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chat\userControlMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chat\userControlMessage.Designer.cs">
+      <DependentUpon>userControlMessage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\FirebaseService.cs" />
     <Compile Include="Classes\FirestoreHelper.cs" />
     <Compile Include="Classes\UserData.cs" />
@@ -338,6 +350,12 @@
     </Compile>
     <EmbeddedResource Include="Chat\chatBox.resx">
       <DependentUpon>chatBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat\chatBox1.resx">
+      <DependentUpon>chatBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat\userControlMessage.resx">
+      <DependentUpon>userControlMessage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>

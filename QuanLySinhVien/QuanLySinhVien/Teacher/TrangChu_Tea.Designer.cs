@@ -39,8 +39,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btTask = new System.Windows.Forms.Button();
             this.bt_dangXuat = new System.Windows.Forms.Button();
-
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -148,6 +146,7 @@
             this.button1.TabIndex = 32;
             this.button1.Text = "Chat";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btTask
             // 
@@ -174,10 +173,10 @@
             this.bt_dangXuat.Text = "Đăng xuất";
             this.bt_dangXuat.UseVisualStyleBackColor = false;
             this.bt_dangXuat.Click += new System.EventHandler(this.bt_dangXuat_Click);
-
+            // 
             // TrangChu_Tea
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -192,8 +191,8 @@
             this.Name = "TrangChu_Tea";
             this.Text = "Trangchu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TrangChu_Tea_FormClosed);
             this.Load += new System.EventHandler(this.TrangChu_Tea_Load);
-            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 

@@ -1,7 +1,13 @@
-﻿using QuanLySinhVien.Chat;
+﻿using Google.Cloud.Firestore;
+using Google.Cloud.Firestore.V1;
+using Google.Cloud.Storage.V1;
+using QuanLySinhVien.Chat;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
+using System.Net;
+using System.Net.Sockets;
 using System.Windows.Forms;
 
 namespace QuanLySinhVien.Student
@@ -13,12 +19,41 @@ namespace QuanLySinhVien.Student
         private Color activeButtonColor = Color.Gray;
         private Color defaultButtonColor = Color.White;
 
+        private TcpClient tcpClient;
+        private StreamReader reader;
+        private StreamWriter writer;
+
+        FirestoreDb firestoreDb;
+        StorageClient storageClient;
+
         public TrangChu_St()
         {
             InitializeComponent();
+            connectToServer(); // kết nối tới server khi load form 
+            string projectId = "ltmcb-7d1a6";
+            firestoreDb = FirestoreDb.Create(projectId);
+            storageClient = StorageClient.Create();
             InitializeButtons();
         }
-
+        //hàm kết nối tới server
+        private void connectToServer()
+        {
+            tcpClient = new TcpClient();
+            try
+            {
+                tcpClient.Connect(IPAddress.Parse("127.0.0.1"), 8080);
+            }
+            catch
+            {
+                MessageBox.Show("Máy chủ không hoạt động!");
+                return;
+            }
+            reader = new StreamReader(tcpClient.GetStream());
+            writer = new StreamWriter(tcpClient.GetStream());
+            //gửi id tới server để server lưu làm key bên server
+            writer.WriteLine(DangNhap.maso);
+            writer.Flush();
+        }
         private void InitializeButtons()
         {
             // Thêm các Button vào danh sách
@@ -34,7 +69,6 @@ namespace QuanLySinhVien.Student
             btXemdiem.Tag = new xemDiem();
             btThongbao.Tag = new NhanTb();
             btDeadline.Tag = new Deadline();
-            btChat.Tag = new chatBox();
             btn_video.Tag = new video();
             btUser.Tag = new User_St();
         }
@@ -84,6 +118,52 @@ namespace QuanLySinhVien.Student
             this.Close();
             DangNhap form = new DangNhap();
             form.ShowDialog();
+        }
+
+        private void btUser_Click(object sender, EventArgs e)
+        {
+
+        }
+        //mở form chat
+        private async void btChat_Click(object sender, EventArgs e)
+        {
+            string username = "";
+            DocumentReference docRef = firestoreDb.Collection("UserData").Document(DangNhap.maso);
+            DocumentSnapshot docSnapshot = await docRef.GetSnapshotAsync();
+
+            // Kiểm tra xem tài liệu có tồn tại hay không
+            if (docSnapshot.Exists)
+            {
+                // Lấy dữ liệu từ tài liệu
+                Dictionary<string, object> studentData = docSnapshot.ToDictionary();
+                username = studentData.ContainsKey("Name") ? studentData["Name"].ToString() : "";
+            }
+            // truyền các tham số như tên, id, tcpclient, streamreader, streamwriter
+            chatBox1 chatbox = new chatBox1(username, DangNhap.maso, tcpClient, reader, writer);
+            chatbox.Visible = true;
+        }
+        //khi tắt ứng dụng thì các file lưu tin nhắn tạm cũng bị xóa đi 
+        private void TrangChu_St_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            string foldePpath = "Temp_Mess_History";
+            if (Directory.Exists(foldePpath))
+            {
+                string[] fileNames = Directory.GetFiles(foldePpath);
+                foreach (string fileName in fileNames)
+                {
+                    if (File.Exists(fileName))
+                    {
+                        try
+                        {
+                            // Xóa file
+                            File.Delete(fileName);
+                        }
+                        catch (Exception ex)
+                        {
+                        }
+                    }
+                }
+            }
         }
     }
 }
