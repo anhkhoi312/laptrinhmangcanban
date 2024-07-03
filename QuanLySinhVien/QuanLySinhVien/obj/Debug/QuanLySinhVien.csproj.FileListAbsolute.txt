@@ -2343,3 +2343,10 @@ D:\HOCTAP\HK4\LTMCB\1\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug
 D:\HOCTAP\HK4\LTMCB\1\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Chat.userControlMessage.resources
 D:\HOCTAP\HK4\LTMCB\1\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Teacher.giaoTask.resources
 D:\HOCTAP\HK4\LTMCB\1\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe.licenses
+D:\HOCTAP\HK4\LTMCB\1\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\EPPlus.dll
+D:\HOCTAP\HK4\LTMCB\1\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\EPPlus.Interfaces.dll
+D:\HOCTAP\HK4\LTMCB\1\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\EPPlus.System.Drawing.dll
+D:\HOCTAP\HK4\LTMCB\1\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+D:\HOCTAP\HK4\LTMCB\1\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\System.ComponentModel.Annotations.dll
+D:\HOCTAP\HK4\LTMCB\1\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\EPPlus.xml
+D:\HOCTAP\HK4\LTMCB\1\laptrinhmangcanban\QuanLySinhVien\QuanLySinhVien\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml

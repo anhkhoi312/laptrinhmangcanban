@@ -92,7 +92,7 @@ namespace QuanLySinhVien.Chat
         private void received()
         {
             try
-            {
+            { 
                 while (isRunning)
                 {
                     //đọc tin nhắn từ server gửi về
