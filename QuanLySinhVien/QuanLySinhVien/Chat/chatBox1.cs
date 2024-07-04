@@ -152,7 +152,9 @@ namespace QuanLySinhVien.Chat
                     {
                         item.Value.Visible = true;
                         panel4.Visible = true;
-                        label1.Text = clickedButton.Text;
+                        //label1.Text = clickedButton.Text;
+                        LoadAvatarFromGcs(clickedButton.Text);
+
                         textBox1.Clear();
                     }
                     //ẩn các panel còn lại
@@ -163,6 +165,38 @@ namespace QuanLySinhVien.Chat
                 }
             }
         }
+        private void LoadAvatarFromGcs(string selectedUserId)
+        {
+            try
+            {
+                string avatarFilePath = $"{selectedUserId}/avatar.png";
+                var storageClient = StorageClient.Create();
+                using (var memoryStream = new MemoryStream())
+                {
+                    storageClient.DownloadObject(bucketName, avatarFilePath, memoryStream);
+                    memoryStream.Seek(0, SeekOrigin.Begin);
+                    pictureBox1.Image = Image.FromStream(memoryStream);
+                }
+                DocumentReference docRef = db.Collection("UserData").Document(selectedUserId); // DangNhap.maso là giá trị của maso
+                DocumentSnapshot snapshot = docRef.GetSnapshotAsync().Result; // Đợi cho việc lấy dữ liệu hoàn thành
+
+                if (snapshot.Exists)
+                {
+                    string name = snapshot.GetValue<string>("Name");
+                    // Hiển thị giá trị name vào Label1
+                    label1.Text = name;
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy tài liệu có id là " + DangNhap.maso);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đã xảy ra lỗi khi tải ảnh đại diện từ GCS: " + ex.Message);
+            }
+        }
+
 
         //lấy thông tin vào tạo các cặp button_panel khi load form
         private async void chatBox1_Load(object sender, EventArgs e)
@@ -209,6 +243,7 @@ namespace QuanLySinhVien.Chat
                                 reMess.setLabel(message.Object.data, message.Object.sender);
                                 flowLayoutPanel.Controls.Add(reMess);
                             }
+
 
                         }
                     }
