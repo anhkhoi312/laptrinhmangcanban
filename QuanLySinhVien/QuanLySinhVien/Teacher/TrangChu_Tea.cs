@@ -61,7 +61,7 @@ namespace QuanLySinhVien
         private void InitializeButtons()
         {
             // Thêm các Button vào danh sách
-            buttons = new List<Button> { btNhapDiem, btThongKe, btThongBao, btDsLop, bt_User, btTask, bt_dangXuat, button1 };
+            buttons = new List<Button> { btNhapDiem, btThongKe, btThongBao, btDsLop, bt_User, btTask, btChat };
 
             // Gán sự kiện Click cho mỗi Button
             foreach (var button in buttons)
@@ -80,6 +80,7 @@ namespace QuanLySinhVien
                 { btDsLop, new QuanLyLop() },
                 { bt_User, new User_Tea() },
                 { btTask, new giaoTask() },
+                { btChat, new chatBox() },
             };
         }
 
@@ -104,7 +105,7 @@ namespace QuanLySinhVien
             btDsLop.Tag = new QuanLyLop();
             bt_User.Tag = new User_Tea();
             btTask.Tag = new giaoTask();
-            //button1.Tag = new chatBox();
+            //btChat.Tag = new chatBox();
 
             // Mở Form tương ứng với Button được nhấn
             if (clickedButton.Tag is Form)
@@ -128,19 +129,15 @@ namespace QuanLySinhVien
             childForm.BringToFront();
             childForm.Show();
         }
-
-        private void TrangChu_Tea_Load(object sender, EventArgs e)
-        {
-        }
-
-        private void bt_dangXuat_Click(object sender, EventArgs e)
+        private async void bt_dangXuat_Click(object sender, EventArgs e)
         {
             this.Close();
             DangNhap form = new DangNhap();
             form.ShowDialog();
         }
+
         //mở form chat
-        private async void button1_Click(object sender, EventArgs e)
+        private async void btChat_Click(object sender, EventArgs e)
         {
             string username = "";
             DocumentReference docRef = firestoreDb.Collection("UserData").Document(DangNhap.maso);

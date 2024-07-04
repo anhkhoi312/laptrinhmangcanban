@@ -2135,7 +2135,7 @@
   <data name="btDsLop.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAB1pJREFUeF7tmmlsVFUYhuu+oAYTlT/ulsVC28EFQZZSlu6LbenQjZbaWloUCoiC
+        DAAACwwBP0AiyAAAB1pJREFUeF7tmmlsVFUYhuu+oAYTlT/ulsVC28EFQZZSlu6LbenQjZbaWloUCoiC
         LAEj0QY3QK2OAkILgm1FoVHcwTWu0ar8ICERrTH+gR9uxCB9fb/2O2Vm6OCduZdSyH2SN8w559vOOfee
         cyFEubi4uLi4uLj0JlfVIOnqmXiHOqB6W/p0+PTlmlr0v24mfBRCqGlQFS5T89OLgTVIj67GrwOrgZh7
         0FG5Cni8qUvym32QsU4b2qrbqU/0LFwyZAZ8VAeFCQuBlZuA57cF6rGXgMkPAGKjaoqtwaUa5tQkpgpj
@@ -4901,10 +4901,10 @@
         n/1/mw/R/f6nskgAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btChat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAA/xJREFUeF7tmE1sVFUUx7ti70dpS3Qqj1agMaW0AqFUghpECGIMGSUo8lFSytRG
+        DAAACwwBP0AiyAAAA/xJREFUeF7tmE1sVFUUx7ti70dpS3Qqj1agMaW0AqFUghpECGIMGSUo8lFSytRG
         AwsXLFiQUEhYoDHKwq8EA9UYdUG0CV34wWfiampTtkgLW8Q9P+9pznupwzz73n3z5uLM+yW/TP733nPf
         OS/pNJmGjIyMjIyMypB7j5amQRZqrB9aDvH4onf4adEwqGO5gzyi27VN8zCNLcMUZXDzede8iHv6Es7p
         kdpFhs8VKOaG4MkCk60Fmp8q0Dqbh7inx2qTNjO8d5CiVwDjjdwALbrVoGtorD1k+PZBik8PQvsBbiyb

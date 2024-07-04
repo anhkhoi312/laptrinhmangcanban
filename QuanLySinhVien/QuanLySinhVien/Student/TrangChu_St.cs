@@ -57,7 +57,7 @@ namespace QuanLySinhVien.Student
         private void InitializeButtons()
         {
             // Thêm các Button vào danh sách
-            buttons = new List<Button> { btXemdiem, btThongbao, btDeadline, btChat, btn_video, btUser, bt_dangXuat };
+            buttons = new List<Button> { btn_Shedule, btXemdiem, btThongbao, btDeadline, btChat, btUser };
 
             // Gán sự kiện Click cho mỗi Button
             foreach (var button in buttons)
@@ -69,8 +69,8 @@ namespace QuanLySinhVien.Student
             btXemdiem.Tag = new xemDiem();
             btThongbao.Tag = new NhanTb();
             btDeadline.Tag = new Deadline();
-            btn_video.Tag = new video();
             btUser.Tag = new User_St();
+            btn_Shedule.Tag = new Tkb();
         }
 
         private void Button_Click(object sender, EventArgs e)
@@ -120,10 +120,7 @@ namespace QuanLySinhVien.Student
             form.ShowDialog();
         }
 
-        private void btUser_Click(object sender, EventArgs e)
-        {
 
-        }
         //mở form chat
         private async void btChat_Click(object sender, EventArgs e)
         {
