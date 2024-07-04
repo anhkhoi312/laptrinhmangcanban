@@ -3,6 +3,7 @@ using Firebase.Database;
 using Firebase.Database.Query;
 using Google.Cloud.Firestore;
 using Google.Cloud.Storage.V1;
+using Google.Type;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Interop;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace QuanLySinhVien.Chat
@@ -60,7 +62,7 @@ namespace QuanLySinhVien.Chat
             flowLayoutPanel.AutoScroll = true;
             flowLayoutPanel.FlowDirection = FlowDirection.LeftToRight;
             flowLayoutPanel.AllowDrop = true;
-            flowLayoutPanel.BackColor = Color.White;
+            //flowLayoutPanel.BackColor = Color.White;
             flowLayoutPanel.Dock = DockStyle.Fill;
             panel2.Controls.Add(flowLayoutPanel);
             flowLayoutPanel.Visible = false;
@@ -106,12 +108,14 @@ namespace QuanLySinhVien.Chat
                     {
                         //giải mã nội 
                         message newMessage = JsonConvert.DeserializeObject<message>(message);
+
                         //duyệt qua từng button để tìm ra flowpanel nào để load tin nhắn lên
                         foreach (var item in id_boxchat)
                         {
                             //khi tìm thấy button 
                             if (newMessage.id_sender == item.Key.Text)
                             {
+
                                 Invoke(new Action(() =>
                                 {
                                     //tạo 1 usercontrol hoặc có thể tạo 1 label 
@@ -120,24 +124,6 @@ namespace QuanLySinhVien.Chat
                                     reMess.setLabel(newMessage.data, newMessage.sender);
                                     //gọi hàm hiển thị lên flowpanel
                                     AddControlToForm(reMess, item.Key);
-                                    
-                                    //item.Value.Controls.Add(reMess); => có thể load lên theo cách này
-                                    string ghiFile = reMess.getString(newMessage.sender);
-                                    //lấy nội dung của label bên trong usercontrol 
-                                    //nếu không rỗng
-                                    if (ghiFile.Trim() != "")
-                                    {
-                                        //tạo 1 tên file để lưu tạm tin nhắn cho 1 phiên làm việc. Khi tắt app thì các file tạm này sẽ mất theo
-                                        string fileName = $"history-{newMessage.id_sender}.txt";
-                                        //lấy đường dẫn đến file
-                                        string filepath = Path.Combine("Temp_Mess_History\\", fileName);
-                                        //ghi từng dòng xuống file
-                                        StreamWriter wri = new StreamWriter(filepath, true);
-                                        wri.AutoFlush = true;
-                                        wri.WriteLine($"{ghiFile}");
-                                        //đóng ghi file để không xảy ra lỗi
-                                        wri.Close();
-                                    }
                                 }));
                                 break;
                             }
@@ -177,6 +163,7 @@ namespace QuanLySinhVien.Chat
                 }
             }
         }
+
         //lấy thông tin vào tạo các cặp button_panel khi load form
         private async void chatBox1_Load(object sender, EventArgs e)
         {
@@ -202,34 +189,30 @@ namespace QuanLySinhVien.Chat
                             FlowLayoutPanel flowLayoutPanel = createFlowlayoutPanel();//tạo 1 flowpanel 
                             panel3.Controls.Add(flowLayoutPanel);// add panel
                             id_boxchat.Add(button, flowLayoutPanel);//add 1 cặp button_panel
-                        }
-                    }
-                    //load tin nhắn cũ từ file
-                    foreach (var item in id_boxchat)
-                    { 
-                        string fileName = "Temp_Mess_History\\history-" + item.Key.Text + ".txt"; //đường dẫn
-                        if (File.Exists(fileName))
-                        {
-                            StreamReader r = new StreamReader(fileName);
-                            string data;
-                            while ((data = r.ReadLine()) != null) // đọc đến khi hết file
+
+                            // Load tin nhắn cũ từ Firebase Realtime Database
+                            var messages = await firebaseClient
+                                .Child("chats")
+                                .Child(this.id+"_"+doc.Id)
+                                .Child("Messages")
+                                .OnceAsync<message>();
+                            var messagesl = await firebaseClient
+                                .Child("chats")
+                                .Child(doc.Id + "_" + this.id)
+                                .Child("Messages")
+                                .OnceAsync<message>();
+                            var allMessages = messages.Concat(messagesl).OrderBy(m => m.Key);
+
+                            foreach (var message in allMessages)
                             {
-                                if (data.Contains(this.username)) // trong data có tồn tại tên của bản thân thì add nó vào label hiển thị bên phải
-                                {
-                                    userControlMessage reMess = new userControlMessage(username);
-                                    reMess.setLabel(data.Substring(0, data.IndexOf(':') - 1), data.Substring(data.IndexOf(':') + 1));
-                                    item.Value.Controls.Add(reMess);
-                                }
-                                else // nếu không tồn tại thì hiển thị bên trái
-                                {
-                                    userControlMessage reMess = new userControlMessage(username);
-                                    reMess.setLabel(data.Substring(data.IndexOf(':') - 1), data.Substring(0, data.IndexOf(':') + 1));
-                                    item.Value.Controls.Add(reMess);
-                                }
+                                userControlMessage reMess = new userControlMessage(username);
+                                reMess.setLabel(message.Object.data, message.Object.sender);
+                                flowLayoutPanel.Controls.Add(reMess);
                             }
-                            r.Close(); //đọc xong thì đóng không thì lỗi :)))
+
                         }
                     }
+                                     
                 }
                 else
                 {
@@ -273,16 +256,6 @@ namespace QuanLySinhVien.Chat
                     userControlMessage reMess = new userControlMessage(username);
                     reMess.setLabel(newMessage.data, newMessage.sender);
                     item.Value.Controls.Add(reMess);
-                    // ghi xuống file để lưu lại tin nhắn 
-                    string ghiFile = reMess.getString(newMessage.sender);
-                    {
-                        string fileName = $"history-{newMessage.id_receiver}.txt";
-                        string filepath = Path.Combine("Temp_Mess_History\\", fileName);
-                        StreamWriter wri = new StreamWriter(filepath, true);
-                        wri.AutoFlush = true;
-                        wri.WriteLine($"{ghiFile}");
-                        wri.Close();
-                    }
                     textBox1.Clear();
                 }
             }

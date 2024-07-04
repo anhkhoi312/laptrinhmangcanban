@@ -43,10 +43,11 @@
             this.richTextBox1.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(214, 68);
+            this.richTextBox1.Location = new System.Drawing.Point(285, 91);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(748, 332);
+            this.richTextBox1.Size = new System.Drawing.Size(996, 441);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
@@ -58,9 +59,10 @@
             this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 32;
-            this.listBox1.Location = new System.Drawing.Point(0, 40);
+            this.listBox1.Location = new System.Drawing.Point(0, 53);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(215, 418);
+            this.listBox1.Size = new System.Drawing.Size(286, 546);
             this.listBox1.TabIndex = 1;
             this.listBox1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.listBox1_DrawItem);
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
@@ -69,10 +71,11 @@
             // 
             this.textBoxMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMessage.Location = new System.Drawing.Point(214, 406);
+            this.textBoxMessage.Location = new System.Drawing.Point(285, 541);
+            this.textBoxMessage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxMessage.Multiline = true;
             this.textBoxMessage.Name = "textBoxMessage";
-            this.textBoxMessage.Size = new System.Drawing.Size(639, 52);
+            this.textBoxMessage.Size = new System.Drawing.Size(851, 69);
             this.textBoxMessage.TabIndex = 2;
             this.textBoxMessage.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxMessage_KeyDown);
             // 
@@ -80,9 +83,10 @@
             // 
             this.buttonSend.BackColor = System.Drawing.Color.Thistle;
             this.buttonSend.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSend.Location = new System.Drawing.Point(859, 406);
+            this.buttonSend.Location = new System.Drawing.Point(1145, 541);
+            this.buttonSend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonSend.Name = "buttonSend";
-            this.buttonSend.Size = new System.Drawing.Size(103, 52);
+            this.buttonSend.Size = new System.Drawing.Size(137, 69);
             this.buttonSend.TabIndex = 3;
             this.buttonSend.Text = "Gửi";
             this.buttonSend.UseVisualStyleBackColor = false;
@@ -94,8 +98,9 @@
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(0, 0);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(215, 40);
+            this.comboBox1.Size = new System.Drawing.Size(285, 50);
             this.comboBox1.TabIndex = 7;
             this.comboBox1.Text = "Tìm kiếm";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
@@ -103,27 +108,30 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(300, 9);
+            this.label1.Location = new System.Drawing.Point(400, 12);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(476, 52);
+            this.label1.Size = new System.Drawing.Size(635, 69);
             this.label1.TabIndex = 5;
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(221, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(295, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(73, 62);
+            this.pictureBox1.Size = new System.Drawing.Size(97, 83);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // chatBox
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.ClientSize = new System.Drawing.Size(962, 458);
+            this.ClientSize = new System.Drawing.Size(1283, 611);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
@@ -133,6 +141,7 @@
             this.Controls.Add(this.richTextBox1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "chatBox";
             this.Text = " ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
