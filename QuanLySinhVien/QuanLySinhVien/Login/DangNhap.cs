@@ -84,54 +84,60 @@ namespace QuanLySinhVien
                 return;
             }
 
-            DocumentReference userDataRef = db.Collection("UserData").Document(username);
-            DocumentSnapshot snapshot = await userDataRef.GetSnapshotAsync();
+            // Hiển thị hộp thoại xác nhận
+            DialogResult result = MessageBox.Show("Bạn có chắc muốn đặt lại mật khẩu mới?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if (snapshot.Exists)
+            if (result == DialogResult.Yes)
             {
-                string email = snapshot.GetValue<string>("Mail");
+                DocumentReference userDataRef = db.Collection("UserData").Document(username);
+                DocumentSnapshot snapshot = await userDataRef.GetSnapshotAsync();
 
-                // Tạo mật khẩu ngẫu nhiên
-                string confirmationCode = GenerateConfirmationCode();
-
-                //Gửi mật khẩu mới qua mail
-                var fromAddress = new MailAddress("tranthungan1724@gmail.com", "NHÓM 15 - LTMCB");
-                var toAddress = new MailAddress(email);
-                const string fromPassword = "vohi pgnu fsrt wtoj";
-                const string subject = "Ứng dụng quản lý điểm sinh viên - Reset mật khẩu";
-
-                // Nội dung email sử dụng định dạng HTML
-                string body = $"<html><body><p>Chào bạn,</p><p>Chúng tôi đã hỗ trợ bạn reset mật khẩu. Đây là mật khẩu mới của bạn: <strong>{confirmationCode}</strong></p><p>Trân trọng!</p><p>Cảm ơn</p></body></html>";
-
-                // Gửi email
-                var smtp = new SmtpClient
+                if (snapshot.Exists)
                 {
-                    Host = "smtp.gmail.com",
-                    Port = 587,
-                    EnableSsl = true,
-                    DeliveryMethod = SmtpDeliveryMethod.Network,
-                    UseDefaultCredentials = false,
-                    Credentials = new NetworkCredential(fromAddress.Address, fromPassword)
-                };
+                    string email = snapshot.GetValue<string>("Mail");
 
-                using (var message = new MailMessage(fromAddress, toAddress)
-                {
-                    Subject = subject,
-                    Body = body,
-                    IsBodyHtml = true // Đặt IsBodyHtml thành true để cho phép sử dụng HTML trong nội dung email
-                })
-                {
-                    smtp.Send(message);
+                    // Tạo mật khẩu ngẫu nhiên
+                    string confirmationCode = GenerateConfirmationCode();
+
+                    // Gửi mật khẩu mới qua mail
+                    var fromAddress = new MailAddress("tranthungan1724@gmail.com", "NHÓM 15 - LTMCB");
+                    var toAddress = new MailAddress(email);
+                    const string fromPassword = "omcc pehn osnr hedf";
+                    const string subject = "Ứng dụng quản lý điểm sinh viên - Reset mật khẩu";
+
+                    // Nội dung email sử dụng định dạng HTML
+                    string body = $"<html><body><p>Chào bạn,</p><p>Chúng tôi đã hỗ trợ bạn reset mật khẩu. Đây là mật khẩu mới của bạn: <strong>{confirmationCode}</strong></p><p>Trân trọng!</p><p>Cảm ơn</p></body></html>";
+
+                    // Gửi email
+                    var smtp = new SmtpClient
+                    {
+                        Host = "smtp.gmail.com",
+                        Port = 587,
+                        EnableSsl = true,
+                        DeliveryMethod = SmtpDeliveryMethod.Network,
+                        UseDefaultCredentials = false,
+                        Credentials = new NetworkCredential(fromAddress.Address, fromPassword)
+                    };
+
+                    using (var message = new MailMessage(fromAddress, toAddress)
+                    {
+                        Subject = subject,
+                        Body = body,
+                        IsBodyHtml = true // Đặt IsBodyHtml thành true để cho phép sử dụng HTML trong nội dung email
+                    })
+                    {
+                        smtp.Send(message);
+                    }
+
+                    // Lưu mật khẩu mới 
+                    await userDataRef.UpdateAsync("Password", confirmationCode);
+
+                    MessageBox.Show($"Mật khẩu mới đã được gửi đến email của bạn.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-
-                // Lưu mật khẩu mới 
-                await userDataRef.UpdateAsync("Password", confirmationCode);
-
-                MessageBox.Show($"Mật khẩu mới đã được gửi đến email của bạn.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Tên người dùng không tồn tại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                else
+                {
+                    MessageBox.Show("Tên người dùng không tồn tại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
         }
         // Tạo mật khẩu ngẫu nhiên

@@ -49,9 +49,9 @@ namespace QuanLySinhVien
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(355, 101);
+            this.label1.Location = new System.Drawing.Point(399, 126);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 29);
+            this.label1.Size = new System.Drawing.Size(203, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "ĐĂNG NHẬP";
             // 
@@ -60,9 +60,9 @@ namespace QuanLySinhVien
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(241, 179);
+            this.label3.Location = new System.Drawing.Point(271, 224);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 20);
+            this.label3.Size = new System.Drawing.Size(102, 25);
             this.label3.TabIndex = 3;
             this.label3.Text = "Username";
             // 
@@ -71,9 +71,9 @@ namespace QuanLySinhVien
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(241, 241);
+            this.label4.Location = new System.Drawing.Point(271, 301);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 20);
+            this.label4.Size = new System.Drawing.Size(98, 25);
             this.label4.TabIndex = 4;
             this.label4.Text = "Password";
             // 
@@ -82,10 +82,12 @@ namespace QuanLySinhVien
             this.UserBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(164)))), ((int)(((byte)(227)))));
             this.UserBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UserBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserBox.Location = new System.Drawing.Point(350, 174);
+            this.UserBox.Location = new System.Drawing.Point(394, 218);
+            this.UserBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.UserBox.Name = "UserBox";
-            this.UserBox.Size = new System.Drawing.Size(294, 25);
+            this.UserBox.Size = new System.Drawing.Size(331, 30);
             this.UserBox.TabIndex = 5;
+            this.UserBox.Text = "22520701";
             // 
             // btn_Login
             // 
@@ -93,9 +95,10 @@ namespace QuanLySinhVien
             this.btn_Login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Login.Location = new System.Drawing.Point(306, 313);
+            this.btn_Login.Location = new System.Drawing.Point(344, 391);
+            this.btn_Login.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Login.Name = "btn_Login";
-            this.btn_Login.Size = new System.Drawing.Size(122, 41);
+            this.btn_Login.Size = new System.Drawing.Size(137, 51);
             this.btn_Login.TabIndex = 6;
             this.btn_Login.Text = "Đăng nhập";
             this.btn_Login.UseVisualStyleBackColor = false;
@@ -108,9 +111,10 @@ namespace QuanLySinhVien
             this.btn_ForgetPass.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_ForgetPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ForgetPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ForgetPass.Location = new System.Drawing.Point(449, 313);
+            this.btn_ForgetPass.Location = new System.Drawing.Point(505, 391);
+            this.btn_ForgetPass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_ForgetPass.Name = "btn_ForgetPass";
-            this.btn_ForgetPass.Size = new System.Drawing.Size(195, 40);
+            this.btn_ForgetPass.Size = new System.Drawing.Size(219, 50);
             this.btn_ForgetPass.TabIndex = 7;
             this.btn_ForgetPass.Text = "Quên mật khẩu";
             this.btn_ForgetPass.UseVisualStyleBackColor = false;
@@ -121,10 +125,12 @@ namespace QuanLySinhVien
             this.PassBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(164)))), ((int)(((byte)(227)))));
             this.PassBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PassBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PassBox.Location = new System.Drawing.Point(350, 235);
+            this.PassBox.Location = new System.Drawing.Point(394, 294);
+            this.PassBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PassBox.Name = "PassBox";
-            this.PassBox.Size = new System.Drawing.Size(294, 25);
+            this.PassBox.Size = new System.Drawing.Size(331, 30);
             this.PassBox.TabIndex = 10;
+            this.PassBox.Text = "112233";
             this.PassBox.UseSystemPasswordChar = true;
             // 
             // showpass
@@ -132,9 +138,10 @@ namespace QuanLySinhVien
             this.showpass.AutoSize = true;
             this.showpass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(164)))), ((int)(((byte)(227)))));
             this.showpass.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.showpass.Location = new System.Drawing.Point(519, 274);
+            this.showpass.Location = new System.Drawing.Point(584, 342);
+            this.showpass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.showpass.Name = "showpass";
-            this.showpass.Size = new System.Drawing.Size(125, 20);
+            this.showpass.Size = new System.Drawing.Size(148, 24);
             this.showpass.TabIndex = 11;
             this.showpass.Text = "Show Password";
             this.showpass.UseVisualStyleBackColor = false;
@@ -143,17 +150,19 @@ namespace QuanLySinhVien
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Location = new System.Drawing.Point(350, 202);
+            this.panel1.Location = new System.Drawing.Point(394, 252);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(294, 1);
+            this.panel1.Size = new System.Drawing.Size(331, 1);
             this.panel1.TabIndex = 12;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel2.Location = new System.Drawing.Point(350, 264);
+            this.panel2.Location = new System.Drawing.Point(394, 330);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(294, 1);
+            this.panel2.Size = new System.Drawing.Size(331, 1);
             this.panel2.TabIndex = 13;
             // 
             // errorLabel
@@ -162,20 +171,20 @@ namespace QuanLySinhVien
             this.errorLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(164)))), ((int)(((byte)(227)))));
             this.errorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.errorLabel.ForeColor = System.Drawing.Color.Firebrick;
-            this.errorLabel.Location = new System.Drawing.Point(324, 365);
+            this.errorLabel.Location = new System.Drawing.Point(364, 456);
             this.errorLabel.Name = "errorLabel";
-            this.errorLabel.Size = new System.Drawing.Size(238, 20);
+            this.errorLabel.Size = new System.Drawing.Size(281, 25);
             this.errorLabel.TabIndex = 14;
             this.errorLabel.Text = "Vui lòng nhập đầy đủ thông tin!";
             this.errorLabel.Visible = false;
             // 
             // DangNhap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(886, 521);
+            this.ClientSize = new System.Drawing.Size(997, 651);
             this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -190,6 +199,7 @@ namespace QuanLySinhVien
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "DangNhap";

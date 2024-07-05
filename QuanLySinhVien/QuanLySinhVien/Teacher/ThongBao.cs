@@ -4,6 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Google.Cloud.Firestore;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace QuanLySinhVien
 {
@@ -11,11 +12,13 @@ namespace QuanLySinhVien
     {
         private FirestoreDb db = FirestoreDb.Create("ltmcb-7d1a6");
         private string teacherId;
+
         public ThongBao()
         {
             InitializeComponent();
             teacherId = DangNhap.maso;
             InitializeRichTextBox();
+            picLoad.Visible = false; // Ẩn ProgressBar 
         }
 
         private async Task ShowNotifications(string teacherId)
@@ -29,7 +32,7 @@ namespace QuanLySinhVien
                 if (notifications != null && notifications.Count > 0)
                 {
                     notifications.Reverse(); // Đảo ngược danh sách để hiển thị thông báo mới nhất lên trên
-                    string separator = new string('-', 125);
+                    string separator = new string('-', 120);
                     string joinedNotifications = string.Join($"\n\n{separator}\n\n", notifications);
                     richTextBox2.Text = joinedNotifications;
                 }
@@ -91,7 +94,9 @@ namespace QuanLySinhVien
                                 MessageBox.Show($"Không tìm thấy thông tin sinh viên với mã số {studentId}");
                             }
                         }
-                        MessageBox.Show("Đã gửi thông báo thành công cho lớp " + className);
+                        picLoad.Visible = false; // Ẩn ProgressBar sau khi hoàn tất
+                        MessageBox.Show("Đã gửi thông báo thành công cho lớp " + className, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                     }
                     else
                     {
@@ -128,6 +133,7 @@ namespace QuanLySinhVien
 
         private async void btSend_Click(object sender, EventArgs e)
         {
+            picLoad.Visible = true; // Hiển thị ProgressBar
             string className = comboBox1.SelectedItem?.ToString();
             string time = DateTime.Now.ToString();
             string messageContent = richTextBox1.Text;
@@ -154,7 +160,6 @@ namespace QuanLySinhVien
                     MessageBox.Show("Vui lòng nhập nội dung.");
                 }
             }
-
         }
 
         private async void bt_ListNoti_Click(object sender, EventArgs e)
@@ -189,5 +194,9 @@ namespace QuanLySinhVien
             }
         }
 
+        private void picLoad_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -318,6 +318,12 @@
     <Compile Include="Student\NhanTb.Designer.cs">
       <DependentUpon>NhanTb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Student\Tkb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\Tkb.Designer.cs">
+      <DependentUpon>Tkb.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student\TrangChu_St.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -329,12 +335,6 @@
     </Compile>
     <Compile Include="Student\User_St.Designer.cs">
       <DependentUpon>User_St.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Student\video.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Student\video.Designer.cs">
-      <DependentUpon>video.cs</DependentUpon>
     </Compile>
     <Compile Include="Student\xemDiem.cs">
       <SubType>Form</SubType>
@@ -404,6 +404,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Student\NhanTb.resx">
       <DependentUpon>NhanTb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\Tkb.resx">
+      <DependentUpon>Tkb.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Student\TrangChu_St.resx">
       <DependentUpon>TrangChu_St.cs</DependentUpon>
