@@ -42,7 +42,7 @@
             this.lblFileName.AutoSize = true;
             this.lblFileName.Location = new System.Drawing.Point(110, 235);
             this.lblFileName.Name = "lblFileName";
-            this.lblFileName.Size = new System.Drawing.Size(0, 16);
+            this.lblFileName.Size = new System.Drawing.Size(0, 20);
             this.lblFileName.TabIndex = 2;
             // 
             // listBoxAssignments
@@ -53,10 +53,10 @@
             this.listBoxAssignments.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listBoxAssignments.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxAssignments.FormattingEnabled = true;
-            this.listBoxAssignments.ItemHeight = 24;
+            this.listBoxAssignments.ItemHeight = 28;
             this.listBoxAssignments.Location = new System.Drawing.Point(21, 17);
             this.listBoxAssignments.Name = "listBoxAssignments";
-            this.listBoxAssignments.Size = new System.Drawing.Size(500, 242);
+            this.listBoxAssignments.Size = new System.Drawing.Size(500, 226);
             this.listBoxAssignments.TabIndex = 5;
             this.listBoxAssignments.SelectedIndexChanged += new System.EventHandler(this.listBoxAssignments_SelectedIndexChanged);
             // 
@@ -74,7 +74,7 @@
             this.btnSubmit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnSubmit.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnSubmit.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btnSubmit.Location = new System.Drawing.Point(826, 221);
+            this.btnSubmit.Location = new System.Drawing.Point(803, 275);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(180, 45);
             this.btnSubmit.TabIndex = 7;
@@ -111,7 +111,7 @@
             this.btnBrowse.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnBrowse.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnBrowse.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btnBrowse.Location = new System.Drawing.Point(618, 221);
+            this.btnBrowse.Location = new System.Drawing.Point(803, 224);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(180, 45);
             this.btnBrowse.TabIndex = 10;
@@ -129,12 +129,12 @@
             this.btnDownload.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnDownload.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnDownload.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDownload.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnDownload.FillColor = System.Drawing.Color.LightSteelBlue;
             this.btnDownload.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnDownload.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btnDownload.Location = new System.Drawing.Point(825, 282);
+            this.btnDownload.Location = new System.Drawing.Point(617, 224);
             this.btnDownload.Name = "btnDownload";
-            this.btnDownload.Size = new System.Drawing.Size(180, 88);
+            this.btnDownload.Size = new System.Drawing.Size(180, 96);
             this.btnDownload.TabIndex = 11;
             this.btnDownload.Text = "Tải file bài tập";
             this.btnDownload.Click += new System.EventHandler(this.btnDownload_Click);
@@ -198,7 +198,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(9, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 24);
+            this.label1.Size = new System.Drawing.Size(117, 29);
             this.label1.TabIndex = 14;
             this.label1.Text = "Hạn nộp:";
             // 
@@ -223,7 +223,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label2.Location = new System.Drawing.Point(9, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 24);
+            this.label2.Size = new System.Drawing.Size(67, 29);
             this.label2.TabIndex = 14;
             this.label2.Text = "Lớp:";
             // 

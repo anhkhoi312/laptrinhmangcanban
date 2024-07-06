@@ -61,9 +61,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(531, 32);
+            this.label1.Location = new System.Drawing.Point(398, 24);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 37);
+            this.label1.Size = new System.Drawing.Size(111, 29);
             this.label1.TabIndex = 8;
             this.label1.Text = "Qua môn";
             // 
@@ -73,9 +74,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(944, 38);
+            this.label2.Location = new System.Drawing.Point(708, 28);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 37);
+            this.label2.Size = new System.Drawing.Size(50, 29);
             this.label2.TabIndex = 9;
             this.label2.Text = "Rớt";
             // 
@@ -85,9 +87,10 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(112, 32);
+            this.label3.Location = new System.Drawing.Point(84, 24);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(170, 37);
+            this.label3.Size = new System.Drawing.Size(129, 29);
             this.label3.TabIndex = 10;
             this.label3.Text = "Tổng cộng";
             // 
@@ -96,9 +99,10 @@
             this.label_monhoc_qld.AutoSize = true;
             this.label_monhoc_qld.BackColor = System.Drawing.Color.Transparent;
             this.label_monhoc_qld.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_monhoc_qld.Location = new System.Drawing.Point(45, 26);
+            this.label_monhoc_qld.Location = new System.Drawing.Point(34, 20);
+            this.label_monhoc_qld.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_monhoc_qld.Name = "label_monhoc_qld";
-            this.label_monhoc_qld.Size = new System.Drawing.Size(189, 46);
+            this.label_monhoc_qld.Size = new System.Drawing.Size(144, 36);
             this.label_monhoc_qld.TabIndex = 20;
             this.label_monhoc_qld.Text = "Chọn lớp";
             // 
@@ -108,9 +112,10 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(576, 29);
+            this.label5.Location = new System.Drawing.Point(432, 12);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(266, 46);
+            this.label5.Size = new System.Drawing.Size(200, 36);
             this.label5.TabIndex = 32;
             this.label5.Text = "DANH SÁCH";
             // 
@@ -130,12 +135,13 @@
             this.CK,
             this.TBM,
             this.type});
-            this.dataGridView1.Location = new System.Drawing.Point(22, 78);
+            this.dataGridView1.Location = new System.Drawing.Point(16, 58);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1349, 611);
+            this.dataGridView1.Size = new System.Drawing.Size(1012, 408);
             this.dataGridView1.TabIndex = 34;
             // 
             // MSSV
@@ -188,10 +194,10 @@
             this.guna2Panel1.BorderThickness = 3;
             this.guna2Panel1.Controls.Add(this.comboBox_mssv);
             this.guna2Panel1.Controls.Add(this.label_monhoc_qld);
-            this.guna2Panel1.Location = new System.Drawing.Point(179, 45);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.guna2Panel1.Location = new System.Drawing.Point(134, 34);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1080, 102);
+            this.guna2Panel1.Size = new System.Drawing.Size(675, 76);
             this.guna2Panel1.TabIndex = 38;
             // 
             // comboBox_mssv
@@ -207,10 +213,10 @@
             this.comboBox_mssv.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.comboBox_mssv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.comboBox_mssv.ItemHeight = 30;
-            this.comboBox_mssv.Location = new System.Drawing.Point(269, 26);
-            this.comboBox_mssv.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.comboBox_mssv.Location = new System.Drawing.Point(202, 11);
+            this.comboBox_mssv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox_mssv.Name = "comboBox_mssv";
-            this.comboBox_mssv.Size = new System.Drawing.Size(764, 36);
+            this.comboBox_mssv.Size = new System.Drawing.Size(409, 36);
             this.comboBox_mssv.TabIndex = 21;
             // 
             // guna2Panel2
@@ -226,10 +232,10 @@
             this.guna2Panel2.Controls.Add(this.label2);
             this.guna2Panel2.Controls.Add(this.label3);
             this.guna2Panel2.FillColor = System.Drawing.Color.MistyRose;
-            this.guna2Panel2.Location = new System.Drawing.Point(138, 173);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.guna2Panel2.Location = new System.Drawing.Point(104, 130);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1354, 102);
+            this.guna2Panel2.Size = new System.Drawing.Size(1016, 76);
             this.guna2Panel2.TabIndex = 39;
             // 
             // tb_rotmon
@@ -237,7 +243,7 @@
             this.tb_rotmon.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tb_rotmon.AutoRoundedCorners = true;
             this.tb_rotmon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tb_rotmon.BorderRadius = 23;
+            this.tb_rotmon.BorderRadius = 17;
             this.tb_rotmon.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tb_rotmon.DefaultText = "";
             this.tb_rotmon.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -247,13 +253,13 @@
             this.tb_rotmon.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tb_rotmon.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tb_rotmon.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tb_rotmon.Location = new System.Drawing.Point(1032, 32);
-            this.tb_rotmon.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tb_rotmon.Location = new System.Drawing.Point(774, 24);
+            this.tb_rotmon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_rotmon.Name = "tb_rotmon";
             this.tb_rotmon.PasswordChar = '\0';
             this.tb_rotmon.PlaceholderText = "";
             this.tb_rotmon.SelectedText = "";
-            this.tb_rotmon.Size = new System.Drawing.Size(208, 48);
+            this.tb_rotmon.Size = new System.Drawing.Size(156, 36);
             this.tb_rotmon.TabIndex = 13;
             // 
             // tb_quamon
@@ -261,7 +267,7 @@
             this.tb_quamon.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tb_quamon.AutoRoundedCorners = true;
             this.tb_quamon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tb_quamon.BorderRadius = 23;
+            this.tb_quamon.BorderRadius = 17;
             this.tb_quamon.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tb_quamon.DefaultText = "";
             this.tb_quamon.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -271,13 +277,13 @@
             this.tb_quamon.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tb_quamon.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tb_quamon.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tb_quamon.Location = new System.Drawing.Point(688, 32);
-            this.tb_quamon.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tb_quamon.Location = new System.Drawing.Point(516, 24);
+            this.tb_quamon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_quamon.Name = "tb_quamon";
             this.tb_quamon.PasswordChar = '\0';
             this.tb_quamon.PlaceholderText = "";
             this.tb_quamon.SelectedText = "";
-            this.tb_quamon.Size = new System.Drawing.Size(208, 48);
+            this.tb_quamon.Size = new System.Drawing.Size(156, 36);
             this.tb_quamon.TabIndex = 12;
             // 
             // textBox1
@@ -285,7 +291,7 @@
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox1.AutoRoundedCorners = true;
             this.textBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox1.BorderRadius = 23;
+            this.textBox1.BorderRadius = 17;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox1.DefaultText = "";
             this.textBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -295,13 +301,13 @@
             this.textBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBox1.Location = new System.Drawing.Point(290, 30);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.textBox1.Location = new System.Drawing.Point(218, 22);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.PasswordChar = '\0';
             this.textBox1.PlaceholderText = "";
             this.textBox1.SelectedText = "";
-            this.textBox1.Size = new System.Drawing.Size(208, 48);
+            this.textBox1.Size = new System.Drawing.Size(156, 36);
             this.textBox1.TabIndex = 11;
             // 
             // guna2Panel3
@@ -316,10 +322,10 @@
             this.guna2Panel3.Controls.Add(this.label5);
             this.guna2Panel3.Controls.Add(this.dataGridView1);
             this.guna2Panel3.FillColor = System.Drawing.Color.MistyRose;
-            this.guna2Panel3.Location = new System.Drawing.Point(115, 331);
-            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.guna2Panel3.Location = new System.Drawing.Point(86, 248);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(1398, 720);
+            this.guna2Panel3.Size = new System.Drawing.Size(1048, 490);
             this.guna2Panel3.TabIndex = 40;
             // 
             // tracuu
@@ -335,21 +341,21 @@
             this.tracuu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.tracuu.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
             this.tracuu.ForeColor = System.Drawing.Color.Black;
-            this.tracuu.Location = new System.Drawing.Point(1288, 34);
-            this.tracuu.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tracuu.Location = new System.Drawing.Point(816, 34);
+            this.tracuu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tracuu.Name = "tracuu";
-            this.tracuu.Size = new System.Drawing.Size(288, 72);
+            this.tracuu.Size = new System.Drawing.Size(130, 76);
             this.tracuu.TabIndex = 41;
             this.tracuu.Text = "Tra cứu";
             this.tracuu.Click += new System.EventHandler(this.tracuu_Click);
             // 
             // ThongKe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1627, 1070);
+            this.ClientSize = new System.Drawing.Size(1220, 788);
             this.Controls.Add(this.tracuu);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel2);
@@ -357,6 +363,7 @@
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ThongKe";
             this.Text = "ThongKe";
             this.Load += new System.EventHandler(this.ThongKe_Load);

@@ -74,7 +74,7 @@
             this.btNhapDiem.ForeColor = System.Drawing.Color.Black;
             this.btNhapDiem.Image = ((System.Drawing.Image)(resources.GetObject("btNhapDiem.Image")));
             this.btNhapDiem.ImageSize = new System.Drawing.Size(40, 40);
-            this.btNhapDiem.Location = new System.Drawing.Point(43, 28);
+            this.btNhapDiem.Location = new System.Drawing.Point(43, 33);
             this.btNhapDiem.Name = "btNhapDiem";
             this.btNhapDiem.Size = new System.Drawing.Size(239, 66);
             this.btNhapDiem.TabIndex = 0;
@@ -92,7 +92,6 @@
             this.panel2.Controls.Add(this.btThongBao);
             this.panel2.Controls.Add(this.btThongKe);
             this.panel2.Controls.Add(this.btNhapDiem);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(346, 724);
@@ -101,8 +100,6 @@
             // 
             // bt_dangXuat
             // 
-            this.bt_dangXuat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.bt_dangXuat.BackColor = System.Drawing.Color.Transparent;
             this.bt_dangXuat.BorderRadius = 12;
             this.bt_dangXuat.BorderThickness = 2;
@@ -114,9 +111,9 @@
             this.bt_dangXuat.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
             this.bt_dangXuat.ForeColor = System.Drawing.Color.Black;
             this.bt_dangXuat.ImageSize = new System.Drawing.Size(40, 40);
-            this.bt_dangXuat.Location = new System.Drawing.Point(3, 666);
+            this.bt_dangXuat.Location = new System.Drawing.Point(43, 539);
             this.bt_dangXuat.Name = "bt_dangXuat";
-            this.bt_dangXuat.Size = new System.Drawing.Size(343, 46);
+            this.bt_dangXuat.Size = new System.Drawing.Size(239, 46);
             this.bt_dangXuat.TabIndex = 39;
             this.bt_dangXuat.Text = "Đăng xuất";
             this.bt_dangXuat.Click += new System.EventHandler(this.bt_dangXuat_Click);
@@ -137,7 +134,7 @@
             this.bt_User.ForeColor = System.Drawing.Color.Black;
             this.bt_User.Image = ((System.Drawing.Image)(resources.GetObject("bt_User.Image")));
             this.bt_User.ImageSize = new System.Drawing.Size(40, 40);
-            this.bt_User.Location = new System.Drawing.Point(43, 583);
+            this.bt_User.Location = new System.Drawing.Point(43, 467);
             this.bt_User.Name = "bt_User";
             this.bt_User.Size = new System.Drawing.Size(239, 66);
             this.bt_User.TabIndex = 38;
@@ -159,7 +156,7 @@
             this.btchat.ForeColor = System.Drawing.Color.Black;
             this.btchat.Image = ((System.Drawing.Image)(resources.GetObject("btchat.Image")));
             this.btchat.ImageSize = new System.Drawing.Size(40, 40);
-            this.btchat.Location = new System.Drawing.Point(43, 490);
+            this.btchat.Location = new System.Drawing.Point(43, 395);
             this.btchat.Name = "btchat";
             this.btchat.Size = new System.Drawing.Size(239, 66);
             this.btchat.TabIndex = 37;
@@ -182,7 +179,7 @@
             this.btDsLop.ForeColor = System.Drawing.Color.Black;
             this.btDsLop.Image = ((System.Drawing.Image)(resources.GetObject("btDsLop.Image")));
             this.btDsLop.ImageSize = new System.Drawing.Size(40, 40);
-            this.btDsLop.Location = new System.Drawing.Point(43, 396);
+            this.btDsLop.Location = new System.Drawing.Point(43, 323);
             this.btDsLop.Name = "btDsLop";
             this.btDsLop.Size = new System.Drawing.Size(239, 66);
             this.btDsLop.TabIndex = 36;
@@ -204,7 +201,7 @@
             this.btTask.ForeColor = System.Drawing.Color.Black;
             this.btTask.Image = ((System.Drawing.Image)(resources.GetObject("btTask.Image")));
             this.btTask.ImageSize = new System.Drawing.Size(40, 40);
-            this.btTask.Location = new System.Drawing.Point(43, 304);
+            this.btTask.Location = new System.Drawing.Point(43, 251);
             this.btTask.Name = "btTask";
             this.btTask.Size = new System.Drawing.Size(239, 66);
             this.btTask.TabIndex = 35;
@@ -226,7 +223,7 @@
             this.btThongBao.ForeColor = System.Drawing.Color.Black;
             this.btThongBao.Image = ((System.Drawing.Image)(resources.GetObject("btThongBao.Image")));
             this.btThongBao.ImageSize = new System.Drawing.Size(40, 40);
-            this.btThongBao.Location = new System.Drawing.Point(43, 212);
+            this.btThongBao.Location = new System.Drawing.Point(43, 177);
             this.btThongBao.Name = "btThongBao";
             this.btThongBao.Size = new System.Drawing.Size(239, 66);
             this.btThongBao.TabIndex = 34;
@@ -248,7 +245,7 @@
             this.btThongKe.ForeColor = System.Drawing.Color.Black;
             this.btThongKe.Image = ((System.Drawing.Image)(resources.GetObject("btThongKe.Image")));
             this.btThongKe.ImageSize = new System.Drawing.Size(40, 40);
-            this.btThongKe.Location = new System.Drawing.Point(43, 118);
+            this.btThongKe.Location = new System.Drawing.Point(43, 105);
             this.btThongKe.Name = "btThongKe";
             this.btThongKe.Size = new System.Drawing.Size(239, 66);
             this.btThongKe.TabIndex = 33;
@@ -256,7 +253,7 @@
             // 
             // TrangChu_Tea
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;

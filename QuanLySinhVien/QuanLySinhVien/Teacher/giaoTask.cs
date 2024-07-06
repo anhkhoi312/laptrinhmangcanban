@@ -33,7 +33,7 @@ namespace QuanLySinhVien.Teacher
                         comboBoxClasses.Items.Add(className);
                     }
                     // Thêm dòng này để kiểm tra dữ liệu
-                    MessageBox.Show("Classes loaded successfully: " + string.Join(", ", classes));
+                    //MessageBox.Show("Classes loaded successfully: " + string.Join(", ", classes));
                 }
                 else
                 {

@@ -236,6 +236,8 @@ namespace QuanLySinhVien.Chat
         //lấy thông tin vào tạo các cặp button_panel khi load form
         private async void chatBox1_Load(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
+            this.KeyDown += btn_send_Keydown;
             try
             {
                 //truy cập đến Userdata để lấy các id 
@@ -257,10 +259,7 @@ namespace QuanLySinhVien.Chat
                             flowLayoutPanel1.Controls.Add(button); //add button vừa tạo và panel bên trái của form
                             FlowLayoutPanel flowLayoutPanel = createFlowlayoutPanel();//tạo 1 flowpanel 
                             panel3.Controls.Add(flowLayoutPanel);// add panel
-                            id_boxchat.Add(button, flowLayoutPanel);//add 1 cặp button_panel
-                      
-
-
+                            id_boxchat.Add(button, flowLayoutPanel);//add 1 cặp button_panel                
                         }
                     }
                                      
@@ -325,6 +324,13 @@ namespace QuanLySinhVien.Chat
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+        private void btn_send_Keydown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btn_send.PerformClick();
+            }
         }
     }
 }

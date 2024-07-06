@@ -51,9 +51,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Brown;
-            this.label1.Location = new System.Drawing.Point(13, 14);
+            this.label1.Location = new System.Drawing.Point(26, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(332, 35);
+            this.label1.Size = new System.Drawing.Size(395, 41);
             this.label1.TabIndex = 1;
             this.label1.Text = "BẢNG ĐIỂM SINH VIÊN";
             // 
@@ -73,13 +73,13 @@
             this.GK,
             this.CK,
             this.TBM});
-            this.dataGridView1.Location = new System.Drawing.Point(14, 17);
+            this.dataGridView1.Location = new System.Drawing.Point(16, 21);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(736, 438);
+            this.dataGridView1.Size = new System.Drawing.Size(828, 548);
             this.dataGridView1.TabIndex = 35;
             // 
             // MA_MH
@@ -133,9 +133,10 @@
             this.guna2Panel1.BorderThickness = 2;
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.FillColor = System.Drawing.Color.Lavender;
-            this.guna2Panel1.Location = new System.Drawing.Point(322, 47);
+            this.guna2Panel1.Location = new System.Drawing.Point(362, 59);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(357, 65);
+            this.guna2Panel1.Size = new System.Drawing.Size(439, 81);
             this.guna2Panel1.TabIndex = 38;
             // 
             // guna2Panel2
@@ -148,18 +149,19 @@
             this.guna2Panel2.BorderRadius = 20;
             this.guna2Panel2.BorderThickness = 3;
             this.guna2Panel2.Controls.Add(this.dataGridView1);
-            this.guna2Panel2.Location = new System.Drawing.Point(145, 128);
+            this.guna2Panel2.Location = new System.Drawing.Point(163, 160);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(763, 474);
+            this.guna2Panel2.Size = new System.Drawing.Size(858, 592);
             this.guna2Panel2.TabIndex = 39;
             // 
             // xemDiem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1032, 628);
+            this.ClientSize = new System.Drawing.Size(1161, 785);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.DoubleBuffered = true;

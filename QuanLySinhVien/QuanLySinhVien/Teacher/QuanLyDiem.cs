@@ -104,26 +104,6 @@ namespace QuanLySinhVien
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
-        
-        private async void comboBox_mssv_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-            string selectedClassName = comboBox_mssv.SelectedItem.ToString();
-            if (!string.IsNullOrEmpty(selectedClassName))
-            {
-                await UpdateListViewWithStudentGrades(selectedClassName);
-            }
-            else
-
-
-
-            {
-                MessageBox.Show("Vui lòng chọn lớp");
-            } 
-                
-        }
-
-
 
         // Hàm lấy danh sách sinh viên------------------------------------------------------------------------
 
@@ -336,6 +316,19 @@ namespace QuanLySinhVien
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private async void comboBox_mssv_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            string selectedClassName = comboBox_mssv.SelectedItem.ToString();
+            if (!string.IsNullOrEmpty(selectedClassName))
+            {
+                await UpdateListViewWithStudentGrades(selectedClassName);
+            }
+            else
+                        {
+                MessageBox.Show("Vui lòng chọn lớp");
+            }
         }
     }
 }

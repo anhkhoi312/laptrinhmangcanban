@@ -112,7 +112,6 @@ namespace QuanLySinhVien.Student
                     selectedAssignmentId = selectedAssignment.Id; // Sử dụng Document ID
                     txtDeadline.Text = selectedAssignment.DeadlineDate.ToString("dd/MM/yyyy HH:mm:ss"); // Hiển thị deadline trong TextBox
                     Lop.Text= selectedAssignment.ClassID.ToString();
-                    MessageBox.Show($"URL của bài tập: {selectedAssignment.FileUrl}"); // Hiển thị URL của bài tập
                 }
             }
         }
