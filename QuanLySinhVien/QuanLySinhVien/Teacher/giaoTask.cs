@@ -110,55 +110,9 @@ namespace QuanLySinhVien.Teacher
         }
 
 
-        private async void btnSave_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(uploadedFilePath))
-            {
-                MessageBox.Show("Vui lòng chọn file bài tập.");
-                return;
-            }
+       
 
-            // Tạo một deadline mới
-            var deadline = new CreateDeadlineModel
-            {
-                Title = txtTitle.Text,
-                DeadlineDate = dateTimePicker.Value, // Lưu giá trị DateTime trực tiếp
-                ClassID = comboBoxClasses.SelectedItem.ToString()
-            };
-
-            using (HttpClient client = new HttpClient())
-            {
-                MultipartFormDataContent form = new MultipartFormDataContent();
-                form.Add(new StringContent(deadline.Title), "Title");
-                form.Add(new StringContent(deadline.DeadlineDate.ToString("yyyy-MM-ddTHH:mm:ss.fffZ")), "DeadlineDate"); // Chuyển DateTime thành chuỗi
-                form.Add(new StringContent(deadline.ClassID), "ClassID");
-
-                using (var fileStream = new FileStream(uploadedFilePath, FileMode.Open, FileAccess.Read))
-                {
-                    form.Add(new StreamContent(fileStream), "file", Path.GetFileName(uploadedFilePath));
-                    HttpResponseMessage response = await client.PostAsync("http://localhost:5000/api/Deadlines/add", form);
-                    if (response.IsSuccessStatusCode)
-                    {
-                        MessageBox.Show("Deadline added successfully.");
-                        LoadDeadlines(comboBoxClasses.SelectedItem.ToString()); // Tải lại danh sách deadlines
-                    }
-                    else
-                    {
-                        string responseContent = await response.Content.ReadAsStringAsync();
-                        MessageBox.Show($"Error: {responseContent}");
-                    }
-                }
-            }
-        }
-
-        private void btnBrowse_Click(object sender, EventArgs e)
-        {
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                uploadedFilePath = openFileDialog1.FileName;
-                lblFileName.Text = Path.GetFileName(uploadedFilePath);
-            }
-        }
+       
 
         private void listBoxDeadlines_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -214,6 +168,56 @@ namespace QuanLySinhVien.Teacher
         private void giaoTask_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnBrowse_Click_1(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                uploadedFilePath = openFileDialog1.FileName;
+                lblFileName.Text = Path.GetFileName(uploadedFilePath);
+            }
+        }
+
+        private async void btnSave_Click_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(uploadedFilePath))
+            {
+                MessageBox.Show("Vui lòng chọn file bài tập.");
+                return;
+            }
+
+            // Tạo một deadline mới
+            var deadline = new CreateDeadlineModel
+            {
+                Title = txtTitle.Text,
+                DeadlineDate = dateTimePicker.Value, // Lưu giá trị DateTime trực tiếp
+                ClassID = comboBoxClasses.SelectedItem.ToString()
+            };
+
+            using (HttpClient client = new HttpClient())
+            {
+                MultipartFormDataContent form = new MultipartFormDataContent();
+                form.Add(new StringContent(deadline.Title), "Title");
+                form.Add(new StringContent(deadline.DeadlineDate.ToString("yyyy-MM-ddTHH:mm:ss.fffZ")), "DeadlineDate"); // Chuyển DateTime thành chuỗi
+                form.Add(new StringContent(deadline.ClassID), "ClassID");
+
+                using (var fileStream = new FileStream(uploadedFilePath, FileMode.Open, FileAccess.Read))
+                {
+                    form.Add(new StreamContent(fileStream), "file", Path.GetFileName(uploadedFilePath));
+                    HttpResponseMessage response = await client.PostAsync("http://localhost:5000/api/Deadlines/add", form);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        MessageBox.Show("Deadline added successfully.");
+                        LoadDeadlines(comboBoxClasses.SelectedItem.ToString()); // Tải lại danh sách deadlines
+                    }
+                    else
+                    {
+                        string responseContent = await response.Content.ReadAsStringAsync();
+                        MessageBox.Show($"Error: {responseContent}");
+                    }
+                }
+            }
         }
     }
 }

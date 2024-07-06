@@ -118,13 +118,49 @@ namespace QuanLySinhVien.Student
             }
         }
 
-        private void openChildForm(Form childForm)
+        private async void openChildForm(Form childForm)
         {
-            if (activeForm != null)
+            // Thêm các Button vào danh sách
+            buttons = new List<Guna.UI2.WinForms.Guna2Button> { btn_Shedule, btXemdiem, btThongbao, btDeadline, btChat, btUser };
+
+            //Gọi chatbox
+            string username = "";
+            DocumentReference docRef = firestoreDb.Collection("UserData").Document(DangNhap.maso);
+            DocumentSnapshot docSnapshot = await docRef.GetSnapshotAsync();
+
+            // Kiểm tra xem tài liệu có tồn tại hay không
+            if (docSnapshot.Exists)
             {
-                activeForm.Close();
+                // Lấy dữ liệu từ tài liệu
+                Dictionary<string, object> studentData = docSnapshot.ToDictionary();
+                username = studentData.ContainsKey("Name") ? studentData["Name"].ToString() : "";
             }
+
+            if (activeForm != null && !activeForm.IsDisposed)
+            {
+                activeForm.Hide(); // Ẩn form thay vì đóng
+            }
+
             activeForm = childForm;
+
+            if (childForm.IsDisposed)
+            {
+                // Nếu form đã bị disposed, khởi tạo lại form mới
+                if (childForm is xemDiem)
+                    activeForm = new xemDiem();
+                else if (childForm is NhanTb)
+                    activeForm = new NhanTb();
+                else if (childForm is Deadline)
+                    activeForm = new Deadline(StudentId);
+                else if (childForm is Tkb)
+                    activeForm = new Tkb();
+                else if (childForm is User_St)
+                    activeForm = new User_St();
+                else if (childForm is chatBox1)
+                    activeForm = new chatBox1(username, DangNhap.maso, tcpClient, reader, writer);
+            }
+
+            childForm = activeForm; // Gán lại form mới nếu cần
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
@@ -142,9 +178,7 @@ namespace QuanLySinhVien.Student
 
      
         //mở form chat
-        private async void btChat_Click(object sender, EventArgs e)
-        {
-        }
+     
 
         //khi tắt ứng dụng thì các file lưu tin nhắn tạm cũng bị xóa đi 
         private void TrangChu_St_FormClosed(object sender, FormClosedEventArgs e)

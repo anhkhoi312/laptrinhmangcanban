@@ -138,18 +138,52 @@ namespace QuanLySinhVien
 
         private void openChildForm(Form childForm)
         {
-            if (activeForm != null)
+            if (activeForm != null && !activeForm.IsDisposed)
             {
-                activeForm.Close();
+                activeForm.Hide();
             }
-            activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panel1.Controls.Add(childForm);
-            panel1.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
+
+            if (childForm.IsDisposed)
+            {
+                if (childForm is QuanLyDiem)
+                    activeForm = new QuanLyDiem();
+                else if (childForm is ThongKe)
+                    activeForm = new ThongKe();
+                else if (childForm is ThongBao)
+                    activeForm = new ThongBao();
+                else if (childForm is QuanLyLop)
+                    activeForm = new QuanLyLop();
+                else if (childForm is User_Tea)
+                    activeForm = new User_Tea();
+                else if (childForm is giaoTask)
+                    activeForm = new giaoTask();
+                else if (childForm is chatBox1)
+                {
+                    string username = "";
+                    DocumentReference docRef = firestoreDb.Collection("UserData").Document(DangNhap.maso);
+                    DocumentSnapshot docSnapshot = docRef.GetSnapshotAsync().Result;
+
+                    if (docSnapshot.Exists)
+                    {
+                        Dictionary<string, object> studentData = docSnapshot.ToDictionary();
+                        username = studentData.ContainsKey("Name") ? studentData["Name"].ToString() : "";
+                    }
+
+                    activeForm = new chatBox1(username, DangNhap.maso, tcpClient, reader, writer);
+                }
+            }
+            else
+            {
+                activeForm = childForm;
+            }
+
+            activeForm.TopLevel = false;
+            activeForm.FormBorderStyle = FormBorderStyle.None;
+            activeForm.Dock = DockStyle.Fill;
+            panel1.Controls.Add(activeForm);
+            panel1.Tag = activeForm;
+            activeForm.BringToFront();
+            activeForm.Show();
         }
 
         private void TrangChu_Tea_Load(object sender, EventArgs e)

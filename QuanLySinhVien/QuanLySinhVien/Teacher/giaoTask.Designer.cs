@@ -61,7 +61,7 @@
             this.lblFileName.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFileName.Location = new System.Drawing.Point(747, 321);
             this.lblFileName.Name = "lblFileName";
-            this.lblFileName.Size = new System.Drawing.Size(236, 40);
+            this.lblFileName.Size = new System.Drawing.Size(143, 24);
             this.lblFileName.TabIndex = 5;
             this.lblFileName.Text = "No file selected";
             // 
@@ -267,6 +267,7 @@
             this.btnBrowse.Size = new System.Drawing.Size(180, 45);
             this.btnBrowse.TabIndex = 10;
             this.btnBrowse.Text = "Chọn file";
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click_1);
             // 
             // btnSave
             // 
@@ -286,6 +287,7 @@
             this.btnSave.Size = new System.Drawing.Size(180, 45);
             this.btnSave.TabIndex = 11;
             this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
             // 
             // listBoxDeadlines
             // 
@@ -293,10 +295,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listBoxDeadlines.FormattingEnabled = true;
-            this.listBoxDeadlines.ItemHeight = 25;
+            this.listBoxDeadlines.ItemHeight = 16;
             this.listBoxDeadlines.Location = new System.Drawing.Point(27, 41);
             this.listBoxDeadlines.Name = "listBoxDeadlines";
-            this.listBoxDeadlines.Size = new System.Drawing.Size(420, 204);
+            this.listBoxDeadlines.Size = new System.Drawing.Size(420, 196);
             this.listBoxDeadlines.TabIndex = 12;
             this.listBoxDeadlines.SelectedIndexChanged += new System.EventHandler(this.listBoxDeadlines_SelectedIndexChanged);
             // 
@@ -306,10 +308,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listBoxStudents.FormattingEnabled = true;
-            this.listBoxStudents.ItemHeight = 25;
+            this.listBoxStudents.ItemHeight = 16;
             this.listBoxStudents.Location = new System.Drawing.Point(24, 41);
             this.listBoxStudents.Name = "listBoxStudents";
-            this.listBoxStudents.Size = new System.Drawing.Size(358, 204);
+            this.listBoxStudents.Size = new System.Drawing.Size(358, 196);
             this.listBoxStudents.TabIndex = 13;
             // 
             // btnDownload
@@ -395,7 +397,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(156, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 32);
+            this.label1.Size = new System.Drawing.Size(157, 20);
             this.label1.TabIndex = 13;
             this.label1.Text = "Deadlines đã tạo:";
             // 
@@ -422,7 +424,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(151, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(182, 32);
+            this.label2.Size = new System.Drawing.Size(116, 20);
             this.label2.TabIndex = 14;
             this.label2.Text = "Các submit: ";
             // 
