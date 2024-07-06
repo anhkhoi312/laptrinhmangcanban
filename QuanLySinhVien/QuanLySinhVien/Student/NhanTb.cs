@@ -10,14 +10,34 @@ using static System.Net.Mime.MediaTypeNames;
 namespace QuanLySinhVien.Student
 {
     public partial class NhanTb : Form
+
     {
+      
+
         FirestoreDb db = FirestoreDb.Create("ltmcb-7d1a6");
 
         public NhanTb()
         {
             InitializeComponent();
+            InitializeTransparentForm();
+        }
+        private void InitializeTransparentForm()
+        {
+            // Thiết lập thuộc tính của form
+            this.FormBorderStyle = FormBorderStyle.None; // Bỏ viền form nếu cần
+            this.BackColor = Color.LimeGreen; // Chọn một màu sắc làm màu trong suốt
+            this.TransparencyKey = Color.LimeGreen; // Làm cho màu LimeGreen trở nên trong suốt
+            this.Opacity = 0.1; // Đặt độ trong suốt của form (0.0 đến 1.0)
+            this.TopLevel = false;
         }
 
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            // Vẽ các điều khiển tùy chỉnh hoặc hình ảnh trên form
+            base.OnPaint(e);
+        }
+
+     
         private async void NhanTb_Load(object sender, EventArgs e)
         {
             string maso = DangNhap.maso;
@@ -65,11 +85,7 @@ namespace QuanLySinhVien.Student
             richTextBox1.Text = selectedNotification;
         }
 
-        private async void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-           
-
-        }
+      
         private async void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listBox1.SelectedItem != null)
@@ -105,6 +121,16 @@ namespace QuanLySinhVien.Student
                     e.Graphics.DrawString(itemText, e.Font, brush, e.Bounds);
                 }
             }
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

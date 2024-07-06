@@ -142,5 +142,19 @@ namespace QuanLySinhVien.Student
             }
         }
 
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tb_gmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

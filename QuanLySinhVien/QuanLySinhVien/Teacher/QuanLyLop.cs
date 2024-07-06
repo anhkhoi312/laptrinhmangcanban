@@ -184,19 +184,7 @@ namespace QuanLySinhVien
                 MessageBox.Show("Đã xảy ra lỗi khi tải danh sách lớp: " + ex.Message);
             }
         }
-        private async void comboBox_mssv_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-            string selectedClassName = comboBox_mssv.SelectedItem.ToString();
-            if (!string.IsNullOrEmpty(selectedClassName))
-            {
-                await UpdateListViewWithStudent(selectedClassName);
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng chọn lớp");
-            }
-        }
+       
 
         private async void button1_them_Click(object sender, EventArgs e)
         {
@@ -388,15 +376,27 @@ namespace QuanLySinhVien
             //Căn giữa cả bảng 
             oSheet.get_Range(c1, c2).HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter;
         }
-        
 
-        private async void btn_XuatFile_Click(object sender, EventArgs e)
+        private void btn_XuatFile_Click(object sender, EventArgs e)
         {
             string classId = comboBox_mssv.SelectedItem.ToString();
             DataTable dt = CreateDataTable();
             ExportDataTableToExcel(dt, classId, "Danh sách lớp " + classId);
 
-            
+
+        }
+
+        private async void comboBox_mssv_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedClassName = comboBox_mssv.SelectedItem.ToString();
+            if (!string.IsNullOrEmpty(selectedClassName))
+            {
+                await UpdateListViewWithStudent(selectedClassName);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn lớp");
+            }
         }
     }
 }

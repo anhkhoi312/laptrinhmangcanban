@@ -74,48 +74,7 @@ namespace QuanLySinhVien
             return studentCount;
         }
 
-        private async void tracuu_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                // Hiển thị thông báo đang tải dữ liệu
-                dataGridView1.Rows.Clear();
-                int temp = dataGridView1.Rows.Add();
-                DataGridViewRow loadingRow = dataGridView1.Rows[temp];
-                loadingRow.Cells["MSSV"].Value = "Đang lấy dữ liệu...";
-
-                // lấy tên lớp được chọn từ comboBox
-                string selectedClassName = comboBox_mssv.SelectedItem.ToString();
-
-                int count = await CountStudentsInClassAsync(selectedClassName);
-                textBox1.Text = count.ToString();
-                await UpdateListViewWithStudentGrades(selectedClassName);
-                int passedCount = 0;
-                int failedCount = 0;
-                foreach (DataGridViewRow row in dataGridView1.Rows)
-                {
-                    if (row.Cells["TBM"].Value != null && row.Cells["TBM"].Value.ToString() != "N/A")
-                    {
-                        double ckScore;
-                        if (double.TryParse(row.Cells["TBM"].Value.ToString(), out ckScore))
-                        {
-                            if (ckScore >= 5)
-                                passedCount++;
-                            else
-                                failedCount++;
-                        }
-                    }
-                }
-
-                // Hiển thị số lượng sinh viên qua môn và rớt môn
-                tb_quamon.Text = passedCount.ToString();
-                tb_rotmon.Text = failedCount.ToString();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
-        }
+        
 
 
         // ---------------------------------------------------------
@@ -210,7 +169,47 @@ namespace QuanLySinhVien
             }
         }
 
+        private async void tracuu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Hiển thị thông báo đang tải dữ liệu
+                dataGridView1.Rows.Clear();
+                int temp = dataGridView1.Rows.Add();
+                DataGridViewRow loadingRow = dataGridView1.Rows[temp];
+                loadingRow.Cells["MSSV"].Value = "Đang lấy dữ liệu...";
 
+                // lấy tên lớp được chọn từ comboBox
+                string selectedClassName = comboBox_mssv.SelectedItem.ToString();
 
+                int count = await CountStudentsInClassAsync(selectedClassName);
+                textBox1.Text = count.ToString();
+                await UpdateListViewWithStudentGrades(selectedClassName);
+                int passedCount = 0;
+                int failedCount = 0;
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    if (row.Cells["TBM"].Value != null && row.Cells["TBM"].Value.ToString() != "N/A")
+                    {
+                        double ckScore;
+                        if (double.TryParse(row.Cells["TBM"].Value.ToString(), out ckScore))
+                        {
+                            if (ckScore >= 5)
+                                passedCount++;
+                            else
+                                failedCount++;
+                        }
+                    }
+                }
+
+                // Hiển thị số lượng sinh viên qua môn và rớt môn
+                tb_quamon.Text = passedCount.ToString();
+                tb_rotmon.Text = failedCount.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
     }
 }

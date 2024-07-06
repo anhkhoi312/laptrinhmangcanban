@@ -14,7 +14,7 @@ namespace QuanLySinhVien.Student
 {
     public partial class TrangChu_St : Form
     {
-        private List<Button> buttons;
+        private List<Guna.UI2.WinForms.Guna2Button> buttons;
         private Form activeForm = null;
         private Color activeButtonColor = Color.Gray;
         private Color defaultButtonColor = Color.White;
@@ -60,7 +60,7 @@ namespace QuanLySinhVien.Student
         private void InitializeButtons()
         {
             // Thêm các Button vào danh sách
-            buttons = new List<Button> { btn_Shedule, btXemdiem, btThongbao, btDeadline, btChat, btUser};
+            buttons = new List<Guna.UI2.WinForms.Guna2Button> { btn_Shedule ,btXemdiem, btThongbao, btDeadline, btChat, btUser};
 
             // Gán sự kiện Click cho mỗi Button
             foreach (var button in buttons)
@@ -78,7 +78,7 @@ namespace QuanLySinhVien.Student
 
         private void Button_Click(object sender, EventArgs e)
         {
-            Button clickedButton = sender as Button;
+            Guna.UI2.WinForms.Guna2Button clickedButton = sender as Guna.UI2.WinForms.Guna2Button;
 
             // Đặt tất cả các Button về màu mặc định
             foreach (var button in buttons)
@@ -120,17 +120,9 @@ namespace QuanLySinhVien.Student
         {
 
         }
-        private void bt_dangXuat_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            DangNhap form = new DangNhap();
-            form.ShowDialog();
-        }
+      
 
-        private void btUser_Click(object sender, EventArgs e)
-        {
-
-        }
+     
         //mở form chat
         private async void btChat_Click(object sender, EventArgs e)
         {
@@ -171,6 +163,25 @@ namespace QuanLySinhVien.Student
                     }
                 }
             }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+     
+
+        private void bt_dangXuat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            DangNhap form = new DangNhap();
+            form.ShowDialog();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

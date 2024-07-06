@@ -114,6 +114,9 @@ namespace QuanLySinhVien
                 await UpdateListViewWithStudentGrades(selectedClassName);
             }
             else
+
+
+
             {
                 MessageBox.Show("Vui lòng chọn lớp");
             } 
@@ -218,6 +221,7 @@ namespace QuanLySinhVien
                         float grade_CK = float.Parse(textBox_ck.Text);
                         double grade_TBM = (grade_QT * 0.15) + (grade_GK * 0.25) + (grade_CK * 0.5);
                         grade_TBM = Math.Round(grade_TBM, 1);
+
 
                         // Tạo Dictionary chứa dữ liệu điểm
                         Dictionary<string, object> gradeData = new Dictionary<string, object>();
@@ -329,5 +333,9 @@ namespace QuanLySinhVien
             return null;
         }
 
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -31,61 +31,34 @@ namespace QuanLySinhVien
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThongBao));
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label_monhoc_qld = new System.Windows.Forms.Label();
-            this.btSend = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.bt_ListNoti = new System.Windows.Forms.Button();
+            this.bt_ListNoti_1 = new System.Windows.Forms.Button();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.picLoad = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.comboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.bt_ListNoti = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLoad)).BeginInit();
-            this.panel3.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(406, 18);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 5, 2, 5);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(303, 44);
-            this.comboBox1.TabIndex = 19;
             // 
             // label_monhoc_qld
             // 
-            this.label_monhoc_qld.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.label_monhoc_qld.AutoSize = true;
             this.label_monhoc_qld.BackColor = System.Drawing.Color.Transparent;
             this.label_monhoc_qld.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_monhoc_qld.Location = new System.Drawing.Point(38, 28);
+            this.label_monhoc_qld.Location = new System.Drawing.Point(43, 21);
             this.label_monhoc_qld.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_monhoc_qld.Name = "label_monhoc_qld";
-            this.label_monhoc_qld.Size = new System.Drawing.Size(360, 36);
+            this.label_monhoc_qld.Size = new System.Drawing.Size(309, 29);
             this.label_monhoc_qld.TabIndex = 18;
-            this.label_monhoc_qld.Text = "Chọn lớp để gửi hông báo";
-            // 
-            // btSend
-            // 
-            this.btSend.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btSend.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSend.Location = new System.Drawing.Point(99, 169);
-            this.btSend.Margin = new System.Windows.Forms.Padding(2);
-            this.btSend.Name = "btSend";
-            this.btSend.Size = new System.Drawing.Size(130, 67);
-            this.btSend.TabIndex = 22;
-            this.btSend.Text = "Gửi";
-            this.btSend.UseVisualStyleBackColor = false;
-            this.btSend.Click += new System.EventHandler(this.btSend_Click);
+            this.label_monhoc_qld.Text = "Chọn lớp để gửi thông báo";
             // 
             // richTextBox1
             // 
@@ -93,26 +66,25 @@ namespace QuanLySinhVien
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(17, 19);
+            this.richTextBox1.Location = new System.Drawing.Point(14, 16);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.richTextBox1.Size = new System.Drawing.Size(796, 189);
+            this.richTextBox1.Size = new System.Drawing.Size(664, 158);
             this.richTextBox1.TabIndex = 23;
             this.richTextBox1.Text = "";
             // 
-            // bt_ListNoti
+            // bt_ListNoti_1
             // 
-            this.bt_ListNoti.BackColor = System.Drawing.Color.Thistle;
-            this.bt_ListNoti.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_ListNoti.Location = new System.Drawing.Point(40, 428);
-            this.bt_ListNoti.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_ListNoti.Name = "bt_ListNoti";
-            this.bt_ListNoti.Size = new System.Drawing.Size(190, 109);
-            this.bt_ListNoti.TabIndex = 25;
-            this.bt_ListNoti.Text = "Xem thông báo đã gửi";
-            this.bt_ListNoti.UseVisualStyleBackColor = false;
-            this.bt_ListNoti.Click += new System.EventHandler(this.bt_ListNoti_Click);
+            this.bt_ListNoti_1.BackColor = System.Drawing.Color.Thistle;
+            this.bt_ListNoti_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_ListNoti_1.Location = new System.Drawing.Point(21, 520);
+            this.bt_ListNoti_1.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_ListNoti_1.Name = "bt_ListNoti_1";
+            this.bt_ListNoti_1.Size = new System.Drawing.Size(158, 91);
+            this.bt_ListNoti_1.TabIndex = 25;
+            this.bt_ListNoti_1.Text = "Xem thông báo đã gửi";
+            this.bt_ListNoti_1.UseVisualStyleBackColor = false;
             // 
             // richTextBox2
             // 
@@ -120,27 +92,13 @@ namespace QuanLySinhVien
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox2.Location = new System.Drawing.Point(19, 19);
+            this.richTextBox2.Location = new System.Drawing.Point(13, 25);
             this.richTextBox2.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.richTextBox2.Size = new System.Drawing.Size(796, 243);
+            this.richTextBox2.Size = new System.Drawing.Size(664, 203);
             this.richTextBox2.TabIndex = 27;
             this.richTextBox2.Text = "";
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.label_monhoc_qld);
-            this.panel1.Location = new System.Drawing.Point(268, 38);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(757, 80);
-            this.panel1.TabIndex = 28;
             // 
             // panel2
             // 
@@ -150,10 +108,9 @@ namespace QuanLySinhVien
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.picLoad);
             this.panel2.Controls.Add(this.richTextBox1);
-            this.panel2.Location = new System.Drawing.Point(235, 169);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(196, 141);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(835, 227);
+            this.panel2.Size = new System.Drawing.Size(696, 189);
             this.panel2.TabIndex = 29;
             // 
             // picLoad
@@ -163,63 +120,140 @@ namespace QuanLySinhVien
             this.picLoad.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picLoad.Image = ((System.Drawing.Image)(resources.GetObject("picLoad.Image")));
             this.picLoad.Location = new System.Drawing.Point(0, 0);
+            this.picLoad.Margin = new System.Windows.Forms.Padding(2);
             this.picLoad.Name = "picLoad";
-            this.picLoad.Size = new System.Drawing.Size(835, 227);
+            this.picLoad.Size = new System.Drawing.Size(696, 189);
             this.picLoad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picLoad.TabIndex = 24;
             this.picLoad.TabStop = false;
             // 
-            // panel3
+            // guna2Panel1
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.guna2Panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.guna2Panel1.BorderRadius = 15;
+            this.guna2Panel1.BorderThickness = 3;
+            this.guna2Panel1.Controls.Add(this.comboBox1);
+            this.guna2Panel1.Controls.Add(this.label_monhoc_qld);
+            this.guna2Panel1.Location = new System.Drawing.Point(197, 30);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(692, 76);
+            this.guna2Panel1.TabIndex = 31;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.comboBox1.BorderColor = System.Drawing.Color.Maroon;
+            this.comboBox1.BorderRadius = 9;
+            this.comboBox1.BorderThickness = 2;
+            this.comboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.comboBox1.ItemHeight = 30;
+            this.comboBox1.Location = new System.Drawing.Point(357, 21);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(298, 36);
+            this.comboBox1.TabIndex = 19;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderRadius = 15;
+            this.guna2Button1.BorderThickness = 3;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.Location = new System.Drawing.Point(45, 157);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(134, 73);
+            this.guna2Button1.TabIndex = 32;
+            this.guna2Button1.Text = "Gửi";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // bt_ListNoti
+            // 
+            this.bt_ListNoti.BackColor = System.Drawing.Color.Transparent;
+            this.bt_ListNoti.BorderRadius = 15;
+            this.bt_ListNoti.BorderThickness = 3;
+            this.bt_ListNoti.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bt_ListNoti.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bt_ListNoti.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bt_ListNoti.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bt_ListNoti.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.bt_ListNoti.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
+            this.bt_ListNoti.ForeColor = System.Drawing.Color.Black;
+            this.bt_ListNoti.Location = new System.Drawing.Point(45, 357);
+            this.bt_ListNoti.Name = "bt_ListNoti";
+            this.bt_ListNoti.Size = new System.Drawing.Size(134, 132);
+            this.bt_ListNoti.TabIndex = 33;
+            this.bt_ListNoti.Text = "Xem thông báo đã gửi";
+            this.bt_ListNoti.Click += new System.EventHandler(this.bt_ListNoti_Click);
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Controls.Add(this.richTextBox2);
-            this.panel3.Location = new System.Drawing.Point(236, 428);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(834, 286);
-            this.panel3.TabIndex = 30;
+            this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.guna2Panel2.BorderRadius = 15;
+            this.guna2Panel2.BorderThickness = 3;
+            this.guna2Panel2.Controls.Add(this.richTextBox2);
+            this.guna2Panel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.guna2Panel2.Location = new System.Drawing.Point(197, 357);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(695, 254);
+            this.guna2Panel2.TabIndex = 34;
             // 
             // ThongBao
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1243, 764);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(1036, 637);
+            this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.bt_ListNoti);
-            this.Controls.Add(this.btSend);
+            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.guna2Panel1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.bt_ListNoti_1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ThongBao";
             this.Text = " ";
             this.Load += new System.EventHandler(this.ThongBao_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLoad)).EndInit();
-            this.panel3.ResumeLayout(false);
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
+            this.guna2Panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label_monhoc_qld;
-        private System.Windows.Forms.Button btSend;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button bt_ListNoti;
+        private System.Windows.Forms.Button bt_ListNoti_1;
         private RichTextBox richTextBox2;
-        private Panel panel1;
         private Panel panel2;
-        private Panel panel3;
         private PictureBox picLoad;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBox1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button bt_ListNoti;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
     }
 }

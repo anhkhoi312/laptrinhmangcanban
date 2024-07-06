@@ -19,6 +19,7 @@ namespace QuanLySinhVien.Models
     [FirestoreData]
     public class DeadlineModel
     {
+        public string Id { get; set; }
         [FirestoreProperty]
         public string Title { get; set; }
 
@@ -30,6 +31,10 @@ namespace QuanLySinhVien.Models
 
         [FirestoreProperty]
         public string FileUrl { get; set; }
+        public override string ToString()
+        {
+            return Title;
+        }
     }
 
 
@@ -51,5 +56,10 @@ namespace QuanLySinhVien.Models
 
         [FirestoreProperty]
         public DateTime SubmittedDate { get; set; }
+
+        public override string ToString()
+        {
+            return StudentId; // Hiển thị mã số sinh viên
+        }
     }
 }

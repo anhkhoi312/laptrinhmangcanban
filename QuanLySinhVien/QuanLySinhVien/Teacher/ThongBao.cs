@@ -131,7 +131,40 @@ namespace QuanLySinhVien
             }
         }
 
-        private async void btSend_Click(object sender, EventArgs e)
+        
+
+        
+
+        private async void ThongBao_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                CollectionReference infoTeacherRef = db.Collection("InfoTeacher");
+                DocumentReference docRef = infoTeacherRef.Document(teacherId);
+                DocumentSnapshot snapshot = await docRef.GetSnapshotAsync();
+
+                List<string> manage = snapshot.GetValue<List<string>>("Manage");
+                if (manage != null && manage.Count > 0)
+                {
+                    comboBox1.Items.AddRange(manage.ToArray());
+                }
+                else
+                {
+                    MessageBox.Show("Bạn đang không quản lý lớp nào !");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đã xảy ra lỗi khi tải danh sách lớp: " + ex.Message);
+            }
+        }
+
+        private void picLoad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void guna2Button1_Click(object sender, EventArgs e)
         {
             picLoad.Visible = true; // Hiển thị ProgressBar
             string className = comboBox1.SelectedItem?.ToString();
@@ -168,35 +201,6 @@ namespace QuanLySinhVien
             string maso = DangNhap.maso;
             await ShowNotifications(maso);
             richTextBox2.ReadOnly = true; // Ngăn người dùng chỉnh sửa nội dung
-        }
-
-        private async void ThongBao_Load(object sender, EventArgs e)
-        {
-            try
-            {
-                CollectionReference infoTeacherRef = db.Collection("InfoTeacher");
-                DocumentReference docRef = infoTeacherRef.Document(teacherId);
-                DocumentSnapshot snapshot = await docRef.GetSnapshotAsync();
-
-                List<string> manage = snapshot.GetValue<List<string>>("Manage");
-                if (manage != null && manage.Count > 0)
-                {
-                    comboBox1.Items.AddRange(manage.ToArray());
-                }
-                else
-                {
-                    MessageBox.Show("Bạn đang không quản lý lớp nào !");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Đã xảy ra lỗi khi tải danh sách lớp: " + ex.Message);
-            }
-        }
-
-        private void picLoad_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

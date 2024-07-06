@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net.Http;
 using System.Net.Http.Json;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLySinhVien.Models;
 
@@ -41,14 +42,73 @@ namespace QuanLySinhVien.Teacher
             }
         }
 
-        private void btnBrowse_Click(object sender, EventArgs e)
+        private async void LoadDeadlines(string classId)
         {
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            using (HttpClient client = new HttpClient())
             {
-                uploadedFilePath = openFileDialog1.FileName;
-                lblFileName.Text = Path.GetFileName(uploadedFilePath);
+                var response = await client.GetAsync($"http://localhost:5000/api/classes/{classId}/deadlines");
+                if (response.IsSuccessStatusCode)
+                {
+                    var deadlines = await response.Content.ReadFromJsonAsync<List<DeadlineModel>>();
+                    listBoxDeadlines.Items.Clear();
+                    foreach (var deadline in deadlines)
+                    {
+                        listBoxDeadlines.Items.Add(deadline);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Không thể tải danh sách deadlines.");
+                }
             }
         }
+
+        private void comboBoxClasses_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var selectedClass = comboBoxClasses.SelectedItem as string;
+            if (!string.IsNullOrEmpty(selectedClass))
+            {
+                LoadDeadlines(selectedClass);
+            }
+        }
+
+
+        private async void btnDownload_Click(object sender, EventArgs e)
+        {
+            if (listBoxStudents.SelectedItem == null)
+            {
+                MessageBox.Show("Vui lòng chọn một submission.");
+                return;
+            }
+
+            var selectedSubmission = listBoxStudents.SelectedItem as SubmissionModel;
+            using (HttpClient client = new HttpClient())
+            {
+                var response = await client.GetAsync($"http://localhost:5000/api/deadlines/submission/download/{selectedSubmission.Id}");
+                if (response.IsSuccessStatusCode)
+                {
+                    var jsonResponse = await response.Content.ReadAsStringAsync();
+                    var fileUrlResponse = System.Text.Json.JsonDocument.Parse(jsonResponse);
+                    var fileUrl = fileUrlResponse.RootElement.GetProperty("url").GetString();
+
+                    using (var downloadClient = new HttpClient())
+                    {
+                        var fileBytes = await downloadClient.GetByteArrayAsync(fileUrl);
+                        var fileName = Path.GetFileName(fileUrl);
+                        var filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), fileName);
+
+                        await Task.Run(() => System.IO.File.WriteAllBytes(filePath, fileBytes));
+                        MessageBox.Show("File downloaded successfully.");
+                    }
+                }
+                else
+                {
+                    string responseContent = await response.Content.ReadAsStringAsync();
+                    MessageBox.Show($"Không thể tải file submission. Error: {responseContent}");
+                }
+            }
+        }
+
 
         private async void btnSave_Click(object sender, EventArgs e)
         {
@@ -80,6 +140,7 @@ namespace QuanLySinhVien.Teacher
                     if (response.IsSuccessStatusCode)
                     {
                         MessageBox.Show("Deadline added successfully.");
+                        LoadDeadlines(comboBoxClasses.SelectedItem.ToString()); // Tải lại danh sách deadlines
                     }
                     else
                     {
@@ -90,8 +151,69 @@ namespace QuanLySinhVien.Teacher
             }
         }
 
-        private void giaoTask_Load(object sender, EventArgs e) { LoadClasses(); }
+        private void btnBrowse_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                uploadedFilePath = openFileDialog1.FileName;
+                lblFileName.Text = Path.GetFileName(uploadedFilePath);
+            }
+        }
 
+        private void listBoxDeadlines_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listBoxDeadlines.SelectedItem != null)
+            {
+                DeadlineModel selectedDeadline = listBoxDeadlines.SelectedItem as DeadlineModel;
+                if (selectedDeadline != null)
+                {
+                    MessageBox.Show($"Deadline Details:\nTitle: {selectedDeadline.Title}\nDue Date: {selectedDeadline.DeadlineDate}\nFile URL: {selectedDeadline.FileUrl}");
+                }
+            }
+        }
 
+        private void dateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loadDL_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void btnCheck_Click_1(object sender, EventArgs e)
+        {
+            if (listBoxDeadlines.SelectedItem == null)
+            {
+                MessageBox.Show("Vui lòng chọn một deadline.");
+                return;
+            }
+
+            var selectedDeadline = listBoxDeadlines.SelectedItem as DeadlineModel;
+            using (HttpClient client = new HttpClient())
+            {
+                var response = await client.GetAsync($"http://localhost:5000/api/deadlines/{selectedDeadline.Id}/submissions");
+                if (response.IsSuccessStatusCode)
+                {
+                    var submissions = await response.Content.ReadFromJsonAsync<List<SubmissionModel>>();
+                    listBoxStudents.Items.Clear();
+                    foreach (var submission in submissions)
+                    {
+                        listBoxStudents.Items.Add(submission);
+                    }
+                }
+                else
+                {
+                    string responseContent = await response.Content.ReadAsStringAsync();
+                    MessageBox.Show($"Không thể tải danh sách submissions. Error: {responseContent}");
+                }
+            }
+        }
+
+        private void giaoTask_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
