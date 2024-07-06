@@ -72,7 +72,7 @@ namespace QuanLySinhVien.Chat
                 {
                     foreach (DocumentSnapshot doc in snapshot.Documents)
                     {
-                        comboBox1_1.Items.Add(doc.Id); // Thêm ID của mỗi document vào combobox
+                        comboBox1.Items.Add(doc.Id); // Thêm ID của mỗi document vào combobox
                     }
                 }
                 else
@@ -88,9 +88,9 @@ namespace QuanLySinhVien.Chat
             }
         }
 
-        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string selectedUserId = comboBox1_1.SelectedItem.ToString();    
+            string selectedUserId = comboBox1.SelectedItem.ToString();    
             try
             {
                 // Tải ảnh đại diện và tên lên
@@ -168,9 +168,9 @@ namespace QuanLySinhVien.Chat
             }
         }
 
-        private async void buttonSend_Click_1(object sender, EventArgs e)
+        private async void buttonSend_Click(object sender, EventArgs e)
         {
-            string receiverId = comboBox1_1.SelectedItem.ToString();
+            string receiverId = comboBox1.SelectedItem.ToString();
             string messageContent = textBoxMessage.Text;
 
             if (!string.IsNullOrEmpty(messageContent))
@@ -198,7 +198,7 @@ namespace QuanLySinhVien.Chat
             if (e.KeyCode == Keys.Enter)
             {
                 // Gọi hàm gửi tin nhắn khi nhấn phím Enter
-                buttonSend_Click_1(sender, e);
+                buttonSend_Click(sender, e);
             }
         }
 

@@ -221,7 +221,7 @@ namespace QuanLySinhVien.Chat
                             button.Click += click_show_panel; //add sự kiện click
                             flowLayoutPanel1.Controls.Add(button); //add button vừa tạo và panel bên trái của form
                             FlowLayoutPanel flowLayoutPanel = createFlowlayoutPanel();//tạo 1 flowpanel 
-                            panel3_1.Controls.Add(flowLayoutPanel);// add panel
+                            panel3.Controls.Add(flowLayoutPanel);// add panel
                             id_boxchat.Add(button, flowLayoutPanel);//add 1 cặp button_panel
 
                             // Load tin nhắn cũ từ Firebase Realtime Database

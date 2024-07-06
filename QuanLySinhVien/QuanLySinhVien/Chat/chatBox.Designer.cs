@@ -33,7 +33,7 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.textBoxMessage = new System.Windows.Forms.TextBox();
             this.buttonSend = new System.Windows.Forms.Button();
-            this.comboBox1_1 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -47,7 +47,7 @@
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.Location = new System.Drawing.Point(184, 72);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(624, 261);
@@ -63,7 +63,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 32;
             this.listBox1.Location = new System.Drawing.Point(0, 33);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(180, 322);
             this.listBox1.TabIndex = 1;
@@ -75,7 +75,7 @@
             this.textBoxMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxMessage.Location = new System.Drawing.Point(184, 337);
-            this.textBoxMessage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxMessage.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxMessage.Multiline = true;
             this.textBoxMessage.Name = "textBoxMessage";
             this.textBoxMessage.Size = new System.Drawing.Size(533, 44);
@@ -87,26 +87,24 @@
             this.buttonSend.BackColor = System.Drawing.Color.Thistle;
             this.buttonSend.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSend.Location = new System.Drawing.Point(716, 338);
-            this.buttonSend.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSend.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSend.Name = "buttonSend";
             this.buttonSend.Size = new System.Drawing.Size(86, 43);
             this.buttonSend.TabIndex = 3;
             this.buttonSend.Text = "Gửi";
             this.buttonSend.UseVisualStyleBackColor = false;
-            this.buttonSend.Click += new System.EventHandler(this.buttonSend_Click_1);
             // 
-            // comboBox1_1
+            // comboBox1
             // 
-            this.comboBox1_1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.comboBox1_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1_1.FormattingEnabled = true;
-            this.comboBox1_1.Location = new System.Drawing.Point(0, 0);
-            this.comboBox1_1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.comboBox1_1.Name = "comboBox1_1";
-            this.comboBox1_1.Size = new System.Drawing.Size(180, 37);
-            this.comboBox1_1.TabIndex = 7;
-            this.comboBox1_1.Text = "Tìm kiếm";
-            this.comboBox1_1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
+            this.comboBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(0, 0);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(180, 37);
+            this.comboBox1.TabIndex = 7;
+            this.comboBox1.Text = "Tìm kiếm";
             // 
             // label1
             // 
@@ -121,7 +119,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(184, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(61, 52);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -151,14 +149,14 @@
             this.ClientSize = new System.Drawing.Size(802, 382);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.comboBox1_1);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.buttonSend);
             this.Controls.Add(this.textBoxMessage);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.richTextBox1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "chatBox";
             this.Text = " ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -176,7 +174,7 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.TextBox textBoxMessage;
         private System.Windows.Forms.Button buttonSend;
-        private System.Windows.Forms.ComboBox comboBox1_1;
+        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
