@@ -90,6 +90,19 @@ namespace QuanLySinhVien.Chat
                 selectedFlowlayoutPanel.Controls.Add(control);
             }
         }
+        //Hàm lưu tin nhắn lên Firebase
+        private async void SaveMessageToFirebase(message newMessage, string id_sender, string id_receiver)
+        {
+            // Tạo một chat ID dựa trên ID của hai người tham gia cuộc trò chuyện
+            string userIds = id_sender;
+
+            await firebaseClient
+                .Child("chats")
+                .Child(userIds + "_" + id_receiver)
+                .Child("Messages")
+                .PostAsync(newMessage);
+        }
+
         //Hàm nhận thông tin từ server được chạy từ 1 luồng riêng được khởi tạo khi load form
         private void received()
         {
@@ -137,7 +150,7 @@ namespace QuanLySinhVien.Chat
             }
         }
         //Hàm hiển thị panel với việc click vào button tương ứng 
-        private void click_show_panel(object sender, EventArgs e)
+        private async void click_show_panel(object sender, EventArgs e)
         {
             //bắt lấy button nào được click
             System.Windows.Forms.Button clickedButton = (System.Windows.Forms.Button)sender;
@@ -152,8 +165,29 @@ namespace QuanLySinhVien.Chat
                     {
                         item.Value.Visible = true;
                         panel4.Visible = true;
-                        //label1.Text = clickedButton.Text;
-                        LoadAvatarFromGcs(clickedButton.Text);
+                        label1.Text = clickedButton.Text;
+                        //LoadAvatarFromGcs(clickedButton.Text);
+
+                        // Load tin nhắn cũ từ Firebase Realtime Database
+                        var messages = await firebaseClient
+                            .Child("chats")
+                            .Child(this.id + "_" + clickedButton.Text)
+                            .Child("Messages")
+                            .OnceAsync<message>();
+
+                        var messagesl = await firebaseClient
+                            .Child("chats")
+                            .Child(clickedButton.Text + "_" + this.id)
+                            .Child("Messages")
+                            .OnceAsync<message>();
+                        var allMessages = messages.Concat(messagesl).OrderBy(m => m.Key);
+
+                        foreach (var message in allMessages)
+                        {
+                            userControlMessage reMess = new userControlMessage(username);
+                            reMess.setLabel(message.Object.data, message.Object.sender);
+                            item.Value.Controls.Add(reMess);
+                        }
 
                         textBox1.Clear();
                     }
@@ -165,7 +199,8 @@ namespace QuanLySinhVien.Chat
                 }
             }
         }
-        private void LoadAvatarFromGcs(string selectedUserId)
+        //Load avata
+        /*private void LoadAvatarFromGcs(string selectedUserId)
         {
             try
             {
@@ -195,7 +230,7 @@ namespace QuanLySinhVien.Chat
             {
                 MessageBox.Show("Đã xảy ra lỗi khi tải ảnh đại diện từ GCS: " + ex.Message);
             }
-        }
+        }*/
 
 
         //lấy thông tin vào tạo các cặp button_panel khi load form
@@ -223,26 +258,7 @@ namespace QuanLySinhVien.Chat
                             FlowLayoutPanel flowLayoutPanel = createFlowlayoutPanel();//tạo 1 flowpanel 
                             panel3.Controls.Add(flowLayoutPanel);// add panel
                             id_boxchat.Add(button, flowLayoutPanel);//add 1 cặp button_panel
-
-                            // Load tin nhắn cũ từ Firebase Realtime Database
-                            var messages = await firebaseClient
-                                .Child("chats")
-                                .Child(this.id+"_"+doc.Id)
-                                .Child("Messages")
-                                .OnceAsync<message>();
-                            var messagesl = await firebaseClient
-                                .Child("chats")
-                                .Child(doc.Id + "_" + this.id)
-                                .Child("Messages")
-                                .OnceAsync<message>();
-                            var allMessages = messages.Concat(messagesl).OrderBy(m => m.Key);
-
-                            foreach (var message in allMessages)
-                            {
-                                userControlMessage reMess = new userControlMessage(username);
-                                reMess.setLabel(message.Object.data, message.Object.sender);
-                                flowLayoutPanel.Controls.Add(reMess);
-                            }
+                      
 
 
                         }
@@ -291,6 +307,11 @@ namespace QuanLySinhVien.Chat
                     userControlMessage reMess = new userControlMessage(username);
                     reMess.setLabel(newMessage.data, newMessage.sender);
                     item.Value.Controls.Add(reMess);
+                    
+                    // Lưu tin nhắn vào Firebase Realtime Database
+                    SaveMessageToFirebase(newMessage, newMessage.id_sender, newMessage.id_receiver);
+
+
                     textBox1.Clear();
                 }
             }

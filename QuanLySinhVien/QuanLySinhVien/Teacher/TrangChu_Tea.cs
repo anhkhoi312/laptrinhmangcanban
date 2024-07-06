@@ -59,21 +59,43 @@ namespace QuanLySinhVien
             writer.WriteLine(DangNhap.maso);
             writer.Flush();
         }
-        private void InitializeButtons()
+        private async void InitializeButtons()
         {
+            // Hàm gọi chatbox
+            string username = "";
+            DocumentReference docRef = firestoreDb.Collection("UserData").Document(DangNhap.maso);
+            DocumentSnapshot docSnapshot = await docRef.GetSnapshotAsync();
+
+            // Kiểm tra xem tài liệu có tồn tại hay không
+            if (docSnapshot.Exists)
+            {
+                // Lấy dữ liệu từ tài liệu
+                Dictionary<string, object> studentData = docSnapshot.ToDictionary();
+                username = studentData.ContainsKey("Name") ? studentData["Name"].ToString() : "";
+            }
+
             // Thêm các Button vào danh sách
-            buttons = new List<Guna2Button> { btNhapDiem, btThongKe, btThongBao, btDsLop, bt_User, btTask, bt_dangXuat, button1 };
+            buttons = new List<Guna2Button> { btNhapDiem, btThongKe, btThongBao, btDsLop, bt_User, btTask, bt_dangXuat, btchat };
 
             // Gán sự kiện Click cho mỗi Button
             foreach (var button in buttons)
             {
                 button.Click += Button_Click;
             }
+
+            btNhapDiem.Tag = new QuanLyDiem();
+            btThongKe.Tag = new ThongKe();
+            btThongBao.Tag = new ThongBao();
+            btDsLop.Tag = new QuanLyLop();
+            bt_User.Tag = new User_Tea();
+            btTask.Tag = new giaoTask();
+            btchat.Tag = new chatBox1(username, DangNhap.maso, tcpClient, reader, writer);
+
         }
 
         private void InitializeButtonFormMapping()
         {
-            buttonFormMapping = new Dictionary<Guna2Button, Form>
+            /*buttonFormMapping = new Dictionary<Guna2Button, Form>
             {
                 { btNhapDiem, new QuanLyDiem() },
                 { btThongKe, new ThongKe() },
@@ -81,7 +103,7 @@ namespace QuanLySinhVien
                 { btDsLop, new QuanLyLop() },
                 { bt_User, new User_Tea() },
                 { btTask, new giaoTask() },
-            };
+            };*/
         }
 
         private void Button_Click(object sender, EventArgs e)
@@ -98,14 +120,14 @@ namespace QuanLySinhVien
             clickedButton.BackColor = activeButtonColor;
 
 
-            // Gán form tương ứng cho mỗi nút bằng cách sử dụng thuộc tính Tag
+            /*// Gán form tương ứng cho mỗi nút bằng cách sử dụng thuộc tính Tag
             btNhapDiem.Tag = new QuanLyDiem();
             btThongKe.Tag = new ThongKe();
             btThongBao.Tag = new ThongBao();
             btDsLop.Tag = new QuanLyLop();
             bt_User.Tag = new User_Tea();
             btTask.Tag = new giaoTask();
-            //button1.Tag = new chatBox();
+            //button1.Tag = new chatBox();*/
 
             // Mở Form tương ứng với Button được nhấn
             if (clickedButton.Tag is Form)
@@ -140,25 +162,7 @@ namespace QuanLySinhVien
         //khi tắt ứng dụng thì các file lưu tin nhắn tạm cũng bị xóa đi 
         private void TrangChu_Tea_FormClosed(object sender, FormClosedEventArgs e)
         {
-            string foldePpath = "Temp_Mess_History";
-            if (Directory.Exists(foldePpath))
-            {
-                string[] fileNames = Directory.GetFiles(foldePpath);
-                foreach (string fileName in fileNames)
-                {
-                    if (File.Exists(fileName))
-                    {
-                        try
-                        {
-                            // Xóa file
-                            File.Delete(fileName);
-                        }
-                        catch (Exception ex)
-                        {
-                        }
-                    }
-                }
-            }
+            
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -180,19 +184,6 @@ namespace QuanLySinhVien
 
         private async void button1_Click(object sender, EventArgs e)
         {
-            string username = "";
-            DocumentReference docRef = firestoreDb.Collection("UserData").Document(DangNhap.maso);
-            DocumentSnapshot docSnapshot = await docRef.GetSnapshotAsync();
-            // Kiểm tra xem tài liệu có tồn tại hay không
-            if (docSnapshot.Exists)
-            {
-                // Lấy dữ liệu từ tài liệu
-                Dictionary<string, object> studentData = docSnapshot.ToDictionary();
-                username = studentData.ContainsKey("Name") ? studentData["Name"].ToString() : "";
-            }
-            // truyền các tham số như tên, id, tcpclient, streamreader, streamwriter
-            chatBox1 chatBox1 = new chatBox1(username, DangNhap.maso, tcpClient, reader, writer);
-            chatBox1.Visible = true;
         }
     }
 }

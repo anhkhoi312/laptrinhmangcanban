@@ -35,7 +35,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.bt_dangXuat = new Guna.UI2.WinForms.Guna2Button();
             this.bt_User = new Guna.UI2.WinForms.Guna2Button();
-            this.button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btchat = new Guna.UI2.WinForms.Guna2Button();
             this.btDsLop = new Guna.UI2.WinForms.Guna2Button();
             this.btTask = new Guna.UI2.WinForms.Guna2Button();
             this.btThongBao = new Guna.UI2.WinForms.Guna2Button();
@@ -86,7 +86,7 @@
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.bt_dangXuat);
             this.panel2.Controls.Add(this.bt_User);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btchat);
             this.panel2.Controls.Add(this.btDsLop);
             this.panel2.Controls.Add(this.btTask);
             this.panel2.Controls.Add(this.btThongBao);
@@ -143,28 +143,28 @@
             this.bt_User.TabIndex = 38;
             this.bt_User.Text = "Người dùng";
             // 
-            // button1
+            // btchat
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btchat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BorderRadius = 12;
-            this.button1.BorderThickness = 2;
-            this.button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.button1.FillColor = System.Drawing.Color.Pink;
-            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageSize = new System.Drawing.Size(40, 40);
-            this.button1.Location = new System.Drawing.Point(43, 490);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(239, 66);
-            this.button1.TabIndex = 37;
-            this.button1.Text = "Chat";
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btchat.BackColor = System.Drawing.Color.Transparent;
+            this.btchat.BorderRadius = 12;
+            this.btchat.BorderThickness = 2;
+            this.btchat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btchat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btchat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btchat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btchat.FillColor = System.Drawing.Color.Pink;
+            this.btchat.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold);
+            this.btchat.ForeColor = System.Drawing.Color.Black;
+            this.btchat.Image = ((System.Drawing.Image)(resources.GetObject("btchat.Image")));
+            this.btchat.ImageSize = new System.Drawing.Size(40, 40);
+            this.btchat.Location = new System.Drawing.Point(43, 490);
+            this.btchat.Name = "btchat";
+            this.btchat.Size = new System.Drawing.Size(239, 66);
+            this.btchat.TabIndex = 37;
+            this.btchat.Text = "Chat";
+            this.btchat.Click += new System.EventHandler(this.button1_Click);
             // 
             // btDsLop
             // 
@@ -256,7 +256,7 @@
             // 
             // TrangChu_Tea
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -287,7 +287,7 @@
         private Guna.UI2.WinForms.Guna2Button btThongBao;
         private Guna.UI2.WinForms.Guna2Button btTask;
         private Guna.UI2.WinForms.Guna2Button btDsLop;
-        private Guna.UI2.WinForms.Guna2Button button1;
+        private Guna.UI2.WinForms.Guna2Button btchat;
         private Guna.UI2.WinForms.Guna2Button bt_User;
         private Guna.UI2.WinForms.Guna2Button bt_dangXuat;
     }
